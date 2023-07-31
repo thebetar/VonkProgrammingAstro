@@ -9,7 +9,8 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"lint": "eslint --ext .astro,.js .",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"audit": "npm audit && npx retire"
 	},
 	"devDependencies": {
 		"@astrojs/sitemap": "^1.0.0",
