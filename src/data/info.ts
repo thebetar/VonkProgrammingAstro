@@ -86,6 +86,12 @@ export const info = {
       link: "https://eslint.org/"
     },
     {
+      title: "i18next",
+      years: 2,
+      logo: "/assets/svg/i18next.svg",
+      link: "https://www.i18next.com/"
+    },
+    {
       title: "Prisma",
       years: 2,
       logo: "/assets/svg/prisma.svg",
