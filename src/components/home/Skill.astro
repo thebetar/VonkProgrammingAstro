@@ -15,7 +15,7 @@ const { title, details } = Astro.props as ISkills;
 				>
 					<div class="flex gap-2 items-center">
 						<div class="md:w-10 md:h-10 w-8 h-8 rounded-full bg-slate-300 dark:bg-slate-100 flex justify-center items-center">
-							<img src={item.logo} class="md:w-6 md:h-6 w-4 h-4" />
+							<img src={item.logo} alt={item.title} class="md:w-6 md:h-6 w-4 h-4" />
 						</div>
 						<h3 class="md:text-lg text-sm">{item.title}</h3>
 					</div>
