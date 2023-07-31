@@ -1,0 +1,33 @@
+name: vonkprogramming-pipeline
+on:
+    push:
+        branches:
+            - master
+jobs:
+    publish:
+        name: Publish
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: 💻 Install Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '16'
+            - name: 💻 Install npm dependencies
+              run: npm ci
+            - name: 🔍 Lint
+              uses: wearerequired/lint-action@v2
+              with:
+                  eslint: true
+            - name: 🗒️ Vulnerability scan
+              run: npm run audit
+            - name: 🔨 Build
+              run: npm run build --production
+            - name: 📁 Publish
+              uses: Creepios/sftp-action@v1.0.3
+              with:
+                  host: 'ssh.strato.com'
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  localPath: './dist'
+                  remotePath: './'
