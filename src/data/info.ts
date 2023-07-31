@@ -9,9 +9,15 @@ export const info = {
   skills: [
     {
       title: "Vue",
-      years: 4,
+      years: 5,
       logo: "/assets/svg/vue.svg",
       link: "https://vuejs.org/"
+    },
+    {
+      title: "Chart.js",
+      years: 5,
+      logo: "/assets/svg/chartjs.svg",
+      link: "https://www.chartjs.org/"
     },
     {
       title: "Express.js",
@@ -108,12 +114,13 @@ export const info = {
       years: 1,
       logo: "/assets/svg/nestjs.svg",
       link: "https://nestjs.com/"
-    },{
-      title: "Electron",
-      years: 1,
-      logo: "/assets/svg/electron.svg",
-      link: "https://www.electronjs.org/"
     },
+    // {
+    //   title: "Electron",
+    //   years: 1,
+    //   logo: "/assets/svg/electron.svg",
+    //   link: "https://www.electronjs.org/"
+    // },
   ],
 
   experience: [
