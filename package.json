@@ -8,7 +8,8 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"lint": "eslint --ext .astro,.js ."
+		"lint": "eslint --ext .astro,.js .",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@astrojs/sitemap": "^1.0.0",
