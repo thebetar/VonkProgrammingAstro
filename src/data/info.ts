@@ -44,6 +44,12 @@ export const info = {
       link: "https://www.docker.com/"
     },
     {
+      title: "Redux",
+      years: 3,
+      logo: "/assets/svg/redux.svg",
+      link: "https://redux.js.org/"
+    },
+    {
       title: "Cypress",
       years: 2,
       logo: "/assets/svg/cypress.svg",
@@ -96,7 +102,12 @@ export const info = {
       years: 1,
       logo: "/assets/svg/nestjs.svg",
       link: "https://nestjs.com/"
-    }
+    },{
+      title: "Electron",
+      years: 1,
+      logo: "/assets/svg/electron.svg",
+      link: "https://www.electronjs.org/"
+    },
   ],
 
   experience: [
