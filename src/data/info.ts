@@ -80,12 +80,6 @@ export const info = {
       link: "https://sass-lang.com/"
     },
     {
-      title: "Astro",
-      years: 2,
-      logo: "/assets/svg/astro.svg",
-      link: "https://astro.build/"
-    },
-    {
       title: "ESLint",
       years: 2,
       logo: "/assets/svg/eslint.svg",
@@ -110,11 +104,35 @@ export const info = {
       link: "https://lit.dev/"
     },
     {
+      title: "Astro",
+      years: 1,
+      logo: "/assets/svg/astro.svg",
+      link: "https://astro.build/"
+    },
+    {
       title: "Nest.js",
       years: 1,
       logo: "/assets/svg/nestjs.svg",
       link: "https://nestjs.com/"
     },
+    {
+      title: "Javascript",
+      years: 8,
+      logo: '/assets/svg/javascript.svg',
+      link: 'https://www.javascript.com/'
+    },
+    {
+      title: "Typescript",
+      years: 4,
+      logo: "/assets/svg/typescript.svg",
+      link:   "https://www.typescriptlang.org/"
+    },
+    {
+      title: "node.js",
+      years: 4,
+      logo: "/assets/svg/nodejs.svg",
+      link: "https://nodejs.org/"
+    }
     // {
     //   title: "Electron",
     //   years: 1,
