@@ -6,3 +6,15 @@ After building the first project in Vue.js I have decided since it is only a por
 ## What you can find in this repo
 
 Like in the last repository for my portfolio website I will also try to adhere to all coding standards in this repository.
+
+Coding standards that can be found here are
+
+-   Linting
+-   Hooks
+-   Pipeline that performs checks
+-   Optimized build
+-   Optimized hosting (apache)
+-   Minimalism
+
+Within this project there are no unit tests or other tests since this is a static website.
+I would recommend at least using Cypress for testing if the website does contain functionality.
