@@ -4,6 +4,7 @@ import { info } from '@data';
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/home/Hero.astro';
 import Experience from '@components/home/Experience.astro';
+import Skill from '@components/home/Skill.astro';
 import ProjectsWrapper from '@components/general/ProjectsWrapper.astro';
 import MetaHead from '@components/general/MetaHead.astro';
 
@@ -24,6 +25,7 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
 	<body>
 		<Layout>
 			<Hero name={info.name} jobDescription={info.jobDescription} about={info.about} />
+			<Skill title={'SKILLS'} details={info.skills} />
 			<Experience title={'EXPERIENCE'} details={info.experience} />
 			<Experience title={'EDUCATION'} details={info.education} />
 			<section>

@@ -6,6 +6,99 @@ export const info = {
     As a software enthusiast, I value quality code above all. My commitment extends to robust linting, rigorous unit testing, adherence to code standards, and efficient pipeline management. Every line of code I write embodies my dedication to excellence and precision in software development.
   `,
 
+  skills: [
+    {
+      title: "Vue",
+      years: 4,
+      logo: "/assets/svg/vue.svg",
+      link: "https://vuejs.org/"
+    },
+    {
+      title: "Express.js",
+      years: 4,
+      logo: "/assets/svg/express.svg",
+      link: "https://expressjs.com/"
+    },
+    {
+      title: "React",
+      years: 3,
+      logo: "/assets/svg/react.svg",
+      link: "https://reactjs.org/"
+    },
+    {
+      title: "MongoDB",
+      years: 3,
+      logo: "/assets/svg/mongodb.svg",
+      link: "https://www.mongodb.com/"
+    },
+    {
+      title: "Jest",
+      years: 3,
+      logo: "/assets/svg/jest.svg",
+      link: "https://jestjs.io/"
+    },
+    {
+      title: "Docker",
+      years: 3,
+      logo: "/assets/svg/docker.svg",
+      link: "https://www.docker.com/"
+    },
+    {
+      title: "Cypress",
+      years: 2,
+      logo: "/assets/svg/cypress.svg",
+      link: "https://www.cypress.io/"
+    },
+    {
+      title: "Ionic",
+      years: 2,
+      logo: "/assets/svg/ionic.svg",
+      link: "https://ionicframework.com/"
+    },
+    {
+      title: "Nginx",
+      years: 2,
+      logo: "/assets/svg/nginx.svg",
+      link: "https://www.nginx.com/"
+    },
+    {
+      title: "Sass",
+      years: 2,
+      logo: "/assets/svg/sass.svg",
+      link: "https://sass-lang.com/"
+    },
+    {
+      title: "Astro",
+      years: 2,
+      logo: "/assets/svg/astro.svg",
+      link: "https://astro.build/"
+    },
+    {
+      title: "ESLint",
+      years: 2,
+      logo: "/assets/svg/eslint.svg",
+      link: "https://eslint.org/"
+    },
+    {
+      title: "Prisma",
+      years: 2,
+      logo: "/assets/svg/prisma.svg",
+      link: "https://www.prisma.io/"
+    },
+    {
+      title: "Lit",
+      years: 2,
+      logo: "/assets/svg/lit.svg",
+      link: "https://lit.dev/"
+    },
+    {
+      title: "Nest.js",
+      years: 1,
+      logo: "/assets/svg/nestjs.svg",
+      link: "https://nestjs.com/"
+    }
+  ],
+
   experience: [
     {
       name: 'ING',

@@ -10,6 +10,18 @@ export interface IHeroProps {
   about: string;
 }
 
+export interface ISkill {
+  title: string;
+  years: number;
+  logo: string;
+  link: string;
+}
+
+export interface ISkills {
+  title: string;
+  details: ISkill[];
+}
+
 export interface IExperience {
   name: string;
   location: string;
