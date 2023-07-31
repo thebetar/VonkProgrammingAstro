@@ -194,7 +194,7 @@ export const info = {
       startDate: 'Jun 2017',
       endDate: 'Mar 2018',
       description: [
-        'At \'Student Aan Huis\', based in Bussum, North Holland, Netherlands, the role involved assisting individuals with their computer issues, from printer setups to restoring entire Windows systems.',
+        'At \'Student Aan Huis\', based in Utrecht, North Holland, Netherlands, the role involved assisting individuals that were customer\'s of \'Student Aan Huis\' with their computer issues, from printer setups to restoring entire Windows systems.',
       ],
       link: 'https://www.studentaanhuis.nl/'
     },
