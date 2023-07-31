@@ -27,7 +27,7 @@ export const info = {
     },
     {
       title: "React",
-      years: 3,
+      years: 4,
       logo: "/assets/svg/react.svg",
       link: "https://reactjs.org/"
     },
@@ -253,7 +253,7 @@ export const info = {
   socialMedia: {
     stackoverflow: "https://stackoverflow.com/users/10104786/lars-vonk",
     github: "https://github.com/thebetar",
-    email: "info@vonkprogramming.nl",
+    email: "mailto:info@vonkprogramming.nl",
     linkedin: "https://www.linkedin.com/in/lars-v-82455612a/",
   },
 
