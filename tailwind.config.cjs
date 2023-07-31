@@ -12,7 +12,6 @@ module.exports = {
         "dark-gray": "#1A1A1A",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
       },
     },
