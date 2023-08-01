@@ -277,6 +277,12 @@ export const info = {
 
   projects: [
     {
+      title: "FietsTracker",
+      isFeatured: true,
+      thumbnail: "/assets/images/fietstrekker.webp",
+      liveUrl: "https://github.com/thebetar/fietsTracker"
+    },
+    {
       title: "Klets",
       isFeatured: true,
       thumbnail: "/assets/images/klets.webp",
@@ -292,7 +298,7 @@ export const info = {
       title: "Fyndyr",
       isFeatured: true,
       thumbnail: "/assets/images/fyndyr.webp",
-      liveUrl: "https://play.google.com/store/apps/details?id=nl.vonkprogramming.fyndyr"
+      liveUrl: "https://github.com/thebetar/Fyndyr"
     },
   ],
 };
