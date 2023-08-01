@@ -280,7 +280,7 @@ export const info = {
       title: "FietsTracker",
       isFeatured: true,
       thumbnail: "/assets/images/fietstrekker.webp",
-      liveUrl: "https://github.com/thebetar/fietsTracker"
+      githubUrl: "https://github.com/thebetar/fietsTracker"
     },
     {
       title: "Klets",
@@ -298,7 +298,8 @@ export const info = {
       title: "Fyndyr",
       isFeatured: true,
       thumbnail: "/assets/images/fyndyr.webp",
-      liveUrl: "https://github.com/thebetar/Fyndyr"
+      liveUrl: "https://play.google.com/store/apps/details?id=nl.vonkprogramming.fyndyr",
+      githubUrl: "https://github.com/thebetar/Fyndyr"
     },
   ],
 };
