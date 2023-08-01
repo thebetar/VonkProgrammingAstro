@@ -277,6 +277,12 @@ export const info = {
 
   projects: [
     {
+      title: "Klets",
+      isFeatured: true,
+      thumbnail: "/assets/images/klets.webp",
+      liveUrl: "https://vonkprogramming.nl"
+    },
+    {
       title: "Deet",
       isFeatured: true,
       thumbnail: "/assets/images/deet.webp",
