@@ -5,6 +5,7 @@ export const info = {
   about: `
     As a software enthusiast, I value quality code above all. My commitment extends to robust linting, rigorous unit testing, adherence to code standards, and efficient pipeline management. Every line of code I write embodies my dedication to excellence and precision in software development.
   `,
+  keywords: "Vue, React, Javascript, Express.js, MongoDB",
 
   skills: [
     {
