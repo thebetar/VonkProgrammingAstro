@@ -135,6 +135,12 @@ export const info = {
       link: "https://nodejs.org/"
     }
     // {
+    //   title: "Strapi",
+    //   years: 1,
+    //   logo: "/assets/svg/strapi.svg",
+    //   link: "https://www.strapi.io/"
+    // },
+    // {
     //   title: "Electron",
     //   years: 1,
     //   logo: "/assets/svg/electron.svg",
