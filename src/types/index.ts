@@ -1,6 +1,8 @@
 export interface IMetaHead {
   title: string;
   description: string;
+  keywords: string;
+  author: string;
   ogImageUrl: string;
 }
 

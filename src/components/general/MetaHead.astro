@@ -2,7 +2,7 @@
 import { IMetaHead } from '@types';
 import { info } from '@data';
 
-const { title, description, ogImageUrl } = Astro.props as IMetaHead;
+const { title, description, keywords, author, ogImageUrl } = Astro.props as IMetaHead;
 ---
 
 <meta charset="UTF-8" />
@@ -29,11 +29,13 @@ const { title, description, ogImageUrl } = Astro.props as IMetaHead;
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y84ZLGD7ES"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
 
-  gtag('config', 'G-Y84ZLGD7ES');
+	gtag('config', 'G-Y84ZLGD7ES');
 </script>
 
 <!-- preload assests -->
