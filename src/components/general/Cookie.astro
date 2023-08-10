@@ -2,7 +2,9 @@
 	id="cookie-component"
 	class="w-screen h-screen px-4 fixed top-0 left-0 bg-slate-800 bg-opacity-80 justify-center items-center hidden"
 >
-	<div class="bg-white bg-opacity-95 backdrop-blur md:w-[460px] w-full md:px-10 px-6 md:py-6 py-4 text-center">
+	<div
+		class="bg-white bg-opacity-95 backdrop-blur md:w-[460px] w-full md:px-10 px-6 md:pt-6 md:pb-4 py-4 text-center"
+	>
 		<img src="/assets/svg/cookie.svg" alt="logo" class="md:h-12 h-10 mx-auto" />
 		<div class="font-semibold text-xl mt-4">Cookie statement</div>
 		<div class="text-xs mt-2">
@@ -12,20 +14,20 @@
 			invite to a party of better content. You explore, we optimize – like finding bonus fries in your takeout!
 			Here's to cookies and content! 🍪🎉
 		</div>
-		<div class="text-xs mt-2">Do you want to accept our cookies?</div>
+		<div class="text-xs md:mt-2 mt-4">Do you want to accept our cookies?</div>
 		<div class="flex gap-x-2 justify-center mt-2">
 			<button
 				id="cookie-accept"
-				class="px-6 py-2 rounded-sm bg-slate-800 hover:bg-slate-600 transition text-white"
+				class="px-6 py-2 rounded-sm bg-slate-800 hover:bg-slate-600 transition text-white md:w-24 w-full"
 			>
 				Accept
 			</button>
 			<button
 				id="cookie-decline"
-				class="px-6 py-2 rounded-sm border-slate-800 hover:border-slate-600 border hover:bg-slate-600 transition text-slate-800 hover:text-white"
+				class="px-6 py-2 rounded-sm transition text-slate-800 hover:text-slate-600 underline text-sm md:w-24 w-full"
 			>
-				Decline
-			</button>
+				Decline</button
+			>
 			{localStorage.getItem('cookie-accept')}
 		</div>
 	</div>
