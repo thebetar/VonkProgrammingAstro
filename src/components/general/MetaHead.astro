@@ -27,8 +27,7 @@ const { title, description, keywords, author, ogImageUrl } = Astro.props as IMet
 {author && <meta name="author" content={author} />}
 
 <!-- Google Analytics -->
-<script async nonce="<?= $_SERVER['CSP_NONCE'] ?>" src="https://www.googletagmanager.com/gtag/js?id=G-Y84ZLGD7ES"
-></script>
+<script async src="/googletagmanager.js"></script>
 
 <script>
 	if (localStorage.getItem('cookie-accept') === 'accept') {

@@ -1,8 +1,5 @@
 <IfModule mod_headers.c>
-      LoadModule headers_module modules/mod_headers.so
-      LoadModule cspnonce_module modules/mod_cspnonce.so
-
-      Header add Content-Security-Policy "default-src 'self' 'unsafe-inline' 'nonce-%{CSP_NONCE}e'; img-src 'self' data:  www.googletagmanager.com; style-src 'self' 'unsafe-inline';"
+      Header add Content-Security-Policy "default-src 'self' 'unsafe-inline'; img-src 'self' data: www.googletagmanager.com; style-src 'self' 'unsafe-inline';"
 
       # Serve gzip compressed CSS, JS, HTML and SVG files if they exist
       # and the client accepts gzip.
