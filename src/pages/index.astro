@@ -30,7 +30,12 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
 
 	<body>
 		<Layout>
-			<Hero name={info.name} jobDescription={info.jobDescription} about={info.about} />
+			<Hero
+				name={info.name}
+				jobDescription1={info.jobDescription1}
+				jobDescription2={info.jobDescription2}
+				about={info.about}
+			/>
 			<Skill title={'SKILLS'} details={info.skills} />
 			<Experience title={'EXPERIENCE'} details={info.experience} />
 			<Experience title={'EDUCATION'} details={info.education} />

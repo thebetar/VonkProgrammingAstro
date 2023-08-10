@@ -8,7 +8,8 @@ export interface IMetaHead {
 
 export interface IHeroProps {
   name: string;
-  jobDescription: string;
+  jobDescription1: string;
+  jobDescription2: string;
   about: string;
 }
 
