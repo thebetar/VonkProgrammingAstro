@@ -186,7 +186,7 @@ export const info = {
       startDate: 'Jun 2021',
       endDate: 'Present',
       description: [
-        '\'J-Tax Automotive\', based in Almere, Flevoland, Netherlands, has had a role since June 2021, which involves creating custom software for valuation reports using Vue.js, ExpressJS and MongoDB. '
+        'Joining \'J-Tax Automotive\' situated in Almere, Flevoland, Netherlands, from June 2021, I undertook the significant responsibility of crafting bespoke software tailored for valuation reports. This marked a pivotal milestone as my first major independent project as a freelancer. The project harnessed the power of Vue.js, ExpressJS, and MongoDB to seamlessly develop a comprehensive solution. The outcome of this endeavor was transformative, as the client now reaps the benefit of generating up to four times the number of reports, highlighting the substantial impact of streamlined and efficient software implementation.'
       ],
       link: 'https://www.j-taxautomotive.nl//'
     },
@@ -196,7 +196,7 @@ export const info = {
       startDate: 'Sep 2019',
       endDate: 'Aug 2020',
       description: [
-        '\'MedWeb\' is a Hilversum, North Holland, Netherlands-based company where the role was performed from September 2019 to August 2020. The responsibilities included working on a roster application for medical specialists and doctors and updating the "Medspace" application using VueJS/JavaScript, IBM Notes, IBM Domino designer, CSS, and HTML. '
+        'At \'MedWeb\' in Hilversum, North Holland, Netherlands, where I was engaged from September 2019 to August 2020, I played a key role in developing a roster application for medical professionals and updating the \'Medspace\' application using VueJS/JavaScript, IBM Notes, IBM Domino Designer, CSS, and HTML. During this time, I also focused on enhancing data visualization capabilities by incorporating Chart.js, enabling clients to derive valuable insights from their data. Working closely with LotusScript, I contributed to the application\'s functionality, translating intricate data into meaningful charts that empowered medical specialists and doctors to make informed decisions based on clear, visualized information.'
       ],
       link: 'https://www.medweb.nl/'
     },
@@ -206,7 +206,7 @@ export const info = {
       startDate: 'Sep 2018',
       endDate: 'Jun 2019',
       description: [
-        'At \'Floriade\', based in Almere, Flevoland, Netherlands, the role was from September 2018 to January 2019. The responsibilities included working on a part of the Floriade project with PHP, CSS, MySQL, and HTML.',
+        'At \'Floriade\', based in Almere, Flevoland, Netherlands, the role was from September 2018 to January 2019. The responsibilities included contributing to a specific segment of the Floriade project, utilizing skills in PHP, CSS, MySQL, and HTML to enhance its digital presence. The Floriade exposition, held in Almere, is a renowned international horticultural exhibition that showcases innovative landscaping and sustainable gardening practices. It serves as a platform for sharing ideas, technologies, and designs related to urban development, horticulture, and environmental sustainability. The exposition attracts visitors from around the world and offers a unique opportunity to explore cutting-edge concepts in urban greening and ecological urban planning',
       ],
       link: 'https://www.floriade.com/'
     },
@@ -216,7 +216,7 @@ export const info = {
       startDate: 'Sep 2017',
       endDate: 'Jun 2018',
       description: [
-        'At \'Sanoma\', based in Hoofddorp, North Holland, Netherlands, the role was performed from September 2017 to June 2018. The responsibilities included developing software for advertising in PHP, CSS, MySQL, and HTML.',
+        'At \'Sanoma\', based in Hoofddorp, North Holland, Netherlands, the role was performed from September 2017 to June 2018. The responsibilities included developing software for advertising in PHP, CSS, MySQL, and HTML. The primary focus of the project revolved around utilizing Chart.js to visualize and present data in a variety of advanced chart formats. These advanced charts added a dynamic dimension to the advertising platform, enabling the effective representation of complex data in an easily understandable manner.',
       ],
       link: 'https://www.sanoma.com/'
     },
