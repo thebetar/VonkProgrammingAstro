@@ -1,11 +1,21 @@
 ---
-import Footer from "@components/general/Footer.astro";
-import Navbar from "@components/general/Navbar.astro";
-import "../styles/style.css";
+import Footer from '@components/general/Footer.astro';
+import Navbar from '@components/general/Navbar.astro';
+import Cookie from '@components/general/Cookie.astro';
+import '../styles/style.css';
 ---
 
 <Navbar />
 <main class="container">
-  <slot />
+	<Cookie />
+	<slot />
 </main>
 <Footer />
+
+<script is:inline>
+	const cookieToggle = !localStorage.getItem('cookie-accept');
+
+	if (cookieToggle) {
+		document.querySelector('#cookie-component').classList.remove('hidden');
+	}
+</script>
