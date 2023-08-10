@@ -86,12 +86,12 @@ export const info = {
       logo: "/assets/svg/eslint.svg",
       link: "https://eslint.org/"
     },
-    {
-      title: "i18next",
-      years: 2,
-      logo: "/assets/svg/i18next.svg",
-      link: "https://www.i18next.com/"
-    },
+    // {
+    //   title: "i18next",
+    //   years: 2,
+    //   logo: "/assets/svg/i18next.svg",
+    //   link: "https://www.i18next.com/"
+    // },
     {
       title: "Prisma",
       years: 2,
@@ -117,6 +117,18 @@ export const info = {
       link: "https://nestjs.com/"
     },
     {
+      title: "Strapi",
+      years: 1,
+      logo: "/assets/svg/strapi.svg",
+      link: "https://www.strapi.io/"
+    },
+    // {
+    //   title: "Electron",
+    //   years: 1,
+    //   logo: "/assets/svg/electron.svg",
+    //   link: "https://www.electronjs.org/"
+    // },
+    {
       title: "Javascript",
       years: 8,
       logo: '/assets/svg/javascript.svg',
@@ -134,18 +146,6 @@ export const info = {
       logo: "/assets/svg/nodejs.svg",
       link: "https://nodejs.org/"
     }
-    // {
-    //   title: "Strapi",
-    //   years: 1,
-    //   logo: "/assets/svg/strapi.svg",
-    //   link: "https://www.strapi.io/"
-    // },
-    // {
-    //   title: "Electron",
-    //   years: 1,
-    //   logo: "/assets/svg/electron.svg",
-    //   link: "https://www.electronjs.org/"
-    // },
   ],
 
   experience: [
