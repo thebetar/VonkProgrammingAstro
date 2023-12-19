@@ -1,7 +1,7 @@
 export const info = {
   baseUrl: "https://vonkprogramming.nl",
   name: "Lars Vonk",
-  jobDescription1: "Software enthousiast",
+  jobDescription1: "Software enthusiast",
   jobDescription2: "Code quality advocate",
   about: `
     As a software enthusiast, I value quality code above all. My commitment extends to robust linting, rigorous unit testing, adherence to code standards, and efficient pipeline management. Every line of code I write embodies my dedication to excellence and precision in software development.
