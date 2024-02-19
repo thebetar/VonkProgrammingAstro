@@ -18,3 +18,7 @@ Coding standards that can be found here are
 
 Within this project there are no unit tests or other tests since this is a static website.
 I would recommend at least using Cypress for testing if the website does contain functionality.
+
+# Note
+
+I does not run on linux use `npm install --os=linux --cpu=x64 sharp`
