@@ -17,7 +17,7 @@
 		"@astrojs/tailwind": "~4.0.0",
 		"@commitlint/cli": "^17.6.7",
 		"@commitlint/config-conventional": "^17.6.7",
-		"@img/sharp-linux-x64": "^0.33.1",
+		"@img/sharp-linux-x64": "^0.33.2",
 		"@typescript-eslint/parser": "^6.2.0",
 		"astro": "~2.10.4",
 		"astro-compress": "~2.2.5",
