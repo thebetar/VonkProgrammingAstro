@@ -51,12 +51,6 @@ export const info = {
 			logo: '/assets/svg/docker.svg',
 			link: 'https://www.docker.com/',
 		},
-		// {
-		//   title: "Redux",
-		//   years: 3,
-		//   logo: "/assets/svg/redux.svg",
-		//   link: "https://redux.js.org/"
-		// },
 		{
 			title: 'Nginx',
 			years: 3,
@@ -87,12 +81,6 @@ export const info = {
 			logo: '/assets/svg/eslint.svg',
 			link: 'https://eslint.org/',
 		},
-		// {
-		//   title: "i18next",
-		//   years: 2,
-		//   logo: "/assets/svg/i18next.svg",
-		//   link: "https://www.i18next.com/"
-		// },
 		{
 			title: 'Prisma',
 			years: 2,
@@ -105,30 +93,6 @@ export const info = {
 			logo: '/assets/svg/lit.svg',
 			link: 'https://lit.dev/',
 		},
-		// {
-		//   title: "Astro",
-		//   years: 1,
-		//   logo: "/assets/svg/astro.svg",
-		//   link: "https://astro.build/"
-		// },
-		// {
-		//   title: "Nest.js",
-		//   years: 1,
-		//   logo: "/assets/svg/nestjs.svg",
-		//   link: "https://nestjs.com/"
-		// },
-		// {
-		//   title: "Strapi",
-		//   years: 1,
-		//   logo: "/assets/svg/strapi.svg",
-		//   link: "https://www.strapi.io/"
-		// },
-		// {
-		//   title: "Electron",
-		//   years: 1,
-		//   logo: "/assets/svg/electron.svg",
-		//   link: "https://www.electronjs.org/"
-		// },
 		{
 			title: 'Javascript',
 			years: 9,
@@ -152,6 +116,195 @@ export const info = {
 			years: 5,
 			logo: '/assets/svg/nodejs.svg',
 			link: 'https://nodejs.org/',
+		},
+	],
+
+	allSkills: [
+		{
+			title: 'Vue',
+			years: 6,
+			logo: '/assets/svg/vue.svg',
+			link: 'https://vuejs.org/',
+		},
+		{
+			title: 'Chart.js',
+			years: 6,
+			logo: '/assets/svg/chartjs.svg',
+			link: 'https://www.chartjs.org/',
+		},
+		{
+			title: 'Express.js',
+			years: 5,
+			logo: '/assets/svg/express.svg',
+			link: 'https://expressjs.com/',
+		},
+		{
+			title: 'React',
+			years: 5,
+			logo: '/assets/svg/react.svg',
+			link: 'https://reactjs.org/',
+		},
+		{
+			title: 'MongoDB',
+			years: 4,
+			logo: '/assets/svg/mongodb.svg',
+			link: 'https://www.mongodb.com/',
+		},
+		{
+			title: 'Jest',
+			years: 4,
+			logo: '/assets/svg/jest.svg',
+			link: 'https://jestjs.io/',
+		},
+		{
+			title: 'Docker',
+			years: 4,
+			logo: '/assets/svg/docker.svg',
+			link: 'https://www.docker.com/',
+		},
+		{
+			title: 'Linux',
+			years: 3,
+			logo: '/assets/svg/linux.svg',
+			link: 'https://www.linux.org/',
+		},
+		{
+			title: 'Redux',
+			years: 3,
+			logo: '/assets/svg/redux.svg',
+			link: 'https://redux.js.org/',
+		},
+		{
+			title: 'Nginx',
+			years: 3,
+			logo: '/assets/svg/nginx.svg',
+			link: 'https://www.nginx.com/',
+		},
+		{
+			title: 'Cypress',
+			years: 3,
+			logo: '/assets/svg/cypress.svg',
+			link: 'https://www.cypress.io/',
+		},
+		{
+			title: 'Ionic',
+			years: 3,
+			logo: '/assets/svg/ionic.svg',
+			link: 'https://ionicframework.com/',
+		},
+		{
+			title: 'Sass',
+			years: 2,
+			logo: '/assets/svg/sass.svg',
+			link: 'https://sass-lang.com/',
+		},
+		{
+			title: 'ESLint',
+			years: 2,
+			logo: '/assets/svg/eslint.svg',
+			link: 'https://eslint.org/',
+		},
+		{
+			title: 'i18next',
+			years: 2,
+			logo: '/assets/svg/i18next.svg',
+			link: 'https://www.i18next.com/',
+		},
+		{
+			title: 'Prisma',
+			years: 2,
+			logo: '/assets/svg/prisma.svg',
+			link: 'https://www.prisma.io/',
+		},
+		{
+			title: 'Lit',
+			years: 2,
+			logo: '/assets/svg/lit.svg',
+			link: 'https://lit.dev/',
+		},
+		{
+			title: 'Astro',
+			years: 1,
+			logo: '/assets/svg/astro.svg',
+			link: 'https://astro.build/',
+		},
+		{
+			title: 'Nest.js',
+			years: 1,
+			logo: '/assets/svg/nestjs.svg',
+			link: 'https://nestjs.com/',
+		},
+		{
+			title: 'Strapi',
+			years: 1,
+			logo: '/assets/svg/strapi.svg',
+			link: 'https://www.strapi.io/',
+		},
+		{
+			title: 'Electron',
+			years: 1,
+			logo: '/assets/svg/electron.svg',
+			link: 'https://www.electronjs.org/',
+		},
+		{
+			title: 'Javascript',
+			years: 9,
+			logo: '/assets/svg/javascript.svg',
+			link: 'https://www.javascript.com/',
+		},
+		{
+			title: 'HTML',
+			years: 9,
+			logo: '/assets/svg/html.svg',
+			link: 'https://html.spec.whatwg.org/',
+		},
+		{
+			title: 'CSS',
+			years: 9,
+			logo: '/assets/svg/css.svg',
+			link: 'https://www.w3.org/Style/CSS/Overview.en.html',
+		},
+		{
+			title: 'Python',
+			years: 6,
+			logo: '/assets/svg/python.svg',
+			link: 'https://www.python.org/',
+		},
+		{
+			title: 'Typescript',
+			years: 5,
+			logo: '/assets/svg/typescript.svg',
+			link: 'https://www.typescriptlang.org/',
+		},
+		{
+			title: 'node.js',
+			years: 5,
+			logo: '/assets/svg/nodejs.svg',
+			link: 'https://nodejs.org/',
+		},
+		{
+			title: 'npm',
+			years: 5,
+			logo: '/assets/svg/npm.svg',
+			link: 'https://www.npmjs.com/',
+		},
+		{
+			title: 'php',
+			years: 5,
+			logo: '/assets/svg/php.svg',
+			link: 'https://www.php.net/',
+		},
+		{
+			title: 'Go',
+			years: 1,
+			logo: '/assets/svg/go.svg',
+			link: 'https://golang.org/',
+		},
+		{
+			title: 'C',
+			years: 1,
+			logo: '/assets/svg/c.svg',
+			link: 'https://en.wikipedia.org/wiki/C_(programming_language)',
 		},
 	],
 
