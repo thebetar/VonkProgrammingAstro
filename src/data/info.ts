@@ -223,6 +223,18 @@ export const info = {
 			link: 'https://lit.dev/',
 		},
 		{
+			title: 'Stripe',
+			years: 1,
+			logo: '/assets/svg/stripe.svg',
+			link: 'https://stripe.com/',
+		},
+		{
+			title: 'Payload',
+			years: 1,
+			logo: '/assets/svg/payload.svg',
+			link: 'https://payloadcms.com/',
+		},
+		{
 			title: 'Astro',
 			years: 1,
 			logo: '/assets/svg/astro.svg',
