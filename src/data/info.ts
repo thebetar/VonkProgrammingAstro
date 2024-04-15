@@ -467,6 +467,12 @@ export const info = {
 
 	projects: [
 		{
+			title: 'Resilient hosting',
+			isFeatured: true,
+			thumbnail: '/assets/images/resilienthosting.webp',
+			githubUrl: 'https://github.com/thebetar/ResillientHosting',
+		},
+		{
 			title: 'Advent of code',
 			isFeatured: true,
 			thumbnail: '/assets/images/adventofcode.webp',
