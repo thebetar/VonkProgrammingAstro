@@ -10,7 +10,7 @@
 		"astro": "astro",
 		"lint": "eslint --ext .astro,.js .",
 		"prepare": "husky install",
-		"audit": "npm audit && npx retire"
+		"audit": "npm audit"
 	},
 	"devDependencies": {
 		"@astrojs/sitemap": "~2.0.1",
