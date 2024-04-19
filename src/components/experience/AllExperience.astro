@@ -4,8 +4,15 @@ import { IExperiences } from '@types';
 const { title, details } = Astro.props as IExperiences;
 ---
 
-<section class="flex items-start justify-between flex-col sm:flex-row dark:text-light">
-	<h2 class="w-[15rem] mt-16">{title}</h2>
+<section class="flex items-center justify-start flex-col dark:text-light">
+	<h2 class="w-full text-4xl text-center md:my-4 my-2">{title}</h2>
+
+	<div class="flex justify-center text-white">
+		<div>
+			<a href="/" class="text-white underline">Go back</a> in time ⏰
+		</div>
+	</div>
+
 	<div class="w-full">
 		{
 			details.map(item => (
@@ -30,11 +37,5 @@ const { title, details } = Astro.props as IExperiences;
 				</div>
 			))
 		}
-		<div class="text-white lg:col-span-3 col-span-2 text-center mt-4 md:text-base text-sm">
-			To see more of my {title.toLowerCase()}
-			<a class="text-white underline hover:opacity-70 transition-opacity" href={`/${title.toLowerCase()}`}>
-				click here</a
-			>
-		</div>
 	</div>
 </section>

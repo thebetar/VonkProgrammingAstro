@@ -7,4 +7,11 @@ const { projects } = Astro.props as IProjects;
 
 <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-8">
 	{projects.map(project => <ProjectCard projectDetail={project} />)}
+
+	<div class="md:col-span-2 col-span-1 text-center mt-4 md:text-base text-sm text-white">
+		To see a full list of all my projects <a
+			class="text-white underline hover:opacity-70 transition-opacity"
+			href="/projects">click here</a
+		>
+	</div>
 </div>

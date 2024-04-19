@@ -14,309 +14,269 @@ export const info = {
 			years: 6,
 			logo: '/assets/svg/vue.svg',
 			link: 'https://vuejs.org/',
+			featured: true,
 		},
 		{
 			title: 'Chart.js',
 			years: 6,
 			logo: '/assets/svg/chartjs.svg',
 			link: 'https://www.chartjs.org/',
+
+			featured: true,
 		},
 		{
 			title: 'Express.js',
 			years: 5,
 			logo: '/assets/svg/express.svg',
 			link: 'https://expressjs.com/',
+
+			featured: true,
 		},
 		{
 			title: 'React',
 			years: 5,
 			logo: '/assets/svg/react.svg',
 			link: 'https://reactjs.org/',
+
+			featured: true,
 		},
 		{
 			title: 'MongoDB',
 			years: 4,
 			logo: '/assets/svg/mongodb.svg',
 			link: 'https://www.mongodb.com/',
+
+			featured: true,
 		},
 		{
 			title: 'Jest',
 			years: 4,
 			logo: '/assets/svg/jest.svg',
 			link: 'https://jestjs.io/',
+
+			featured: true,
 		},
 		{
 			title: 'Docker',
 			years: 4,
 			logo: '/assets/svg/docker.svg',
 			link: 'https://www.docker.com/',
+
+			featured: true,
 		},
 		{
 			title: 'Nginx',
 			years: 3,
 			logo: '/assets/svg/nginx.svg',
 			link: 'https://www.nginx.com/',
+
+			featured: true,
 		},
 		{
 			title: 'Cypress',
 			years: 3,
 			logo: '/assets/svg/cypress.svg',
 			link: 'https://www.cypress.io/',
+
+			featured: true,
 		},
 		{
 			title: 'Ionic',
 			years: 3,
 			logo: '/assets/svg/ionic.svg',
 			link: 'https://ionicframework.com/',
+
+			featured: true,
 		},
 		{
 			title: 'Sass',
 			years: 2,
 			logo: '/assets/svg/sass.svg',
 			link: 'https://sass-lang.com/',
+
+			featured: true,
 		},
 		{
 			title: 'ESLint',
 			years: 2,
 			logo: '/assets/svg/eslint.svg',
 			link: 'https://eslint.org/',
+
+			featured: true,
 		},
 		{
 			title: 'Prisma',
 			years: 2,
 			logo: '/assets/svg/prisma.svg',
 			link: 'https://www.prisma.io/',
+
+			featured: true,
 		},
 		{
 			title: 'Lit',
 			years: 2,
 			logo: '/assets/svg/lit.svg',
 			link: 'https://lit.dev/',
+
+			featured: true,
 		},
 		{
 			title: 'Javascript',
 			years: 9,
 			logo: '/assets/svg/javascript.svg',
 			link: 'https://www.javascript.com/',
+
+			featured: true,
 		},
 		{
 			title: 'Python',
 			years: 6,
 			logo: '/assets/svg/python.svg',
 			link: 'https://www.python.org/',
+
+			featured: true,
 		},
 		{
 			title: 'Typescript',
 			years: 5,
 			logo: '/assets/svg/typescript.svg',
 			link: 'https://www.typescriptlang.org/',
+
+			featured: true,
 		},
 		{
 			title: 'node.js',
 			years: 5,
 			logo: '/assets/svg/nodejs.svg',
 			link: 'https://nodejs.org/',
-		},
-	],
 
-	allSkills: [
-		{
-			title: 'Vue',
-			years: 6,
-			logo: '/assets/svg/vue.svg',
-			link: 'https://vuejs.org/',
-		},
-		{
-			title: 'Chart.js',
-			years: 6,
-			logo: '/assets/svg/chartjs.svg',
-			link: 'https://www.chartjs.org/',
-		},
-		{
-			title: 'Express.js',
-			years: 5,
-			logo: '/assets/svg/express.svg',
-			link: 'https://expressjs.com/',
-		},
-		{
-			title: 'React',
-			years: 5,
-			logo: '/assets/svg/react.svg',
-			link: 'https://reactjs.org/',
-		},
-		{
-			title: 'MongoDB',
-			years: 4,
-			logo: '/assets/svg/mongodb.svg',
-			link: 'https://www.mongodb.com/',
-		},
-		{
-			title: 'Jest',
-			years: 4,
-			logo: '/assets/svg/jest.svg',
-			link: 'https://jestjs.io/',
-		},
-		{
-			title: 'Docker',
-			years: 4,
-			logo: '/assets/svg/docker.svg',
-			link: 'https://www.docker.com/',
+			featured: true,
 		},
 		{
 			title: 'Linux',
 			years: 3,
 			logo: '/assets/svg/linux.svg',
 			link: 'https://www.linux.org/',
+			featured: false,
 		},
 		{
 			title: 'Redux',
 			years: 3,
 			logo: '/assets/svg/redux.svg',
 			link: 'https://redux.js.org/',
-		},
-		{
-			title: 'Nginx',
-			years: 3,
-			logo: '/assets/svg/nginx.svg',
-			link: 'https://www.nginx.com/',
-		},
-		{
-			title: 'Cypress',
-			years: 3,
-			logo: '/assets/svg/cypress.svg',
-			link: 'https://www.cypress.io/',
-		},
-		{
-			title: 'Ionic',
-			years: 3,
-			logo: '/assets/svg/ionic.svg',
-			link: 'https://ionicframework.com/',
+			featured: false,
 		},
 		{
 			title: 'Sass',
 			years: 2,
 			logo: '/assets/svg/sass.svg',
 			link: 'https://sass-lang.com/',
-		},
-		{
-			title: 'ESLint',
-			years: 2,
-			logo: '/assets/svg/eslint.svg',
-			link: 'https://eslint.org/',
+			featured: false,
 		},
 		{
 			title: 'i18next',
 			years: 2,
 			logo: '/assets/svg/i18next.svg',
 			link: 'https://www.i18next.com/',
-		},
-		{
-			title: 'Prisma',
-			years: 2,
-			logo: '/assets/svg/prisma.svg',
-			link: 'https://www.prisma.io/',
+			featured: false,
 		},
 		{
 			title: 'Lit',
 			years: 2,
 			logo: '/assets/svg/lit.svg',
 			link: 'https://lit.dev/',
+			featured: false,
 		},
 		{
 			title: 'Stripe',
 			years: 1,
 			logo: '/assets/svg/stripe.svg',
 			link: 'https://stripe.com/',
+			featured: false,
 		},
 		{
 			title: 'Payload',
 			years: 1,
 			logo: '/assets/svg/payload.svg',
 			link: 'https://payloadcms.com/',
+			featured: false,
 		},
 		{
 			title: 'Astro',
 			years: 1,
 			logo: '/assets/svg/astro.svg',
 			link: 'https://astro.build/',
+			featured: false,
 		},
 		{
 			title: 'Nest.js',
 			years: 1,
 			logo: '/assets/svg/nestjs.svg',
 			link: 'https://nestjs.com/',
+			featured: false,
 		},
 		{
 			title: 'Strapi',
 			years: 1,
 			logo: '/assets/svg/strapi.svg',
 			link: 'https://www.strapi.io/',
+			featured: false,
 		},
 		{
 			title: 'Electron',
 			years: 1,
 			logo: '/assets/svg/electron.svg',
 			link: 'https://www.electronjs.org/',
+			featured: false,
 		},
 		{
 			title: 'Javascript',
 			years: 9,
 			logo: '/assets/svg/javascript.svg',
 			link: 'https://www.javascript.com/',
+			featured: false,
 		},
 		{
 			title: 'HTML',
 			years: 9,
 			logo: '/assets/svg/html.svg',
 			link: 'https://html.spec.whatwg.org/',
+			featured: false,
 		},
 		{
 			title: 'CSS',
 			years: 9,
 			logo: '/assets/svg/css.svg',
 			link: 'https://www.w3.org/Style/CSS/Overview.en.html',
-		},
-		{
-			title: 'Python',
-			years: 6,
-			logo: '/assets/svg/python.svg',
-			link: 'https://www.python.org/',
-		},
-		{
-			title: 'Typescript',
-			years: 5,
-			logo: '/assets/svg/typescript.svg',
-			link: 'https://www.typescriptlang.org/',
-		},
-		{
-			title: 'node.js',
-			years: 5,
-			logo: '/assets/svg/nodejs.svg',
-			link: 'https://nodejs.org/',
+			featured: false,
 		},
 		{
 			title: 'npm',
 			years: 5,
 			logo: '/assets/svg/npm.svg',
 			link: 'https://www.npmjs.com/',
+			featured: false,
 		},
 		{
 			title: 'php',
 			years: 5,
 			logo: '/assets/svg/php.svg',
 			link: 'https://www.php.net/',
+			featured: false,
+		},
+		{
+			title: 'C',
+			years: 2,
+			logo: '/assets/svg/c.svg',
+			link: 'https://en.wikipedia.org/wiki/C_(programming_language)',
+			featured: false,
 		},
 		{
 			title: 'Go',
 			years: 1,
 			logo: '/assets/svg/go.svg',
 			link: 'https://golang.org/',
-		},
-		{
-			title: 'C',
-			years: 1,
-			logo: '/assets/svg/c.svg',
-			link: 'https://en.wikipedia.org/wiki/C_(programming_language)',
+			featured: false,
 		},
 	],
 
@@ -426,26 +386,38 @@ export const info = {
 			],
 		},
 		{
-			name: 'AWS cloud practitioner',
-			location: 'Online',
-			startDate: 'Feb 2021',
-			endDate: 'Feb 2021',
-			description: ['AWS cloud practitioner certification'],
-		},
-		{
 			name: 'Cambridge English: C2',
 			location: 'Online',
 			startDate: 'Aug 2016',
 			endDate: 'Aug 2016',
-			description: ['Cambridge English: C2 Proficiency (CPE)'],
+			description: [
+				'A certificate proving my English proficiency at the highest level. I have taken the test to prove my English proficiency and to be able to study in English.',
+				'Issued by Cambridge English Language Assessment.',
+			],
 		},
-
+		{
+			name: 'AWS cloud practitioner',
+			location: 'Online',
+			startDate: 'Feb 2021',
+			endDate: 'Feb 2021',
+			description: ['AWS cloud practitioner certification', 'Issued by Amazon Web Services.'],
+		},
 		{
 			name: 'Certified scrum master',
 			location: 'Online',
 			startDate: 'Dec 2022',
 			endDate: 'Dec 2022',
-			description: ['Cambridge English: C2 Proficiency (CPE)'],
+			description: [
+				'Basic understanding of the scrum framework and how to work and/or lead in a scrum team.',
+				'Issued by ScrumFoundation.',
+			],
+		},
+		{
+			name: 'Graph Developer - Associate',
+			location: 'Online',
+			startDate: 'Apr 2022',
+			endDate: 'Apr 2022',
+			description: ['Basic online course learning GraphQL from the Apollo team.', 'Issued by Apollo.'],
 		},
 		{
 			name: 'Various Udemy courses',
@@ -454,6 +426,7 @@ export const info = {
 			endDate: 'Present',
 			description: [
 				'I like to keep my skills up to date by taking various courses on Udemy. I have completed courses on Vue.js, React, Node.js, MongoDB, Express.js, and many more.',
+				'Issued by Udemy.',
 			],
 		},
 	],
@@ -466,6 +439,18 @@ export const info = {
 	},
 
 	projects: [
+		{
+			title: 'AssistAI',
+			isFeatured: true,
+			thumbnail: '/assets/images/assistai.png',
+			githubUrl: 'https://github.com/thebetar/AssistAI',
+		},
+		{
+			title: 'Voice calculator',
+			isFeatured: true,
+			thumbnail: '/assets/images/speechcalculator.png',
+			githubUrl: 'https://github.com/thebetar/IASRProject',
+		},
 		{
 			title: 'Resilient hosting',
 			isFeatured: true,

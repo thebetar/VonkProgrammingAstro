@@ -1,8 +1,23 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://vonkprogramming.nl/</loc>
-        <lastmod>2023-07-31</lastmod>
+        <lastmod>2024-04-19</lastmod>
+    </url>
+    <url>
+        <loc>https://vonkprogramming.nl/skills</loc>
+        <lastmod>2024-04-19</lastmod>
+    </url>
+    <url>
+        <loc>https://vonkprogramming.nl/experience</loc>
+        <lastmod>2024-04-19</lastmod>
+    </url>
+    <url>
+        <loc>https://vonkprogramming.nl/education</loc>
+        <lastmod>2024-04-19</lastmod>
+    </url>
+    <url>
+        <loc>https://vonkprogramming.nl/projects</loc>
+        <lastmod>2024-04-19</lastmod>
     </url>
 </urlset>

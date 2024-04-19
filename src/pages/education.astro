@@ -3,8 +3,8 @@ import { info } from '@data';
 
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/home/Hero.astro';
-import AllSkill from '@components/skills/AllSkill.astro';
 import MetaHead from '@components/general/MetaHead.astro';
+import AllExperience from '@components/experience/AllExperience.astro';
 ---
 
 <!DOCTYPE html>
@@ -22,7 +22,8 @@ import MetaHead from '@components/general/MetaHead.astro';
 	<body>
 		<Layout>
 			<Hero name={info.name} jobDescription1={info.jobDescription1} jobDescription2={info.jobDescription2} />
-			<AllSkill title={'SKILLS'} skills={info.skills} />
+
+			<AllExperience title="Education" details={info.education} />
 		</Layout>
 	</body>
 </html>

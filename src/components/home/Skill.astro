@@ -1,14 +1,14 @@
 ---
 import type { ISkills } from '@types';
 
-const { title, details } = Astro.props as ISkills;
+const { title, skills } = Astro.props as ISkills;
 ---
 
 <section class="flex items-start justify-between flex-col sm:flex-row dark:text-light">
 	<h2 class="w-[15rem] mt-16">{title}</h2>
 	<div class="w-full mt-6 grid lg:grid-cols-3 grid-cols-2 md:gap-x-8 gap-x-2">
 		{
-			details.map(item => (
+			skills.map(item => (
 				<a
 					href={item.link}
 					class="md:my-4 my-1 flex justify-between items-center dark:border-slate-300 border-slate-600 border md:p-4 px-2 py-3 dark:text-light text-black no-underline md:rounded rounded-lg dark:hover:bg-slate-900 hover:bg-slate-200 transition"
