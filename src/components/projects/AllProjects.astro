@@ -7,6 +7,13 @@ const { title, projects } = Astro.props as IProjects;
 
 <section class="flex items-start justify-between flex-col dark:text-light">
 	<h2 class="w-full text-4xl text-center md:my-4 my-2">{title}</h2>
+
+	<div class="flex justify-center text-white">
+		<div>
+			<a href="/" class="text-white underline">Go back</a> in time ⏰
+		</div>
+	</div>
+
 	<div class="w-full mt-6 grid lg:grid-cols-3 grid-cols-2 md:gap-8 gap-2">
 		{projects.map(project => <ProjectCard projectDetail={project} />)}
 	</div>
