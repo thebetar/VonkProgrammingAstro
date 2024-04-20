@@ -27,6 +27,6 @@
 		"eslint-plugin-astro": "^0.28.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.2.3",
-		"sharp": "^0.33.2"
+		"sharp": "^0.33.3"
 	}
 }

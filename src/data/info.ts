@@ -54,7 +54,7 @@ export const info = {
 			logo: '/assets/svg/jest.svg',
 			link: 'https://jestjs.io/',
 
-			featured: true,
+			featured: false,
 		},
 		{
 			title: 'Docker',
@@ -78,7 +78,7 @@ export const info = {
 			logo: '/assets/svg/cypress.svg',
 			link: 'https://www.cypress.io/',
 
-			featured: true,
+			featured: false,
 		},
 		{
 			title: 'Ionic',
@@ -86,7 +86,7 @@ export const info = {
 			logo: '/assets/svg/ionic.svg',
 			link: 'https://ionicframework.com/',
 
-			featured: true,
+			featured: false,
 		},
 		{
 			title: 'Sass',
@@ -94,7 +94,7 @@ export const info = {
 			logo: '/assets/svg/sass.svg',
 			link: 'https://sass-lang.com/',
 
-			featured: true,
+			featured: false,
 		},
 		{
 			title: 'ESLint',
@@ -110,7 +110,7 @@ export const info = {
 			logo: '/assets/svg/prisma.svg',
 			link: 'https://www.prisma.io/',
 
-			featured: true,
+			featured: false,
 		},
 		{
 			title: 'Lit',
@@ -142,7 +142,7 @@ export const info = {
 			logo: '/assets/svg/typescript.svg',
 			link: 'https://www.typescriptlang.org/',
 
-			featured: true,
+			featured: false,
 		},
 		{
 			title: 'node.js',
