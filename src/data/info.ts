@@ -443,7 +443,7 @@ export const info = {
 		{
 			title: 'x86 assembly',
 			isFeatured: true,
-			thumbnail: '/assets/images/x86-assembly.webp',
+			thumbnail: '/assets/images/x86-assembly.png',
 			githubUrl: 'https://github.com/thebetar/x86-assembly',
 		},
 		{
