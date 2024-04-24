@@ -1,0 +1,130 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'VonkProgramming'}
+			description={info.about}
+			keywords={info.keywords}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<h1 class="text-4xl">How to achieve code excellence</h1>
+
+			<div class="blog-post">
+				<p>
+					Being able to solve problems is a very important part of being a developer, but we have all ran into
+					the problem that when we go back to our code 2 months later it can seem quite cryptic. Unless of
+					course some very important rules are followed!
+				</p>
+				<p>In this blog I will go over my tricks to keep my code readable and the quality high!</p>
+				<h2 id="introduction">Introduction</h2>
+				<p>In this blog I will go over the following concepts:</p>
+				<ul>
+					<li><p>Code splitting</p></li>
+					<li><p>Never nesting</p></li>
+					<li><p>Variable and function names</p></li>
+					<li><p>Linting</p></li>
+					<li><p>Testing</p></li>
+					<li><p>Comments</p></li>
+					<li><p>Fix problem quick and dirty, then refactor</p></li>
+				</ul>
+				<p>
+					In the end I will go into why I think having a sustainable plan for yourself is important, since
+					following all rules religiously most likely will end up having you not follow them at all anymore in
+					the long-term.
+				</p>
+				<h3 id="code-splitting">Code splitting</h3>
+				<p>
+					We have all learnt initially that functions used so logic does not have to repeated, this of course
+					is a very important use case for functions!
+				</p>
+				<p>
+					However functions can also greatly increase the readability of your code. Long if statements or big
+					functions can become unreadable since a lot of context has to be remembered. While splitting it up
+					in small readable and rememberable chunks makes it easier to understand.
+				</p>
+				<p>
+					This can be done for instace by changing a big if statement like <code
+						>person.age &gt; 65 &amp;&amp; person.nationality === &#39;NL&#39; &amp;&amp; person.working ===
+						true</code
+					> into a function by moving this if statement to a function and calling it <code
+						>ifEligibleForDiscount</code
+					>. This describes what you mean to do with this functionality and cleans up the code block of the
+					function.
+				</p>
+				<p>
+					When this is done over an entire code base it can keep the code more readable especially when going
+					back to it after a while since function names are often more descriptive than code.
+				</p>
+				<h2 id="never-nesting">Never nesting</h2>
+				<p>
+					Never nesting is the concept of keeping the layers within your code as low as possible. This is to
+					remove the complexity of reading over what a function performs. This can be done both by early
+					returns and code splitting. When too many layers are used it can be easy to lose oversight of which
+					layer is currently used.
+				</p>
+				<p>
+					Early returns are the idea of instead of using <code>if(x === true ) {'{'} some_logic {'}'}</code> using
+					<code>if(x === false) {'{'} return {'}'} some_logic</code> which does not add an extra layer of nesting.
+				</p>
+				<p>
+					I recommend watching the video from <a href="https://www.youtube.com/watch?v=CFRhGnuXG-4"
+						>CodeAesthetic</a
+					> to know more!
+				</p>
+				<h3 id="variable-and-function-names">Variable and function names</h3>
+				<p>
+					Naming in programming should describe what the variable will be used for or what the function should
+					do. Renaming variables and functions after the program is functional is an important part of keeping
+					everything nice and readable. Variable names should include their context and what they are used
+					for.
+				</p>
+				<h3 id="linting">Linting</h3>
+				<p>
+					Linting is an integral part of writing qualitative code. Using tools like <code>eslint</code> for javascript
+					are amazing to achieve this task. It is important however to set the right linting tools and not be too
+					nice on yourself when creating the configuration of this linter. Strict rules will reduce the speed at
+					which you can write code but will in the longterm create better quality of code.
+				</p>
+				<h3 id="comments">Comments</h3>
+				<p>
+					Comments are important for describing function or variables which need more context than can be
+					given in a single name. If the rules above are adhered however comments should not be necessary for
+					every function and can be written for more complex function. It is best practise to write comments
+					for all your code, but a sustainable way if there is a time constraint is to at least write it for
+					all complex functions where the context might be a little unclear later on.
+				</p>
+				<h3 id="fix-problem-quick-and-dirty-then-refactor">Fix Problem quick and dirty, then refactor</h3>
+				<p>
+					This is one of my favourite rules which I apply to almost all my problems. If there is a problem it
+					is not a crime to create some code in the quick and dirty way to fix the problem. However the
+					problem starts to arise when after the code works the steps to make the code of high quality and
+					sustainable are not taken. It is very alluring to finish quickly and call it a day but the time
+					investment to improve the code by using the rules described in this blog is most of the time minimal
+					and will reduce time spend decyphering later.
+				</p>
+				<h2 id="sustainability">Sustainability</h2>
+				<p>
+					I have had many points where I tried to follow all the rules when writing my code. In my perspective
+					writing perfect code is very hard and time consuming and I do not think it is a sustainable goal for
+					most developers. That is why I think it is an important rule to find what works and is easy to apply
+					so the maximum value to time ratio can be achieved. The rules described in this document are minimal
+					but they are easy to implement and thus will be easier to stick to, which in the development world
+					is very important. There will be many people out there telling you how to do it better, and maybe
+					they will be right. But in the end having good rules which you can stick to is the most important.
+				</p>
+			</div>
+		</Layout>
+	</body>
+</html>

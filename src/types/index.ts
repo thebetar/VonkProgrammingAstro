@@ -13,11 +13,24 @@ export interface IHeroProps {
 	about: string;
 }
 
+export interface IBlog {
+	title: string;
+	description: string;
+	date: string;
+	link: string;
+}
+
+export interface IBlogs {
+	title: string;
+	blogs: IBlog[];
+}
+
 export interface ISkill {
 	title: string;
 	years: number;
 	logo: string;
 	link: string;
+	featured: boolean;
 }
 
 export interface ISkills {

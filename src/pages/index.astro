@@ -3,8 +3,9 @@ import { info } from '@data';
 
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/home/Hero.astro';
-import Experience from '@components/home/Experience.astro';
+import Blog from '@components/home/Blog.astro';
 import Skill from '@components/home/Skill.astro';
+import Experience from '@components/home/Experience.astro';
 import ProjectsWrapper from '@components/general/ProjectsWrapper.astro';
 import MetaHead from '@components/general/MetaHead.astro';
 
@@ -41,6 +42,7 @@ const featuredProjects = info.projects.reduce((accumulator, project) => {
 				jobDescription2={info.jobDescription2}
 				about={info.about}
 			/>
+			<Blog title={'BLOG'} blogs={info.blogs} />
 			<Skill title={'SKILLS'} skills={featuredSkills} />
 			<Experience title={'EXPERIENCE'} details={featuredExperiences} />
 			<Experience title={'EDUCATION'} details={featuredEducation} />

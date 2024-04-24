@@ -1,0 +1,33 @@
+---
+import { IBlogs } from '@types';
+
+const { title, blogs } = Astro.props as IBlogs;
+---
+
+<section class="flex items-start justify-between flex-col sm:flex-row dark:text-light">
+	<h2 class="w-[15rem] mt-16">{title}</h2>
+	<div class="w-full">
+		{
+			blogs.map(item => (
+				<div class="md:my-16 my-8">
+					<div>
+						<h3 class="text-xl font-semibold">{item.title}</h3>
+						<p class="text-sm dark:text-gray">{item.description}</p>
+						<a
+							href={item.link}
+							class="text-sm dark:text-gray underline hover:opacity-70 transition-opacity"
+						>
+							Read more
+						</a>
+					</div>
+				</div>
+			))
+		}
+		<div class="text-white lg:col-span-3 col-span-2 text-center mt-4 md:text-base text-sm">
+			To see more of my {title.toLowerCase()}
+			<a class="text-white underline hover:opacity-70 transition-opacity" href={`/${title.toLowerCase()}`}>
+				click here</a
+			>
+		</div>
+	</div>
+</section>

@@ -42,3 +42,45 @@
 		@apply dark:text-light;
 	}
 }
+
+.blog-post {
+	color: #ffffff;
+
+	h2 {
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: 1.25rem;
+		font-weight: 600;
+	}
+
+	p,
+	li,
+	a {
+		color: #ffffff;
+	}
+
+	p {
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+
+	ul {
+		margin-top: 8px;
+		margin-bottom: 8px;
+		margin-left: 16px;
+	}
+
+	li {
+		list-style-type: disc;
+	}
+
+	code {
+		background-color: #1a202c;
+		color: #ffffff;
+		padding: 4px;
+		border-radius: 4px;
+	}
+}

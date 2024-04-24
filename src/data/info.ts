@@ -1,3 +1,5 @@
+import { IBlog, IExperience, IProject, ISkill } from '@types';
+
 export const info = {
 	baseUrl: 'https://vonkprogramming.nl',
 	name: 'Lars Vonk',
@@ -8,6 +10,16 @@ export const info = {
   `,
 	keywords:
 		'web development, mobile development, freelance developer, Bussum, Naarden, Hilversum, Netherlands, front-end development, Vue, React',
+
+	blogs: [
+		{
+			title: 'How to achieve code excellence',
+			description: `
+				What are the key principles of code excellence? What rules to adhere to and what tools to use? This blog post will delve deep into the world of writing excellent code, click read more to find out.
+			`,
+			link: '/blogs/code-excellence',
+		},
+	] as IBlog[],
 
 	skills: [
 		{
@@ -22,7 +34,6 @@ export const info = {
 			years: 6,
 			logo: '/assets/svg/chartjs.svg',
 			link: 'https://www.chartjs.org/',
-
 			featured: true,
 		},
 		{
@@ -30,7 +41,6 @@ export const info = {
 			years: 5,
 			logo: '/assets/svg/express.svg',
 			link: 'https://expressjs.com/',
-
 			featured: true,
 		},
 		{
@@ -38,7 +48,6 @@ export const info = {
 			years: 5,
 			logo: '/assets/svg/react.svg',
 			link: 'https://reactjs.org/',
-
 			featured: true,
 		},
 		{
@@ -86,7 +95,6 @@ export const info = {
 			years: 3,
 			logo: '/assets/svg/ionic.svg',
 			link: 'https://ionicframework.com/',
-
 			featured: false,
 		},
 		{
@@ -94,7 +102,6 @@ export const info = {
 			years: 2,
 			logo: '/assets/svg/sass.svg',
 			link: 'https://sass-lang.com/',
-
 			featured: false,
 		},
 		{
@@ -102,7 +109,6 @@ export const info = {
 			years: 2,
 			logo: '/assets/svg/eslint.svg',
 			link: 'https://eslint.org/',
-
 			featured: true,
 		},
 		{
@@ -110,7 +116,6 @@ export const info = {
 			years: 2,
 			logo: '/assets/svg/prisma.svg',
 			link: 'https://www.prisma.io/',
-
 			featured: false,
 		},
 		{
@@ -118,7 +123,6 @@ export const info = {
 			years: 2,
 			logo: '/assets/svg/lit.svg',
 			link: 'https://lit.dev/',
-
 			featured: true,
 		},
 		{
@@ -126,7 +130,6 @@ export const info = {
 			years: 9,
 			logo: '/assets/svg/javascript.svg',
 			link: 'https://www.javascript.com/',
-
 			featured: true,
 		},
 		{
@@ -134,7 +137,6 @@ export const info = {
 			years: 6,
 			logo: '/assets/svg/python.svg',
 			link: 'https://www.python.org/',
-
 			featured: true,
 		},
 		{
@@ -142,7 +144,6 @@ export const info = {
 			years: 5,
 			logo: '/assets/svg/typescript.svg',
 			link: 'https://www.typescriptlang.org/',
-
 			featured: false,
 		},
 		{
@@ -150,7 +151,6 @@ export const info = {
 			years: 5,
 			logo: '/assets/svg/nodejs.svg',
 			link: 'https://nodejs.org/',
-
 			featured: true,
 		},
 		{
@@ -279,7 +279,7 @@ export const info = {
 			link: 'https://golang.org/',
 			featured: false,
 		},
-	],
+	] as ISkill[],
 
 	experience: [
 		{
@@ -363,7 +363,7 @@ export const info = {
 			],
 			link: 'https://www.studentaanhuis.nl/',
 		},
-	],
+	] as IExperience[],
 
 	education: [
 		{
@@ -430,7 +430,7 @@ export const info = {
 				'Issued by Udemy.',
 			],
 		},
-	],
+	] as IExperience[],
 
 	socialMedia: {
 		stackoverflow: 'https://stackoverflow.com/users/10104786/lars-vonk',
@@ -515,5 +515,5 @@ export const info = {
 			githubUrl: 'https://github.com/thebetar/Fyndyr',
 			liveUrl: 'https://play.google.com/store/apps/details?id=nl.vonkprogramming.fyndyr',
 		},
-	],
+	] as IProject[],
 };
