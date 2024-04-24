@@ -17,6 +17,7 @@ export const info = {
 			description: `
 				What are the key principles of code excellence? What rules to adhere to and what tools to use? This blog post will delve deep into the world of writing excellent code, click read more to find out.
 			`,
+			date: '24th April 2024',
 			link: '/blogs/code-excellence',
 		},
 	] as IBlog[],
