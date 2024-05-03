@@ -33,7 +33,7 @@ import MetaHead from '@components/general/MetaHead.astro';
 				<p>
 					Being able to solve problems is a very important part of being a developer, but we have all ran into
 					the problem that when we go back to our code 2 months later it can seem quite cryptic. Unless of
-					course some very important rules are followed!
+					course your code is excellent!
 				</p>
 				<p>In this blog I will go over my tricks to keep my code readable and the quality high!</p>
 				<h2 id="introduction">Introduction</h2>
@@ -63,13 +63,14 @@ import MetaHead from '@components/general/MetaHead.astro';
 					in small readable and rememberable chunks makes it easier to understand.
 				</p>
 				<p>
-					This can be done for instace by changing a big if statement like <code
-						>person.age &gt; 65 &amp;&amp; person.nationality === &#39;NL&#39; &amp;&amp; person.working ===
-						true</code
-					> into a function by moving this if statement to a function and calling it <code
-						>ifEligibleForDiscount</code
-					>. This describes what you mean to do with this functionality and cleans up the code block of the
-					function.
+					This can be done for instace by changing a big if statement like
+					<code>
+						person.age &gt; 65 &amp;&amp; person.nationality === &#39;NL&#39; &amp;&amp; person.working ===
+						true
+					</code>
+					into a function by moving this if statement to a function and calling it
+					<code> ifEligibleForDiscount</code>. This describes what you mean to do with this functionality and
+					cleans up the code block of the function.
 				</p>
 				<p>
 					When this is done over an entire code base it can keep the code more readable especially when going
@@ -87,9 +88,8 @@ import MetaHead from '@components/general/MetaHead.astro';
 					<code>if(x === false) {'{'} return {'}'} some_logic</code> which does not add an extra layer of nesting.
 				</p>
 				<p>
-					I recommend watching the video from <a href="https://www.youtube.com/watch?v=CFRhGnuXG-4"
-						>CodeAesthetic</a
-					> to know more!
+					I recommend watching the video from
+					<a href="https://www.youtube.com/watch?v=CFRhGnuXG-4"> CodeAesthetic</a> to know more!
 				</p>
 				<h3 id="variable-and-function-names">Variable and function names</h3>
 				<p>
