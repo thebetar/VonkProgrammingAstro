@@ -25,8 +25,8 @@
 
 # Rewrite www to non-www
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.example\.com$
-RewriteRule ^/?$ "http\:\/\/example\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
       
 <FilesMatch "\.(jpg|jpeg|png|svg|svg\.gz|webp|ttf|js|js\.gz|css|css\.gz|html|html\.gz)$">
       Header append Cache-Control "public, max-age=31536000, immutable"
