@@ -13,6 +13,14 @@ export const info = {
 
 	blogs: [
 		{
+			title: 'Learning sustainably',
+			description: `
+				Continuous learning is very important in the world of software engineering. But a pitfall a lot of people encounter is that they cannot stick to it. In this blog post I will delve into my personal journey with learning and my findings and tips.
+			`,
+			date: '24th April 2024',
+			link: '/blogs/code-excellence',
+		},
+		{
 			title: 'How to achieve code excellence',
 			description: `
 				What are the key principles of code excellence? What rules to adhere to and what tools to use? This blog post will delve deep into the world of writing excellent code, click read more to find out.
