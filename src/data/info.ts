@@ -5,8 +5,11 @@ export const info = {
 	name: 'Lars Vonk',
 	jobDescription1: 'Software enthusiast',
 	jobDescription2: 'Code quality advocate',
-	about: `
+	description: `
 		I am an experienced developer with experience in Javascript and Python. I value code quality and continuous learning as can be read in my blogs.
+	`,
+	about: `
+		I am an experienced developer with experience in Javascript and Python. I value code quality and continuous learning as can be read in my blogs. In my free time I like to work on side projects and learn new technologies. I am currently studying for a master's degree in computer systems and networks at the Warsaw University of Technology.
 	`,
 	keywords:
 		'web development, mobile development, freelance developer, Bussum, Naarden, Hilversum, Netherlands, front-end development, Vue, React',

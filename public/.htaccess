@@ -22,10 +22,15 @@
             # Serve correct encoding type.
             Header append Content-Encoding gzip
 
+            # Set the Content-Type
+            Header set Content-Type text/html
+
             # Force proxies to cache gzipped &
             # non-gzipped css/js files separately.
             Header append Vary Accept-Encoding
       </FilesMatch>
+
+      <FilesMatch "\.(js|css|html|svg)\.gz$">
 </IfModule>
       
 <FilesMatch "\.(jpg|jpeg|png|svg|svg\.gz|webp|ttf|js|js\.gz|css|css\.gz|html|html\.gz)$">
