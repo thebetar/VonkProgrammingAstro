@@ -13,6 +13,7 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
 					class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
 					aria-label="Social Media"
 					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +40,7 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
 					class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
 					aria-label="Social Media"
 					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +61,7 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
 			)
 		}
 	</div>
-	<a href={githubUrl ? githubUrl : liveUrl} target="_blank" class="w-full">
+	<a href={githubUrl ? githubUrl : liveUrl} target="_blank" rel="noopener noreferrer" class="w-full">
 		<img
 			src={thumbnail}
 			class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s] aspect-square"

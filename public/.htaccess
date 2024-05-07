@@ -22,9 +22,19 @@
             Header append Vary Accept-Encoding
       </FilesMatch>
 </IfModule>
+
+# Rewrite www to non-www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.example\.com$
+RewriteRule ^/?$ "http\:\/\/example\.com\/" [R=301,L]
       
 <FilesMatch "\.(jpg|jpeg|png|svg|svg\.gz|webp|ttf|js|js\.gz|css|css\.gz|html|html\.gz)$">
       Header append Cache-Control "public, max-age=31536000, immutable"
 </FilesMatch>
 
+# Redirect to index.html
 ErrorDocument 404 /index.html
+
+# Turn off signature
+ServerSignature Off
+ServerTokens Prod

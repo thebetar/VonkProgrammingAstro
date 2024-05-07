@@ -30,7 +30,12 @@ const { title, details } = Astro.props as IExperiences;
 						))}
 					</ul>
 					{item.link ? (
-						<a href={item.link} class="text-sm underline dark:text-gray mt-4" target="_blank">
+						<a
+							href={item.link}
+							class="text-sm underline dark:text-gray mt-4"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Go to website
 						</a>
 					) : null}
