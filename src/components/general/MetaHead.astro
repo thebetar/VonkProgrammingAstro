@@ -22,7 +22,7 @@ const { title, description, keywords, author, ogImageUrl } = Astro.props as IMet
 
 <!-- Primary Meta Tags -->
 {title && <link rel="canonical" href={`${info.baseUrl}${Astro.url.pathname}`} />}
-{title && <title>{`${title} - ${info.name}`}</title>}
+{title && <title>{`VonkProgramming - ${title}`}</title>}
 {title && <meta name="title" content={`${title} - ${info.name}`} />}
 {description && <meta name="description" content={description} />}
 {keywords && <meta name="keywords" content={keywords} />}

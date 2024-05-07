@@ -1,3 +1,15 @@
+<IfModule mod_mime.c>
+      AddType text/plain .txt
+      AddType text/html .html .htm
+      AddType application/javascript .js
+      AddType text/css .css
+      AddType image/jpeg .jpg .jpeg
+      AddType image/png .png
+      AddType image/gif .gif
+      AddType image/svg+xml .svg
+      AddType image/svg+xml .svgz
+</IfModule>
+
 <IfModule mod_headers.c>
       Header add Content-Security-Policy "default-src 'self' 'unsafe-inline'; img-src 'self' data: www.googletagmanager.com; style-src 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline' www.googletagmanager.com;
 
@@ -22,20 +34,18 @@
             # Serve correct encoding type.
             Header append Content-Encoding gzip
 
-            # Set the Content-Type
-            Header set Content-Type text/html
-
             # Force proxies to cache gzipped &
             # non-gzipped css/js files separately.
             Header append Vary Accept-Encoding
       </FilesMatch>
 
-      <FilesMatch "\.(js|css|html|svg)\.gz$">
+      <FilesMatch "\.(jpg|jpeg|png|svg|webp|ttf|js|js\.gz|css|css\.gz|html|html\.gz)$">
+            Header append Cache-Control "public, max-age=31536000, immutable"
+      </FilesMatch>
+
+      # Serve correct encoding type.
+      AddEncoding gzip .gz
 </IfModule>
-      
-<FilesMatch "\.(jpg|jpeg|png|svg|svg\.gz|webp|ttf|js|js\.gz|css|css\.gz|html|html\.gz)$">
-      Header append Cache-Control "public, max-age=31536000, immutable"
-</FilesMatch>
 
 # Redirect to index.html
 ErrorDocument 404 /index.html
