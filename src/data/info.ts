@@ -9,11 +9,9 @@ export const info = {
 		I am an experienced developer with experience in Javascript and Python. I value code quality and continuous learning as can be read in my blogs.
 	`,
 	about: `
-		I am an experienced developer with experience in Javascript and Python. I value code quality and continuous learning as can be read in my blogs. In my free time I like to work on side projects and learn new technologies. I am currently studying for a master's degree in computer systems and networks at the Warsaw University of Technology.
+		I am an experienced developer with experience in javascript and python. I value code quality and continuous learning as can be read in my blogs. In my free time I like to work on side projects and learn new technologies. I am currently studying for a master's degree in computer systems and networks at the Warsaw University of Technology.
 	`,
-	keywords:
-		'web development, mobile development, freelance developer, Bussum, Naarden, Hilversum, Netherlands, front-end development, Vue, React',
-
+	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
 			title: 'Learning sustainably',
