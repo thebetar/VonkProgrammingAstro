@@ -18,7 +18,7 @@ export const info = {
 				Continuous learning is very important in the world of software engineering. But a pitfall a lot of people encounter is that they cannot stick to it. In this blog post I will delve into my personal journey with learning and my findings and tips.
 			`,
 			date: '24th April 2024',
-			link: '/blogs/code-excellence',
+			link: '/blogs/learning-sustainably',
 		},
 		{
 			title: 'How to achieve code excellence',
