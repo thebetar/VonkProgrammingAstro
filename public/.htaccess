@@ -34,7 +34,3 @@
 
 # Redirect to index.html
 ErrorDocument 404 /index.html
-
-# Turn off signature
-# ServerSignature Off
-# ServerTokens Prod
