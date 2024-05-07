@@ -11,7 +11,15 @@ import MetaHead from '@components/general/MetaHead.astro';
 		<MetaHead
 			title={'VonkProgramming'}
 			description={info.about}
-			keywords={info.keywords}
+			keywords={[
+				'code quality',
+				'code excellence',
+				'code splitting',
+				'linting',
+				'testing',
+				'comments',
+				'never nesting',
+			].join(', ')}
 			author={info.name}
 			ogImageUrl={'/assets/images/logo.webp'}
 		/>
