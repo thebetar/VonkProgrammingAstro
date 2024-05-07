@@ -1,6 +1,11 @@
 <IfModule mod_headers.c>
       Header add Content-Security-Policy "default-src 'self' 'unsafe-inline'; img-src 'self' data: www.googletagmanager.com; style-src 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline' www.googletagmanager.com;
 
+      # Rewrite www to non-www
+      RewriteEngine On
+      RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+      RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+
       # Serve gzip compressed CSS, JS, HTML and SVG files if they exist
       # and the client accepts gzip.
       RewriteCond "%{HTTP:Accept-encoding}" "gzip"
@@ -22,11 +27,6 @@
             Header append Vary Accept-Encoding
       </FilesMatch>
 </IfModule>
-
-# Rewrite www to non-www
-# RewriteEngine On
-# RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-# RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
       
 <FilesMatch "\.(jpg|jpeg|png|svg|svg\.gz|webp|ttf|js|js\.gz|css|css\.gz|html|html\.gz)$">
       Header append Cache-Control "public, max-age=31536000, immutable"
@@ -36,5 +36,5 @@
 ErrorDocument 404 /index.html
 
 # Turn off signature
-ServerSignature Off
-ServerTokens Prod
+# ServerSignature Off
+# ServerTokens Prod
