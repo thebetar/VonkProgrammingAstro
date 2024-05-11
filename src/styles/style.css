@@ -43,16 +43,31 @@
 	}
 }
 
+.blog-header {
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .blog-post {
 	color: #ffffff !important;
+	max-width: 720px;
+	margin-top: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
 }
 
 .blog-post h2 {
+	margin-top: 24px;
+	margin-bottom: 8px;
 	font-size: 1.5rem !important;
 	font-weight: 600 !important;
 }
 
 .blog-post h3 {
+	margin-top: 16px;
+	margin-bottom: 8px;
 	font-size: 1.25rem !important;
 	font-weight: 600 !important;
 }
