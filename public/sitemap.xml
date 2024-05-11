@@ -20,4 +20,17 @@
         <loc>https://vonkprogramming.nl/projects</loc>
         <lastmod>2024-04-19</lastmod>
     </url>
+
+    <url>
+        <loc>https://vonkprogramming.nl/blogs/code-excellence</loc>
+        <lastmod>2024-04-24</lastmod>
+    </url>
+    <url>
+        <loc>https://vonkprogramming.nl/blogs/learning-sustainably</loc>
+        <lastmod>2024-05-07</lastmod>
+    </url>
+    <url>
+        <loc>https://vonkprogramming.nl/blogs/small-efficiencies</loc>
+        <lastmod>2024-05-11</lastmod>
+    </url>
 </urlset>

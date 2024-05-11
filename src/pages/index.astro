@@ -32,6 +32,17 @@ const featuredProjects = info.projects.reduce((accumulator, project) => {
 			author={info.name}
 			ogImageUrl={'/assets/images/logo.webp'}
 		/>
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "VonkProgramming",
+				"url": "https://vonkprogramming.nl",
+				"logo": "https://vonkprogramming.nl/assets/images/logo.webp",
+				"sameAs": "https://github.com/thebetar"
+			}
+		</script>
 	</head>
 
 	<body>
