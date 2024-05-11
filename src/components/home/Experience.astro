@@ -35,8 +35,11 @@ const { title, details } = Astro.props as IExperiences;
 				</div>
 			))
 		}
-		<div class="text-white lg:col-span-3 col-span-2 text-center mt-4 md:text-base text-sm">
-			<a class="text-white underline hover:opacity-70 transition-opacity" href={`/${title.toLowerCase()}`}>
+		<div class="lg:col-span-3 col-span-2 text-center mt-4 md:text-base text-sm">
+			<a
+				class="dark:text-white text-zinc-900 underline hover:opacity-70 transition-opacity"
+				href={`/${title.toLowerCase()}`}
+			>
 				View all my {title.toLowerCase()}
 			</a>
 		</div>

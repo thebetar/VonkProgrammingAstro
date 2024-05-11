@@ -9,6 +9,8 @@ const { projects } = Astro.props as IProjects;
 	{projects.map(project => <ProjectCard projectDetail={project} />)}
 
 	<div class="md:col-span-2 col-span-1 text-center mt-4 md:text-base text-sm text-white">
-		<a class="text-white underline hover:opacity-70 transition-opacity" href="/projects">View all projects</a>
+		<a class="dark:text-white text-zinc-900 underline hover:opacity-70 transition-opacity" href="/projects"
+			>View all projects</a
+		>
 	</div>
 </div>

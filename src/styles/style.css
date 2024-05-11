@@ -50,7 +50,6 @@
 }
 
 .blog-post {
-	color: #ffffff !important;
 	max-width: 720px;
 	margin-top: 4px;
 	margin-left: auto;
@@ -70,12 +69,6 @@
 	margin-bottom: 8px;
 	font-size: 1.25rem !important;
 	font-weight: 600 !important;
-}
-
-.blog-post p,
-.blog-post li,
-.blog-post a {
-	color: #ffffff !important;
 }
 
 .blog-post a {
@@ -104,7 +97,17 @@
 
 .blog-post code {
 	background-color: #1a202c !important;
-	color: #ffffff !important;
 	padding: 4px !important;
 	border-radius: 4px !important;
+}
+
+[data-theme='dark'] .blog-post,
+[data-theme='dark'] .blog-post p,
+[data-theme='dark'] .blog-post li,
+[data-theme='dark'] .blog-post a {
+	color: #ffffff !important;
+}
+
+[data-theme='light'] .blog-post code {
+	color: #ffffff !important;
 }
