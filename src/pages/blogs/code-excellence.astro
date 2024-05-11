@@ -3,6 +3,9 @@ import { info } from '@data';
 
 import Layout from '@layouts/Layout.astro';
 import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 1);
 ---
 
 <!DOCTYPE html>
@@ -27,19 +30,7 @@ import MetaHead from '@components/general/MetaHead.astro';
 
 	<body>
 		<Layout>
-			<div class="flex justify-center text-white mb-8">
-				<div>
-					<a href="/" class="text-white underline">Go back</a> in time ⏰
-				</div>
-			</div>
-
-			<div class="blog-header">
-				<h1 class="text-4xl mb-2">How to achieve code excellence</h1>
-
-				<p class="text-sm dark:text-gray mb-8">2024-04-24</p>
-			</div>
-
-			<div class="blog-post">
+			<BlogPost title={blog.title} date={blog.date}>
 				<p>
 					Being able to solve problems is a very important part of being a developer, but we have all ran into
 					the problem that when we go back to our code 2 months later it can seem quite cryptic. Unless of
@@ -142,7 +133,7 @@ import MetaHead from '@components/general/MetaHead.astro';
 					is very important. There will be many people out there telling you how to do it better, and maybe
 					they will be right. But in the end having good rules which you can stick to is the most important.
 				</p>
-			</div>
+			</BlogPost>
 		</Layout>
 	</body>
 </html>

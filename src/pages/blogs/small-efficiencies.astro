@@ -3,6 +3,9 @@ import { info } from '@data';
 
 import Layout from '@layouts/Layout.astro';
 import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 3);
 ---
 
 <!DOCTYPE html>
@@ -19,19 +22,7 @@ import MetaHead from '@components/general/MetaHead.astro';
 
 	<body>
 		<Layout>
-			<div class="flex justify-center text-white mb-8">
-				<div>
-					<a href="/" class="text-white underline">Go back</a> in time ⏰
-				</div>
-			</div>
-
-			<div class="blog-header">
-				<h1 class="text-4xl mb-2">Small efficiencies add up</h1>
-	
-				<p class="text-sm dark:text-gray mb-8">2024-05-11</p>
-			</div>
-
-			<div class="blog-post">
+			<BlogPost title={blog.title} date={blog.date}>
 				<p>
 					Being efficient is very important as a developer. There are many tools we love because they reduce
 					the amount of time that we need to ship a tool to production, think about AI coding assistants
@@ -163,7 +154,7 @@ import MetaHead from '@components/general/MetaHead.astro';
 						</p>
 					</li>
 				</ul>
-			</div>
+			</BlogPost>
 		</Layout>
 	</body>
 </html>

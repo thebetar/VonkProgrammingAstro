@@ -1,0 +1,28 @@
+---
+import { IBlog } from '@types';
+
+const { title, date } = Astro.props as IBlog;
+---
+
+<div class="flex justify-center text-white mb-8">
+	<div>
+		<a href="/" class="text-white underline">Go back</a> in time ⏰
+	</div>
+</div>
+
+<div class="blog-header">
+	<h1 class="text-4xl mb-2">{title}</h1>
+
+	<p class="text-sm dark:text-gray mb-8">{date}</p>
+</div>
+
+<div class="blog-post">
+	<slot />
+</div>
+
+<a
+	class="mx-auto h-10 w-fit px-4 py-2 bg-zinc-800 hover:bg-zinc-600 transition-colors text-white rounded-md block mb-10 cursor-pointer"
+	href="mailto:info@vonkprogramming.nl"
+>
+	Ask me a question</a
+>

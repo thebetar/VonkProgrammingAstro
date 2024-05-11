@@ -3,6 +3,9 @@ import { info } from '@data';
 
 import Layout from '@layouts/Layout.astro';
 import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 2);
 ---
 
 <!DOCTYPE html>
@@ -19,23 +22,11 @@ import MetaHead from '@components/general/MetaHead.astro';
 
 	<body>
 		<Layout>
-			<div class="flex justify-center text-white mb-8">
-				<div>
-					<a href="/" class="text-white underline">Go back</a> in time ⏰
-				</div>
-			</div>
-
-			<div class="blog-header">
-				<h1 class="text-4xl mb-2">Learning sustainably</h1>
-
-				<p class="text-sm dark:text-gray mb-8">2024-05-07</p>
-			</div>
-
-			<div class="blog-post">
+			<BlogPost title={blog.title} date={blog.date}>
 				<p>
 					Learning is one of the cornerstones of becoming a good developer. A lot of developers go to
 					university first to get a bachelor&#39;s degree or master&#39;s degree where a lot of knowledge is
-					taught. But in a lot of cases after the degree is attained and a couple of years of working
+					acquired. But in a lot of cases after the degree is attained and a couple of years of working
 					experience is achieved the learning at home, fun side projects and overall love of code reduces or
 					becomes null. I have found that the way to combat this is to make learning at home sustainable. This
 					means that it should stay fun, it should not feel tedious.
@@ -66,8 +57,8 @@ import MetaHead from '@components/general/MetaHead.astro';
 					Aside from spending more time studying than your colleagues, and I know it is not a race but in the
 					end some extra promotions wouldn&#39;t hurt. The biggest benefit I have noticed is that you get a
 					lot of experience outside of the stack that might be used at your place of work. It happens too many
-					times that people only have experience in the tools they work with, and once they started looking
-					for work they have a very narrow window to look in to.
+					times that people only have experience in the tools they work with, and once they start looking for
+					work they have a very narrow window to look in to.
 				</p>
 				<p>
 					Another big benefit is that different tools or programming languages force you to look at problems
@@ -84,8 +75,8 @@ import MetaHead from '@components/general/MetaHead.astro';
 					is great, but I initially got into programming because I liked computers. The first time I wrote a
 					program was magical, and there were times where I was so stuck in all the work I had to do that I
 					lost this magic a little bit. That is why I think doing fun personal project, which maybe don&#39;t
-					even learn new things but are just fun are also very very important. They keep programming fun! And
-					don&#39;t we all want to love our work?
+					even teach you new things but are just fun are also very very important. They keep programming fun!
+					And don&#39;t we all want to love our work?
 				</p>
 				<h2 id="my-personal-advice">My personal advice</h2>
 				<p>
@@ -109,7 +100,7 @@ import MetaHead from '@components/general/MetaHead.astro';
 					takes small steps but a lot of small steps is further than you will ever get sprinting for a short
 					while.
 				</p>
-			</div>
+			</BlogPost>
 		</Layout>
 	</body>
 </html>

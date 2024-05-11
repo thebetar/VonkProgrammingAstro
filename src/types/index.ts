@@ -14,6 +14,7 @@ export interface IHeroProps {
 }
 
 export interface IBlog {
+	id: number;
 	title: string;
 	description: string;
 	date: string;
