@@ -63,6 +63,15 @@
 	color: #ffffff !important;
 }
 
+.blog-post a {
+	transition: opacity 0.2s !important;
+	text-decoration: underline !important;
+}
+
+.blog-post a:hover {
+	opacity: 0.8 !important;
+}
+
 .blog-post p {
 	margin-top: 8px !important;
 	margin-bottom: 8px !important;

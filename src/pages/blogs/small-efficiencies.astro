@@ -1,0 +1,175 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Code excellence'}
+			description={info.description}
+			keywords={[
+				'code quality',
+				'code excellence',
+				'code splitting',
+				'linting',
+				'testing',
+				'comments',
+				'never nesting',
+			].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<div class="flex justify-center text-white mb-8">
+				<div>
+					<a href="/" class="text-white underline">Go back</a> in time ⏰
+				</div>
+			</div>
+
+			<h1 class="text-4xl mb-2">smll efficiencies add up</h1>
+
+			<p class="text-sm dark:text-gray mb-8">2024-05-11</p>
+
+			<div class="blog-post">
+				<p>
+					Being efficient is very important as a developer. There are many tools we love because they reduce
+					the amount of time that we need to ship a tool to production, think about AI coding assistants
+					making you code very mundane tasks a lot faster, or pipelines which transformed having to publish
+					every time you finish a new version into just writing a pipeline template once and seeing the magic
+					happen! While all these tools are great a lot of programmers still do not got the maximum value out
+					of the possible efficiency boosts that exist.
+				</p>
+				<h2 id="the-heaven-of-efficiency">The heaven of efficiency</h2>
+				<p>
+					Maybe some of you know the tools that are most famous for efficiency but I will describe them in
+					this article anyway and give my opinion on them. The main tools which many consider to maximise
+					effienciency while writing code on your own system are:
+				</p>
+				<ul>
+					<li><p>TMUX</p></li>
+					<li><p>NEOVIM</p></li>
+					<li><p>I3</p></li>
+					<li><p>fuzzyfinder</p></li>
+				</ul>
+				<p>
+					These tools all seems scary at first but they offer a big efficiency boost once they are controlled.
+					However in my personal opinion when starting out with finding efficiencies these are not the tools
+					you should go for. This is because some of them are hard to learn and this makes them scary. I am an
+					avid proponent of learning in steps and finding which efficiencies can be found in your current
+					workflow or with small adjustments that are quick to learn. From the list above I think TMUX and
+					fuzzyfinder still fall into this category since they can be easily used in your current environment.
+					While Neovim and i3 are very good to get the maximum value out of every hour spend programming, they
+					do take a lot of time to configure and learn.
+				</p>
+				<h2 id="easy-efficiency-wins">Easy efficiency wins</h2>
+				<p>
+					As described above I don&#39;t want to make this article about what is the best way to increase
+					efficiency and end up changing no one&#39;s workflow since the step to change is too big. I am
+					currently still in the process of learning neovim myself and am using visual studio code as my daily
+					driver.
+				</p>
+				<p>
+					The easiest win for every developer or even every person using a computer is to learn the shortcuts
+					that the programs you use often provide. Even if it is something like Microsoft word. I have started
+					doing this a wihle ago, with trying to learn all the visual studio code shortcuts and it has
+					increased my productivity tremendously! I can now switch between tabs, open workspaces, search
+					files, open projects, select everything I want and more without ever touching my mouse. My personal
+					rule is to &quot;<strong>try to reach a state where I do not need my mouse</strong>&quot;.
+				</p>
+				<p>
+					Secondly I have tried to create pipelines for my own projects. I have done this using the very easy
+					to set up tool of github actions. Using this has two big benefits. One every time you publish a new
+					version you do not have to follow all the steps of publishing. But more importantly benefit two, you
+					will get experience writing pipelines which can be a very valuable skill in your career.
+				</p>
+				<p>
+					Thirdly do not be afraid to experiment. This might sound weird since in the previous text I
+					described as trying new things to be scary but trying scary things and deciding they are not for you
+					is still valuable. A good example for me is that I have tried i3 which is a very bare and mimimal
+					tiling window manager and the pure minimalism was not for me, I like to have some basic things like
+					a graphical interface to manage my settings. But after trying it I did see the great value in having
+					a tiling window manager where switching between windows is only a shortcut instead of cycling
+					through all your windows using <code>alt + tab</code>. So I am now trying regolith and enjoying it a
+					lot.
+				</p>
+				<h2 id="ai-assistant">AI assistant</h2>
+				<p>
+					Using an AI assistant when writing code has become very popular in the last years. It can greatly
+					reduce the time spent on writing code. Especially when writing more redundant code or when using a
+					new programming language where the syntax is still unclear. The AI assistant tools takes a hint from
+					what you are writing and generates what you most likely want to write which is more than often
+					correct. This increases the speed of development greatly.
+				</p>
+				<p>
+					However in recent years there has also been some criticism with the quality of code going down and
+					that when learning a new language it can obstruct the learning process since the AI assistant can
+					write all the code just based on comments. This mostly works in popular languages like Javascript
+					and Python. I think however that investing in an AI assistant is great value since the speed of
+					writing code is greatly increased by almost 100%. This makes you able to do more work in less time
+					and only for a couple of euros (or dollars) per month. The time saved to the cost of the tool
+					greatly favours paying for the tool.
+				</p>
+				<h2 id="efficiency-mindset">Efficiency mindset</h2>
+				<p>
+					The mindset I have for efficiency is that I am willing to take some time to improve my efficiency if
+					in the long run it will save me time. This is a fine balance between a tool taking a lot of hours to
+					learn but not saving a lot of time and learning a shortcut taking up no time at all but having
+					massive efficiency gains. This is also why I have up till now not taken the leap to start with
+					neovim since the time spent on learning the tool and actually becoming more efficienct with it is in
+					my perspective very big compared to when the efficiencies will pay off. Even though visual studio
+					code loves to consume all the memory my laptop has and more.
+				</p>
+				<p>
+					The constant mindset of improving as can also be read in my other blog posts is something very
+					central to my developer journey, I try to always find new ways but in a way that I can stick to
+					them.
+				</p>
+				<h2 id="some-of-my-favourite-shortcuts">Some of my favourite shortcuts</h2>
+				<p>
+					As described before I <strong>love</strong> shortcuts. They make my workflow a lot more efficient. Some
+					of my favourite shortcuts for visual studio code are the following
+				</p>
+				<ul>
+					<li><p><code>ctrl + p</code> to open a file</p></li>
+					<li><p><code>ctrl + r</code> to open a project</p></li>
+					<li><p><code>ctrl + n</code> to open a new tab</p></li>
+					<li><p><code>F2</code> rename symbol</p></li>
+					<li><p><strong><code>ctrl + p</code></strong> to open a file</p></li>
+					<li><p><code>ctrl + $(number)</code> switch to workspace</p></li>
+					<li><p><code>alt + $(number)</code> switch to file in workspace</p></li>
+				</ul>
+				<p>Many more can be found here</p>
+				<ul>
+					<li>
+						<p>
+							Linux: <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf"
+								>https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf</a
+							>
+						</p>
+					</li>
+					<li>
+						<p>
+							Windows: <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
+								>https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf</a
+							>
+						</p>
+					</li>
+					<li>
+						<p>
+							MacOS: <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
+								>https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf</a
+							>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</Layout>
+	</body>
+</html>

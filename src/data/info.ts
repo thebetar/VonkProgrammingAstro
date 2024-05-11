@@ -14,11 +14,19 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			title: 'Small efficiencies add up',
+			description: `
+				Working fast and efficient is important. Doing more in less time while impressing your colleagues is amazing. I will dive into what small and easy improvements every developer can make to work more efficiently and save time in the long run which can be spent on other things (most likely more coding!)
+			`,
+			date: '2024-05-11',
+			link: '/blogs/small-efficiencies',
+		},
+		{
 			title: 'Learning sustainably',
 			description: `
 				Continuous learning is very important in the world of software engineering. But a pitfall a lot of people encounter is that they cannot stick to it. In this blog post I will delve into my personal journey with learning and my findings and tips.
 			`,
-			date: '7th May 2024',
+			date: '2024-05-07',
 			link: '/blogs/learning-sustainably',
 		},
 		{
@@ -26,7 +34,7 @@ export const info = {
 			description: `
 				What are the key principles of code excellence? What rules to adhere to and what tools to use? This blog post will delve deep into the world of writing excellent code, click read more to find out.
 			`,
-			date: '24th April 2024',
+			date: '2024-04-24',
 			link: '/blogs/code-excellence',
 		},
 	] as IBlog[],
