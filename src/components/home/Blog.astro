@@ -2,6 +2,10 @@
 import { IBlogs } from '@types';
 
 const { title, blogs } = Astro.props as IBlogs;
+
+function getReadmoreLink(link: string) {
+	return link.split('/').pop().split('-').join(' ').toLowerCase();
+}
 ---
 
 <section class="flex items-start justify-between flex-col sm:flex-row dark:text-light">
@@ -20,7 +24,7 @@ const { title, blogs } = Astro.props as IBlogs;
 							href={item.link}
 							class="text-sm dark:text-gray underline hover:opacity-70 transition-opacity"
 						>
-							Read more
+							Read more about {getReadmoreLink(item.link)}
 						</a>
 					</div>
 				</div>

@@ -39,7 +39,7 @@
             Header append Vary Accept-Encoding
       </FilesMatch>
 
-      <FilesMatch "\.(jpg|jpeg|png|svg|webp|ttf|js|js\.gz|css|css\.gz|html|html\.gz)$">
+      <FilesMatch "\.(jpg|jpeg|png|webp|ttf|svg|svg\.gz|js|js\.gz|css|css\.gz|html|html\.gz)$">
             Header append Cache-Control "public, max-age=31536000, immutable"
       </FilesMatch>
 
