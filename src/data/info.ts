@@ -14,6 +14,15 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 4,
+			title: 'Taking notes, a real superpower',
+			description: `
+				Also experience forgetfulness every now and then? There is a solution! A superpower that is available to everyone, taking notes. In this blog post I will discuss how taking notes has changed my ability to remember.
+			`,
+			date: '2024-05-17',
+			link: '/blogs/taking-notes',
+		},
+		{
 			id: 3,
 			title: 'Small efficiencies add up',
 			description: `

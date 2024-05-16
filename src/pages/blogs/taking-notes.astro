@@ -1,0 +1,138 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 4);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Taking notes'}
+			description={info.description}
+			keywords={['notes', 'code', 'superpower', 'productivity', 'second brain'].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost title={blog.title} date={blog.date}>
+				<p>
+					The human brain is very good at being creative, but not as good at remembering things. I have
+					personally experienced this many times, when forgetting you should have done something or when not
+					being able to recollect something important someone has told you. There is a solution however!
+					Making notes. Writing things down on paper or in a note taking software permanently stores what you
+					want. This can be very useful when learning new things or when there is a lot of things that you
+					have to keep track off.
+				</p>
+				<p>
+					Not only does writing stuff down store what you write down on paper or in storage of a device, but
+					it also helps you remember things better. My personal favourite way is to summarise what I have
+					learnt or have to remember in my own words since when reading them I do not only remember what I
+					wrote down but also what I was thinking when I wrote things down.
+				</p>
+				<h2 id="never-forgetting-anything">Never forgetting anything</h2>
+				<p>
+					The most obvious but still very valuable advantage of taking a lot of notes is that you will not be
+					able to forget anything. When someone tells you something and you write it down, you will store it.
+					We have all experienced that we forgot something someone asked us to do earlier in the day or that
+					someone who we asked to do something forget about it, if everyone would take notes this would happen
+					a lot less. All this while taking notes is quite easy and non time consuming.
+				</p>
+				<h2 id="managing-thoughts">Managing thoughts</h2>
+				<p>
+					Taking notes about creative thoughts is also a great way to not lose ideas. I think we all have
+					experienced that great idea when lying in bed at night, just to wake up next morning and not being
+					able to recollect it. Or knowning that you still have to do something but can&#39;t remember what
+					exactly.
+				</p>
+				<p>
+					This can all be helped by writing down what you need to do in a nice to do list. This also counts
+					for things you do not necessarily have to do today, tomorrow or this week. But might be an idea you
+					want to pursue somewhere down the line, like a course you want to follow once you have the time, a
+					person you want to reconnect with after your busy period at work is over or a new skill you want to
+					attain.
+				</p>
+				<p>
+					Writing these things down is a great way to get more out of your time since in the time spent doing
+					nothing you can take a look at your to do list and find something that you still wanted to do. This
+					however only works when you also write down fun things you want to pursue like researching a new
+					technology you have read about.
+				</p>
+				<h2 id="summarising-knowledge">Summarising knowledge</h2>
+				<p>
+					With this lifetime of storage space available what to write down? In my other blog post I wrote
+					about learning consistently throughout a career. Taking notes is a very important part of this.
+				</p>
+				<p>
+					Learning new skills is great but there is not much to gain if the new knowledge is lost over time.
+					Writing down small summaries of knowledge not only helps remembering stuff but also gives a nice
+					overview of all the knowledge that your brain contains. It&#39;s like creating an amazing library of
+					your own mind it&#39;s contents, all with an easy search filter.
+				</p>
+				<h2 id="note-taking-applications">Note taking applications</h2>
+				<p>
+					After my university was done I used to write a lot of things down on paper. The big advantage of
+					writing things down is that your brain remembers things better than when typing. However in the
+					longterm the amount of notes start stacking up and becoming a big mess. That is why I recommend
+					using a note taking app that fits your style.
+				</p>
+				<p>
+					Computers are a lot better at storing massive amounts of data especially text. A single flash drive
+					of 128GB can store a live time of notes in text format, even free cloud storage you can get with
+					most notetaking applications is more than enough for extensive note taking. Another big advantage of
+					a note taking application is that your notes are stored in the cloud. You can access them anywhere
+					and write notes to your library on any device and share them easily with other people.
+				</p>
+				<h2 id="challenges-when-taking-notes">Challenges when taking notes</h2>
+				<p>
+					The biggest challenge when taking notes is to keep your notes organised. This is why I am a fan of
+					using software to take notes and not paper, while paper can be very organised with the right system,
+					software makes it easier for me, this however is just an opinion and paper has it&#39;s own
+					advantages as described before.
+				</p>
+				<p>
+					I have personally encountered this challenge after I started using the notetaking application <a
+						href="https://notion.so/">Notion</a
+					> and after a while running into the problem that organising my notes was harder and harder to achieve.
+					In Notion you can order notes hierarchically which is amazing to start with, but after a while I started
+					encountering that I had notes which would fit in multiple hierarchies. I started creating shared hierarchies
+					and choosing the best of the two instead of being able to connect them to both.
+				</p>
+				<p>
+					After a while this mess became bigger and bigger. I am not saying Notion is not good, for other use
+					cases it is great and I still use it for taking notes for my university, but for writing down my
+					knowledge about programming it did not work well for me.
+				</p>
+				<p>
+					After this I got the advice to start using <a href="https://www.amplenote.com/">Amplenote</a> which organises
+					notes based on tags which can be provided to a note which makes the notes work more as a big collection
+					with easily searchable tags. This worked perfectly for my usecase and keeps my notes very well organised.
+				</p>
+				<p>
+					Everytime I want to find a note I can just search for the category where this note falls into and
+					easily find it back.
+				</p>
+				<p>
+					What I am trying to say with this story is not to choose Amplenote over Notion but that the concept
+					of organising ones notes is very important and that finding a way that suits your note taking style
+					is very important or it can get very messy after a wihle.
+				</p>
+				<h2 id="what-to-use">What to use</h2>
+				<p>
+					In the end writing notes is the most important part not how it is done. If paper is your preferred
+					way of writing notes, do that! Find a way that is convenient to use for you and that you enjoy
+					using. It&#39;s no use if you stop using this amazing superpower after some time because of
+					inconveniencies. As long as you are writing notes you can unlock the superpower of never forgetting
+					anything!
+				</p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>
