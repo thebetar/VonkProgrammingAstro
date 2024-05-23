@@ -17,8 +17,8 @@ const { title, details } = Astro.props as IExperiences;
 		{
 			details.map(item => (
 				<div class="md:my-16 my-8">
-					<div class="flex justify-between items-center flex-wrap">
-						<h3 class="text-xl font-semibold">{item.name}</h3>
+					<div class="flex justify-between md:flex-row flex-col md:items-center flex-wrap">
+						<h3 class="text-xl leading-6 font-semibold md:mb-0 mb-1">{item.name}</h3>
 						<p class="text-sm dark:text-gray">
 							{item.startDate} - {item.endDate}
 						</p>

@@ -15,11 +15,11 @@ function getReadmoreLink(link: string) {
 			blogs.map(item => (
 				<div class="md:my-16 my-8">
 					<div>
-						<div class="flex justify-between items-center mb-2">
+						<div class="flex justify-between md:flex-row flex-col md:items-center mb-2">
 							<h3 class="text-xl font-semibold">{item.title}</h3>
 							<p class="text-sm dark:text-gray">{item.date}</p>
 						</div>
-						<p class="text-sm dark:text-gray">{item.description}</p>
+						<p class="text-base md:text-sm dark:text-gray mb-1">{item.description}</p>
 						<a
 							href={item.link}
 							class="text-sm dark:text-gray underline hover:opacity-70 transition-opacity"

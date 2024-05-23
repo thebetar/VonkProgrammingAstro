@@ -14,6 +14,15 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 5,
+			title: 'The right tool for the job',
+			description: `
+				Finding the right tool for the job can be difficult. Finding the optimal tool is even more difficult. In this blog post I go into my views on finding the right tool and what are important things to take into account.
+			`,
+			date: '2024-05-24',
+			link: '/blogs/finding-tools',
+		},
+		{
 			id: 4,
 			title: 'Taking notes, a real superpower',
 			description: `
