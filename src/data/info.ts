@@ -426,7 +426,7 @@ export const info = {
 			],
 		},
 		{
-			name: 'Cambridge English: C2',
+			name: 'Cambridge English: C1',
 			location: 'Online',
 			startDate: 'Aug 2016',
 			endDate: 'Aug 2016',
