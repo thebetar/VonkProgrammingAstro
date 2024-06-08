@@ -1,0 +1,90 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 6);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Divide & Conquer'}
+			description={info.description}
+			keywords={['productivity', 'programming', 'problem solving', 'code splitting'].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost title={blog.title} date={blog.date}>
+				<p>
+					If you attended school this will sound very familiar to you. You learn about something new that
+					sounds so complex that you cannot even imagine how you will ever wrap your head around it. But once
+					you start slowly learning all the details you realise that the complex topic, is not that complex
+					once you learn all the details that make up the topic. This is true for knowledge, computer systems
+					and almost all things.
+				</p>
+				<p>
+					Being able to break big problems down into smaller sub problems is very important to start solving
+					them; and breaking down how a complex system of systems work in each component is crucial to
+					understanding what environment you are working in.
+				</p>
+				<h2 id="losing-overview">Losing overview</h2>
+				<p>
+					The reason that problems might seem complex is that the overview of all simple parts is not clear.
+					Some information is missing which makes the problem in it's entirety seem difficult to understand.
+					The best way to prevent this is to not try to understand the whole problem but to break it up into
+					parts and try to understand each part.
+				</p>
+				<p>
+					For instance trying to understand how authentication and authorisation of a user works needs many
+					steps, but once you break it up into the steps of sending login credentials, getting the user with
+					the same username from the database, comparing the result of hashing the sent password and the
+					password hash stored in the database and based on this authenticate or not. It becomes quite clear
+					per step what is going on. This is of course just a simple example of breaking something that can be
+					considered complex into small easy to understand parts, but I have found that almost all things can
+					be approached like this.
+				</p>
+				<p>
+					What often helps when trying to understand these issues where the overview is hard to grasp is to
+					map it out. I love drawing simple diagrams to get a new visual representation of what the thing is I
+					am trying to solve, and very often after I am done drawing it already seems very clear! Of course
+					not every problem requires a diagram to be drawn, but the step of creating a visual representation
+					of the problem helps to get this overview.
+				</p>
+				<h2 id="how-to-go-from-complex-to-simple">How to go from complex to simple</h2>
+				<p>
+					Sometimes it is hard to find where to start when breaking down a problem. In these instances
+					it&#39;s good to start at the part of the problem that is understood and expanding this part, most
+					of the time while writing the logic for this part of the problem the parts that come before and
+					after also become clear.
+				</p>
+				<p>
+					If this is not possible, you can try to find a way to break up the problem into sub problems which
+					can be more easily solved, using. I know that sometimes it feels like this is not possible, but
+					often when a problem is analysed. Enough ways to split the problem will appear.
+				</p>
+				<p>
+					Within programming all programs can be boiled down to a large systems of very basic operations. The
+					complexity comes from the combination of many of these operations. Understanding this and not losing
+					hope when something seems too complex is very important. It happens to all of us that something
+					seems impossible to understand. The solutions that need to be created to fix a problem are also
+					built on combining basic operations to create basic methods to create more and more complexity.
+				</p>
+				<h2 id="conclusion">Conclusion</h2>
+				<p>
+					We have all experienced the thought that we will never understand a concept or architecture. It is a
+					normal feeling. The most important thing is to keep your head cool and slowly start breaking up the
+					problem by creating a nice overview of the problem or splitting it up into nice sub problems which
+					can be tackled. When combining these steps almost all problems can be fixed!
+				</p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>
