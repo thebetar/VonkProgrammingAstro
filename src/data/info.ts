@@ -19,6 +19,7 @@ export const info = {
 			description: `
 				It happens to all of us that we encounter something that seems so complex that it cannot be grasped by our brains. But often after looking at the problem for a while and breaking it up into smaller pieces it becomes manageable. In this blog post I will discuss how I use the divide and conquer principle in my coding journey.
 			`,
+			link: '/blogs/divide-conquer',
 		},
 		{
 			id: 5,
