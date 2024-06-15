@@ -50,7 +50,7 @@ export const info = {
 				Why are all these motivational guru's so successful in conveying their message. I have also had a period in my life where I was susceptible to these kind of voices and what I have noticed; Is that it works very well in achieving more in life! It might sound weird because a lot of the time they also try to sell you some weird course which does not work. But the effect of believing that you will be able to achieve greatness is a very powerful 
 			`,
 			tags: [BlogTags.Productivity, BlogTags.Lifestyle],
-			date: '2024-05-15',
+			date: '2024-06-15',
 			link: '/blogs/believe-yourself',
 		},
 		{
@@ -60,7 +60,7 @@ export const info = {
 				It happens to all of us that we encounter something that seems so complex that it cannot be grasped by our brains. But often after looking at the problem for a while and breaking it up into smaller pieces it becomes manageable. In this blog post I will discuss how I use the divide and conquer principle in my coding journey.
 			`,
 			tags: [BlogTags.Productivity, BlogTags.Development],
-			date: '2024-05-07',
+			date: '2024-06-07',
 			link: '/blogs/divide-conquer',
 		},
 		{
