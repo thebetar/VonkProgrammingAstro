@@ -22,7 +22,7 @@ export const blogTags = [
 	},
 	{
 		name: BlogTags.Innovation,
-		color: 'orange',
+		color: 'red',
 	},
 ];
 
