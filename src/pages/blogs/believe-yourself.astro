@@ -1,0 +1,97 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 7);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Code excellence'}
+			description={info.description}
+			keywords={['motivation', 'productivity', 'hard work', 'believe in yourself'].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost title={blog.title} date={blog.date}>
+				<p>
+					Why are all these motivational guru&#39;s so successful in conveying their message. I have also had
+					a period in my life where I was susceptible to these kind of voices and what I have noticed; Is that
+					it works very well in achieving more in life! It might sound weird because a lot of the time they
+					also try to sell you some weird course which does not work. But the effect of believing that you
+					will be able to achieve greatness is a very powerful force.
+				</p>
+				<p>
+					Of course there has to be some caveats put to this. You shouldn&#39;t start thinking you are more
+					important than other people. Everyone has their own struggles and goals. But having the believe that
+					you will achieve your own goals absolutely helps a lot with being motivated and finding the energy.
+				</p>
+				<h2 id="motivational-speaking">Motivational speaking</h2>
+				<p>
+					As said in the first chapter, motivational speaking works great by giving you extra motivation
+					because you believe you can achieve your goals. However what can often be observed is that this
+					effect is temporary. The belief in that you can be great has to be internal.
+				</p>
+				<p>
+					I am a firm believer in what most motivational speakers try to convey which is, if you work hard to
+					achieve your goals, you will most likely succeed. It might now be soon, but in the end it will
+					happen. My rationalisation to this is that the best in the world have both talent and hard work, but
+					people who are great can often have just average educational achievements but work very hard to be
+					where they are at. This might sound like I&#39;m throwing shade their way, but this is actually very
+					motivating! It means that with dedicated hard work it is possible so to believe you can achieve this
+					only means that you need to believe that you are at least slightly above average and very hard
+					working.
+				</p>
+				<h2 id="finding-motivation">Finding motivation</h2>
+				<p>
+					Being hardworking can be very tiring and you can lose motivation. It is important to at first like
+					what you are doing or where you are going. This is perception, most things have fun aspects.
+					Secondly the power of boredom is often underestimated. If you don&#39;t feel like continuing just
+					take a break, but NO PHONES. Once you are resting for 5-10 minutes you will start to feel bored,
+					which is good. This boredom will transform into wanting to do something and you continuing your
+					task.
+				</p>
+				<h2 id="selective-delusion">Selective delusion</h2>
+				<p>
+					Sometimes it is good to be slightly delusional. The &quot;sometimes&quot; is an important word here.
+					For instance when going into a test knowing that you have studied well. Creating the delusion that
+					you are going to easily pass and that this test is nothing to you, helps reducing anxiety which can
+					often lead to a worse performance.
+				</p>
+				<p>
+					In my opinion these kind of delusional thoughts can be very helpful. I think we&#39;ve all noticed
+					the difference in performance when having the absolute belief that something is easy for you and
+					when something is hard.
+				</p>
+				<p>
+					This delusion can also help with self conscious. Believing you are very important can help in
+					certain situations.
+				</p>
+				<p>
+					This strategy has to be used very selectively however, for instance believing the test will be easy
+					before studying might result in spending less time studying. When interacting with people it can
+					often result in them thinking you have a superiority complex, which is not good. After all everyone
+					was created equal.
+				</p>
+				<h2 id="conclusion">Conclusion</h2>
+				<p>
+					Believing in yourself is a very powerful tool. It might sometimes feel like you are fooling yourself
+					but if it leads to positive effects, why not!? I think having a belief in yourself based on knowing
+					that you are good enough at what you choose to do with your life and being hard working is easy.
+					Everyone is above average in what they do, otherwise you need to do something else. And once you
+					find this thing working hard will get you very far. I believe this counts for everyone!
+				</p>
+				<p>So to end on, believe in yourself, even though it might sometimes seem or be delusional.</p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>

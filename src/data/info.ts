@@ -1,5 +1,35 @@
 import { IBlog, IExperience, IProject, ISkill } from '@types';
 
+enum BlogTags {
+	Productivity = 'productivity',
+	Development = 'development',
+	Lifestyle = 'lifestyle',
+	Innovation = 'innovation',
+}
+
+export const blogTags = [
+	{
+		name: BlogTags.Productivity,
+		color: 'green',
+	},
+	{
+		name: BlogTags.Lifestyle,
+		color: 'blue',
+	},
+	{
+		name: BlogTags.Development,
+		color: 'purple',
+	},
+	{
+		name: BlogTags.Innovation,
+		color: 'orange',
+	},
+];
+
+export function getTagColor(tag: string) {
+	return blogTags.find(blogTag => blogTag.name === tag)?.color;
+}
+
 export const info = {
 	baseUrl: 'https://vonkprogramming.nl',
 	name: 'Lars Vonk',
@@ -14,11 +44,23 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 7,
+			title: 'The benefit of believing in yourself',
+			description: `
+				Why are all these motivational guru's so successful in conveying their message. I have also had a period in my life where I was susceptible to these kind of voices and what I have noticed; Is that it works very well in achieving more in life! It might sound weird because a lot of the time they also try to sell you some weird course which does not work. But the effect of believing that you will be able to achieve greatness is a very powerful 
+			`,
+			tags: [BlogTags.Productivity, BlogTags.Lifestyle],
+			date: '2024-05-15',
+			link: '/blogs/believe-yourself',
+		},
+		{
 			id: 6,
 			title: 'Divide & Conquer',
 			description: `
 				It happens to all of us that we encounter something that seems so complex that it cannot be grasped by our brains. But often after looking at the problem for a while and breaking it up into smaller pieces it becomes manageable. In this blog post I will discuss how I use the divide and conquer principle in my coding journey.
 			`,
+			tags: [BlogTags.Productivity, BlogTags.Development],
+			date: '2024-05-07',
 			link: '/blogs/divide-conquer',
 		},
 		{
@@ -27,6 +69,7 @@ export const info = {
 			description: `
 				Finding the right tool for the job can be difficult. Finding the optimal tool is even more difficult. In this blog post I go into my views on finding the right tool and what are important things to take into account.
 			`,
+			tags: [BlogTags.Development, BlogTags.Innovation],
 			date: '2024-05-24',
 			link: '/blogs/finding-tools',
 		},
@@ -36,6 +79,7 @@ export const info = {
 			description: `
 				Also experience forgetfulness every now and then? There is a solution! A superpower that is available to everyone, taking notes. In this blog post I will discuss how taking notes has changed my ability to remember.
 			`,
+			tags: [BlogTags.Productivity, BlogTags.Lifestyle],
 			date: '2024-05-17',
 			link: '/blogs/taking-notes',
 		},
@@ -45,6 +89,7 @@ export const info = {
 			description: `
 				Working fast and efficient is important. Doing more in less time while impressing your colleagues is amazing. I will dive into what small and easy improvements every developer can make to work more efficiently and save time in the long run which can be spent on other things (most likely more coding!)
 			`,
+			tags: [BlogTags.Productivity, BlogTags.Development],
 			date: '2024-05-11',
 			link: '/blogs/small-efficiencies',
 		},
@@ -54,6 +99,7 @@ export const info = {
 			description: `
 				Continuous learning is very important in the world of software engineering. But a pitfall a lot of people encounter is that they cannot stick to it. In this blog post I will delve into my personal journey with learning and my findings and tips.
 			`,
+			tags: [BlogTags.Development, BlogTags.Lifestyle],
 			date: '2024-05-07',
 			link: '/blogs/learning-sustainably',
 		},
@@ -63,6 +109,7 @@ export const info = {
 			description: `
 				What are the key principles of code excellence? What rules to adhere to and what tools to use? This blog post will delve deep into the world of writing excellent code, click read more to find out.
 			`,
+			tags: [BlogTags.Development],
 			date: '2024-04-24',
 			link: '/blogs/code-excellence',
 		},

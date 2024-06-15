@@ -1,0 +1,29 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import Hero from '@components/home/Hero.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import AllBlogs from '@components/blog/AllBlogs.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Experience overview'}
+			description={info.description}
+			keywords={info.keywords}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<Hero name={info.name} jobDescription1={info.jobDescription1} jobDescription2={info.jobDescription2} />
+
+			<AllBlogs title={'BLOG'} blogs={info.blogs} />
+		</Layout>
+	</body>
+</html>

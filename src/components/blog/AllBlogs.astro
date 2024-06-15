@@ -9,11 +9,18 @@ function getReadmoreLink(link: string) {
 }
 ---
 
-<section class="flex items-start justify-between flex-col sm:flex-row dark:text-light">
-	<h2 class="w-[15rem] mt-16">{title}</h2>
-	<div class="w-full">
+<section class="flex items-center justify-start flex-col dark:text-light">
+	<h2 class="w-full text-4xl text-center md:my-4 my-2">{title}</h2>
+
+	<div class="flex justify-center dark:text-white text-zinc-900">
+		<div>
+			<a href="/" class="underline dark:text-white text-zinc-900">Go back</a> in time ⏰
+		</div>
+	</div>
+
+	<div class="xl:w-[960px] md:w-[720px] w-full">
 		{
-			blogs.slice(0, 4).map(blog => (
+			blogs.map(blog => (
 				<div class="md:my-16 my-8">
 					<div>
 						<div class="flex justify-between md:flex-row flex-col md:items-center mb-2">
@@ -53,10 +60,5 @@ function getReadmoreLink(link: string) {
 				</div>
 			))
 		}
-		<div class="lg:col-span-3 col-span-2 text-center mt-4 md:text-base text-sm">
-			<a class="dark:text-white text-zinc-900 underline hover:opacity-70 transition-opacity" href="/blogs">
-				See all {blogs.length} blogs
-			</a>
-		</div>
 	</div>
 </section>
