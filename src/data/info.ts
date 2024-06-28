@@ -50,8 +50,8 @@ export const info = {
 				Do you have the feeling that programming full time as a job has reduced your appreciation of programming? Or are you just curious about the opinions of another lover of programming. In this blog I discuss why I love programming and how I will keep loving it.
 			`,
 			tags: [BlogTags.Development, BlogTags.Lifestyle, BlogTags.Innovation],
-			date: '2024-06-15',
-			link: '/blogs/believe-yourself',
+			date: '2024-06-28',
+			link: '/blogs/love-programming',
 		},
 		{
 			id: 7,
