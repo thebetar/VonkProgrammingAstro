@@ -44,28 +44,38 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 8,
+			title: 'The love of programming ❤️',
+			description: `
+				Do you have the feeling that programming full time as a job has reduced your appreciation of programming? Or are you just curious about the opinions of another lover of programming. In this blog I discuss why I love programming and how I will keep loving it.
+			`,
+			tags: [BlogTags.Development, BlogTags.Lifestyle, BlogTags.Innovation],
+			date: '2024-06-28',
+			link: '/blogs/love-programming',
+		},
+		{
 			id: 7,
-			title: 'The benefit of believing in yourself',
+			title: 'The benefit of believing in yourself 🤩',
 			description: `
 				Why are all these motivational guru's so successful in conveying their message. I have also had a period in my life where I was susceptible to these kind of voices and what I have noticed; Is that it works very well in achieving more in life! It might sound weird because a lot of the time they also try to sell you some weird course which does not work. But the effect of believing that you will be able to achieve greatness is a very powerful 
 			`,
 			tags: [BlogTags.Productivity, BlogTags.Lifestyle],
-			date: '2024-05-15',
+			date: '2024-06-15',
 			link: '/blogs/believe-yourself',
 		},
 		{
 			id: 6,
-			title: 'Divide & Conquer',
+			title: 'Divide & Conquer 🪖',
 			description: `
 				It happens to all of us that we encounter something that seems so complex that it cannot be grasped by our brains. But often after looking at the problem for a while and breaking it up into smaller pieces it becomes manageable. In this blog post I will discuss how I use the divide and conquer principle in my coding journey.
 			`,
 			tags: [BlogTags.Productivity, BlogTags.Development],
-			date: '2024-05-07',
+			date: '2024-06-07',
 			link: '/blogs/divide-conquer',
 		},
 		{
 			id: 5,
-			title: 'The right tool for the job',
+			title: 'The right tool for the job 🔨',
 			description: `
 				Finding the right tool for the job can be difficult. Finding the optimal tool is even more difficult. In this blog post I go into my views on finding the right tool and what are important things to take into account.
 			`,
@@ -75,7 +85,7 @@ export const info = {
 		},
 		{
 			id: 4,
-			title: 'Taking notes, a real superpower',
+			title: 'Taking notes, a real superpower 🦸',
 			description: `
 				Also experience forgetfulness every now and then? There is a solution! A superpower that is available to everyone, taking notes. In this blog post I will discuss how taking notes has changed my ability to remember.
 			`,
