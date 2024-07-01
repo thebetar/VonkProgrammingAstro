@@ -545,6 +545,12 @@ export const info = {
 
 	projects: [
 		{
+			title: 'Encrypted message exchange service with replication',
+			isFeatured: true,
+			thumbnail: '/assets/images/encrypted-message-exchange.webp',
+			githubUrl: 'https://github.com/thebetar/EncryptedMessageExchange',
+		},
+		{
 			title: 'x86 assembly',
 			isFeatured: true,
 			thumbnail: '/assets/images/x86-assembly.png',
