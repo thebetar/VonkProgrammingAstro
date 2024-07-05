@@ -27,17 +27,17 @@
             $checkStmt = $conn->prepare("SELECT COUNT(*) FROM Blogs WHERE id = :blog_id");
             $checkStmt->bindParam(':blog_id', $blog_id);
             $checkStmt->execute();
-            $blogExists = $checkStmt->fetchColumn();
+            $blog = $checkStmt->fetch();
     
             $stmt = null;
     
-            if (!$blogExists) {
+            if (!$blog) {
                 // Add blog with one view
                 $stmt = $conn->prepare("INSERT INTO Blogs (id, views, ip_addresses) VALUES (:blog_id, 1, :ip_address)");
                 $stmt->bindParam(':blog_id', $blog_id);
             } else {
                 // Check if IP address already exists
-                if($blogExists['ip_addresses'] && strpos($blogExists['ip_addresses'], $ip_address) !== false) {
+                if($blog['ip_addresses'] && strpos($blog['ip_addresses'], $ip_address) !== false) {
                     echo "exists";
                     return;
                 }
