@@ -55,10 +55,11 @@
                 echo "failed";
             }
         } elseif($_SERVER["REQUEST_METHOD"] == "GET") {
-            $blog_id = isset( $_GET["id"] ) ? intval( $_GET["id"] ) : 0;
+            $blog_id = isset($_GET["blog_id"]) ? intval($_GET["blog_id"]) : 0;
 
             if ($blog_id == 0) {
                 echo "Invalid request";
+                return;
             }
 
             // Get views of the blog
@@ -72,7 +73,7 @@
                 echo "failed";
             }
         }
-        
+
         echo "Invalid request";
     } catch(PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
