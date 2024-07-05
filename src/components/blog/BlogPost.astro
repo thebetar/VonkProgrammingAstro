@@ -20,9 +20,29 @@ const { title, date } = Astro.props as IBlog;
 	<slot />
 </div>
 
-<a
-	class="mx-auto h-10 w-fit px-4 py-2 bg-zinc-800 hover:bg-zinc-600 transition-colors rounded-md block mb-10 cursor-pointer text-white"
-	href="mailto:info@vonkprogramming.nl"
+<div
+	class="flex max-w-[720px] mx-auto md:gap-x-4 gap-2 justify-center items-center md:text-base text-sm mb-10 md:flex-row flex-col"
 >
-	Ask me a question</a
->
+	<button
+		id="subscribe-popup-button"
+		class="h-10 w-full px-4 py-2 bg-zinc-700 hover:bg-zinc-600 transition-colors rounded-md block cursor-pointer text-white text-center"
+	>
+		Subscribe to my blog
+	</button>
+
+	<a
+		class="h-10 w-full px-4 py-2 border-2 border-zinc-800 dark:hover:bg-zinc-800 hover:bg-zinc-300 transition-colors rounded-md block cursor-pointer dark:text-light text-zinc-800 text-center"
+		href="mailto:info@vonkprogramming.nl"
+	>
+		Ask me a question</a
+	>
+</div>
+
+<script is:inline>
+	const blogPostSubscribeButton = document.getElementById('subscribe-popup-button');
+
+	blogPostSubscribeButton.addEventListener('click', () => {
+		document.querySelector('#subscribe-component').classList.add('flex');
+		document.querySelector('#subscribe-component').classList.remove('hidden');
+	});
+</script>

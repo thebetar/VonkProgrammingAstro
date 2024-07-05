@@ -1,0 +1,96 @@
+<div
+	id="subscribe-component"
+	class="w-screen h-screen px-4 fixed top-0 left-0 bg-zinc-800 bg-opacity-80 justify-center items-center hidden"
+>
+	<div
+		class="bg-light text-dark bg-opacity-95 backdrop-blur md:max-w-[460px] w-full md:px-8 px-6 py-4 text-center rounded-sm"
+	>
+		<svg
+			width="48px"
+			height="48px"
+			viewBox="0 0 24 24"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			class="mx-auto"
+		>
+			<path
+				d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"></path>
+			<rect
+				x="3"
+				y="5"
+				width="18"
+				height="14"
+				rx="2"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"></rect>
+		</svg>
+
+		<div class="font-semibold text-xl mt-4">Subscribe</div>
+		<div class="text-xs mt-2">
+			Want to be the first to know when I drop a new blog post? <br />
+			Fill out your email below and hit subscribe and I will drop an email in your inbox whenever I have something
+			new to share!
+		</div>
+		<div class="text-xs mt-2">
+			<input
+				id="subscribe-email"
+				type="email"
+				placeholder="Enter your email"
+				class="max-w-[280px] w-full px-3 py-2 border border-zinc-800 rounded-md focus:outline-none focus:border-zinc-600"
+			/>
+			<div class="text-xs text-red-500 hidden" id="subscribe-error">Please enter a valid email address</div>
+		</div>
+		<div class="flex gap-x-2 justify-center mt-2">
+			<button
+				id="subscribe-button"
+				class="px-6 py-2 rounded-sm bg-zinc-800 hover:bg-zinc-600 transition text-white md:w-28 w-full text-center"
+			>
+				Subscribe
+			</button>
+			<button
+				id="decline-button"
+				class="px-6 py-2 rounded-sm transition border border-zinc-800 text-zinc-800 text-sm md:w-28 w-full text-center hover:bg-zinc-300"
+			>
+				Close
+			</button>
+		</div>
+	</div>
+</div>
+
+<script is:inline>
+	const emailRegex = '^[w-.]+@([w-]+.)+[w-]{2,4}$';
+	const subscribeAcceptButton = document.getElementById('subscribe-button');
+
+	subscribeAcceptButton.addEventListener('click', () => {
+		const emailInput = document.getElementById('subscribe-email');
+
+		if (!emailInput.value.match(emailRegex)) {
+			document.getElementById('subscribe-error').classList.remove('hidden');
+			return;
+		}
+
+		fetch('https://vonkprogramming.nl/subscribe.php', {
+			method: 'POST',
+			body: JSON.stringify({ email: emailInput.value }),
+		});
+
+		localStorage.setItem('subscribe-popup', 'shown');
+
+		document.querySelector('#subscribe-component').classList.add('hidden');
+		document.querySelector('#subscribe-component').classList.remove('flex');
+	});
+
+	const subscribeDeclineButton = document.getElementById('decline-button');
+
+	subscribeDeclineButton.addEventListener('click', () => {
+		localStorage.setItem('subscribe-popup', 'shown');
+
+		document.querySelector('#subscribe-component').classList.add('hidden');
+		document.querySelector('#subscribe-component').classList.remove('flex');
+	});
+</script>

@@ -1,11 +1,26 @@
 <div
 	id="cookie-component"
-	class="w-screen h-screen px-4 fixed top-0 left-0 bg-slate-800 bg-opacity-80 justify-center items-center hidden"
+	class="w-screen h-screen px-4 fixed top-0 left-0 bg-zinc-800 bg-opacity-80 justify-center items-center hidden"
 >
 	<div
-		class="bg-white bg-opacity-95 backdrop-blur md:w-[460px] w-full md:px-10 px-6 md:pt-6 md:pb-4 py-4 text-center"
+		class="bg-white bg-opacity-95 backdrop-blur md:max-w-[460px] w-full md:px-10 px-6 md:pt-6 md:pb-4 py-4 text-center rounded-sm"
 	>
-		<img src="/assets/svg/cookie.svg" alt="logo" title="logo" class="md:h-12 h-10 mx-auto" height="48" width="48" />
+		<svg
+			class="md:h-12 h-10 mx-auto"
+			height="48px"
+			width="48px"
+			viewBox="0 0 24 24"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M9 16H9.01M12 11H12.01M7 10H7.01M15 16H15.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C12 5.76142 13.7909 8 16 8C16 10.2091 18.2386 12 21 12Z"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"></path>
+		</svg>
+
 		<div class="font-semibold text-xl mt-4">Cookie statement</div>
 		<div class="text-xs mt-2">
 			Our website sprinkles digital cookies to see what you love. It's like peeking into your preferences, minus
@@ -18,32 +33,31 @@
 		<div class="flex gap-x-2 justify-center mt-2">
 			<button
 				id="cookie-accept"
-				class="px-6 py-2 rounded-sm bg-slate-800 hover:bg-slate-600 transition text-white md:w-24 w-full"
+				class="px-6 py-2 rounded-sm bg-zinc-800 hover:bg-zinc-600 transition text-white md:w-24 w-full"
 			>
 				Accept
 			</button>
 			<button
 				id="cookie-decline"
-				class="px-6 py-2 rounded-sm transition text-slate-800 hover:text-slate-600 underline text-sm md:w-24 w-full"
+				class="px-6 py-2 rounded-sm transition text-zinc-800 hover:text-zinc-600 underline text-sm md:w-24 w-full"
 			>
 				Decline</button
 			>
-			{localStorage.getItem('cookie-accept')}
 		</div>
 	</div>
 </div>
 
 <script is:inline>
-	const acceptButton = document.getElementById('cookie-accept');
+	const cookieAcceptButton = document.getElementById('cookie-accept');
 
-	acceptButton.addEventListener('click', () => {
+	cookieAcceptButton.addEventListener('click', () => {
 		localStorage.setItem('cookie-accept', 'accept');
 		location.reload();
 	});
 
-	const declineButton = document.getElementById('cookie-decline');
+	const cookieDeclineButton = document.getElementById('cookie-decline');
 
-	declineButton.addEventListener('click', () => {
+	cookieDeclineButton.addEventListener('click', () => {
 		localStorage.setItem('cookie-accept', 'decline');
 		location.reload();
 	});

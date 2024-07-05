@@ -18,10 +18,10 @@ const { title, skills } = Astro.props as ISkills;
 			skills.map(item => (
 				<a
 					href={item.link}
-					class="md:my-4 my-1 flex justify-between items-center dark:border-slate-300 border-slate-600 border md:p-4 px-2 py-3 dark:text-light text-black no-underline md:rounded rounded-lg dark:hover:bg-slate-900 hover:bg-slate-200 transition"
+					class="md:my-4 my-1 flex justify-between items-center dark:border-zinc-300 border-zinc-600 border md:p-4 px-2 py-3 dark:text-light text-black no-underline md:rounded rounded-lg dark:hover:bg-zinc-900 hover:bg-zinc-200 transition"
 				>
 					<div class="flex md:gap-2 gap-1 items-center">
-						<div class="md:w-10 md:h-10 w-6 h-6 rounded-full bg-slate-300 dark:bg-slate-100 flex justify-center items-center">
+						<div class="md:w-10 md:h-10 w-6 h-6 rounded-full bg-zinc-300 dark:bg-zinc-100 flex justify-center items-center">
 							<img
 								src={item.logo}
 								alt={item.title}
@@ -32,7 +32,7 @@ const { title, skills } = Astro.props as ISkills;
 						</div>
 						<h3 class="md:text-lg text-sm">{item.title}</h3>
 					</div>
-					<p class="md:text-sm text-xs dark:text-gray text-slate-600">{item.years} years</p>
+					<p class="md:text-sm text-xs dark:text-gray text-zinc-600">{item.years} years</p>
 				</a>
 			))
 		}

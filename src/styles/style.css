@@ -32,6 +32,7 @@
 	}
 	p,
 	li,
+	button,
 	a {
 		@apply font-outfit text-dark-gray;
 	}
