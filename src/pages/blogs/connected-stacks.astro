@@ -1,0 +1,106 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 9);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Connected stacks'}
+			description={info.description}
+			keywords={['development', 'career', 'stack', 'improvement'].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost id={blog.id} title={blog.title} date={blog.date}>
+				<p>
+					It often happens that within larger organisations teams work on a product where the team itself is
+					not aware of the placement of this product in the bigger system. They sometimes don&#39;t even know
+					who the users are! In my opinion this is a big problem and should be avoided.
+				</p>
+				<p>
+					This problem mainly consists of two separate problems which are &quot;The developer does not know
+					who their user is&quot; and &quot;The developer does not know which systems the product interacts
+					with and how they work&quot;. I think both of these problems need to be tackled but how?
+				</p>
+				<h2 id="what-is-the-context-">What is the context?</h2>
+				<p>
+					I think bigger emphasis should be given to what the context of the products are that the team is
+					currently working on when a new person joins a team. For instance where does it place itself in the
+					system, what is it&#39;s input and what is it&#39;s output and what are the goals that this product
+					is trying to achieve. This is very important to start understanding why certain logical decisions
+					are made in the code. If this is not clear confusion might arise about what certain parts are meant
+					to do. These questions sometimes cannot even be answered by most of the team members which is a
+					shame.
+				</p>
+				<p>
+					Another vital point which I think could be solved in a single onboarding meeting is who the end
+					users are. I understand that meeting users will not be possible in many use cases but illustrating a
+					basic profile of a user of the product is always helpful. Is it an internal co worker within the
+					company are other companies users or is the product meant for clients? This still applies when
+					discussing non-client facing applications since the clients of these systems, which are other
+					systems most of the time, still have certain characteristics and goals they aim to achieve. These
+					are all important aspects that a team should know.
+				</p>
+				<h2 id="understanding-all-connected-stacks">Understanding all connected stacks</h2>
+				<p>
+					In my professional career I have often tried to not only get a good grasp of the stack that is used
+					within my team, but also to get an understanding of the parts that our team does not necessarily
+					have to modify but still interacts with. This could be a certain API written in another programming
+					language, a pipeline that runs every release or a certain tool that is used during development. I
+					think getting a certain basic understanding of how these tools works and how they are built is
+					important. This goes further than just getting some slides about the overview, in my opinion when
+					you interact with an API using Java it is very important to also at least know how a basic API is
+					made using Java.
+				</p>
+				<p>
+					The reason why I think getting a moderate understanding of all the connecting stacks is that
+					communication between teams benefits greatly from developers who have certain overlap in their
+					skills. If all developers would take the time to get a basic understanding of all the stacks
+					connected to their teams products. Solving problems where multiple teams using different stacks have
+					to interact a lot would become a lot more streamlined. It would also reduce the amount of meetings
+					where teams talk past each other instead of with each other. An example of this is when frontend
+					developers communicate with backend developers and backend developers start talking about threads.
+					Threads are not often used within frontend development and this can cause a lot of confusion when
+					the frontend development team has no experience with the backend stack that connects to their
+					frontend.
+				</p>
+				<h2 id="enriching-experience">Enriching experience</h2>
+				<p>
+					Aside from the aforementioned advantages of greater efficiency in communication it also grants the
+					opportunity to broaden your skillset with new tools and languages which means that eventually you
+					might even get good enough at the connected stack that you can make it your main stack if you would
+					want to. Many developers find it difficult to find time outside of their work to get experience
+					using other stacks than they themselves use, well this is the perfect opportunity! Your work will
+					probably even be excited when you propose to spend some time getting a better understanding of the
+					API that your team&#39;s product calls every day.
+				</p>
+				<p>
+					It also makes your work more diverse since you will be able to tackle different challenges using
+					different languages and tools.
+				</p>
+				<h2 id="conclusion">Conclusion</h2>
+				<p>
+					While it might seem scary at first to learn new things, just imagine that you felt like this as well
+					when first learning the stack you are currently using. I think every developer can benefit greatly
+					from getting a basic understanding of all the connecting systems to the product they are working on.
+				</p>
+				<p>
+					Creating a simple hello world application in a new language is always quite simple and straight to
+					the point, have you already tried making one in all the languages that are contained in the stacks
+					that are connected to your product?
+				</p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>

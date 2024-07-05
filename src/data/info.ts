@@ -44,6 +44,16 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 9,
+			title: 'Why is context important? 🤔',
+			description: `
+				Development teams are often too focussed on the products they work on directly and don't stop to consider who the users are and where the product fits in to the bigger system and what stacks are used that are closely related to the product. In this blog post I will talk about how I deal with understanding this context and how I am often able to communicate with team that work in completely different stacks.
+			`,
+			tags: [BlogTags.Development],
+			date: '2024-07-05',
+			link: '/blogs/connected-stacks',
+		},
+		{
 			id: 8,
 			title: 'The love of programming ❤️',
 			description: `
