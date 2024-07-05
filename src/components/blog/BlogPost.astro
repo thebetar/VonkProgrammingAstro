@@ -88,7 +88,7 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 			)
 			.then(response => response.text())
 			.then(data => {
-				if (isNan(data)) {
+				if (isNaN(data)) {
 					return;
 				}
 
