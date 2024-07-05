@@ -63,13 +63,13 @@
 </div>
 
 <script is:inline>
-	const emailRegex = '^[w-.]+@([w-]+.)+[w-]{2,4}$';
+	const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 	const subscribeAcceptButton = document.getElementById('subscribe-button');
 
 	subscribeAcceptButton.addEventListener('click', () => {
 		const emailInput = document.getElementById('subscribe-email');
 
-		if (!emailInput.value.match(emailRegex)) {
+		if (!emailRegex.test(emailInput.value)) {
 			document.getElementById('subscribe-error').classList.remove('hidden');
 			return;
 		}
