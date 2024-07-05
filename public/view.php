@@ -72,9 +72,10 @@
             } else {
                 echo "failed";
             }
+        } else {
+            echo "Invalid request";
         }
 
-        echo "Invalid request";
     } catch(PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     } finally {

@@ -67,8 +67,8 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 		});
 
 	if (!viewedBlogs.includes(blog_id)) {
-		viewedBlogs.push(blog_id);
-		localStorage.setItem('viewed-blogs', JSON.stringify(viewedBlogs));
+		// viewedBlogs.push(blog_id);
+		// localStorage.setItem('viewed-blogs', JSON.stringify(viewedBlogs));
 
 		fetch('https://api.ipify.org?format=json')
 			.then(response => response.json())
@@ -80,7 +80,7 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 					},
 					body: JSON.stringify({
 						blog_id,
-						ip: data.ip,
+						ip_address: data.ip,
 					}),
 				});
 			})
