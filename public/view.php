@@ -41,6 +41,10 @@
                     echo "exists";
                     return;
                 }
+
+                echo $blog['ip_addresses'];
+                echo " | ";
+                echo strpos($blog['ip_addresses'], $ip_address);
     
                 // Increment views and add IP address
                 $stmt = $conn->prepare("UPDATE Blogs SET views = views + 1, ip_addresses = CONCAT(ip_addresses, ', ', :ip_address) WHERE id = :blog_id");
