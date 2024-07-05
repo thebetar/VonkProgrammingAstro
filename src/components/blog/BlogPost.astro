@@ -61,21 +61,20 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 			if (isNaN(data)) {
 				return;
 			}
+
+			document.getElementById('view-count').innerText = data;
 		})
 		.catch(error => {
 			console.log('Error:', error);
 		});
 
 	if (!viewedBlogs.includes(blog_id)) {
-		// viewedBlogs.push(blog_id);
-		// localStorage.setItem('viewed-blogs', JSON.stringify(viewedBlogs));
+		viewedBlogs.push(blog_id);
+		localStorage.setItem('viewed-blogs', JSON.stringify(viewedBlogs));
 
 		fetch('https://api.ipify.org?format=json')
 			.then(response => response.json())
-			.then(data => {
-				console.log('IP:', data.ip);
-				console.log('Blog ID:', blog_id);
-
+			.then(data =>
 				fetch('/view.php', {
 					method: 'POST',
 					headers: {
@@ -85,7 +84,15 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 						blog_id,
 						ip_address: data.ip,
 					}),
-				});
+				}),
+			)
+			.then(response => response.text())
+			.then(data => {
+				if (isNan(data)) {
+					return;
+				}
+
+				document.getElementById('view-count').innerText = data;
 			})
 			.catch(error => {
 				console.log('Error:', error);
