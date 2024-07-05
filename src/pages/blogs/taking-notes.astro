@@ -22,7 +22,7 @@ const blog = info.blogs.find(blog => blog.id === 4);
 
 	<body>
 		<Layout>
-			<BlogPost id={blog.id} title={blog.title} date={blog.date}>
+			<BlogPost {...blog}>
 				<p>
 					The human brain is very good at being creative, but not as good at remembering things. I have
 					personally experienced this many times, when forgetting you should have done something or when not

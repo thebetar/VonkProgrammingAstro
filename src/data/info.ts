@@ -381,7 +381,7 @@ export const info = {
 		},
 		{
 			title: 'C',
-			years: 2,
+			years: 3,
 			logo: '/assets/svg/c.svg',
 			link: 'https://en.wikipedia.org/wiki/C_(programming_language)',
 			featured: false,
@@ -397,10 +397,20 @@ export const info = {
 
 	experience: [
 		{
+			name: 'SPAR',
+			location: 'Waalwijk, Noord-Brabant, Nederland',
+			startDate: 'Jun 2024',
+			endDate: 'Now',
+			description: [
+				'At SPAR Nederland I work as a data engineer solving data related questions and problems. I am mostly using my SQL, Azure and python skills to solve complex problems related to big data. Within this role I have gotten the opportunity to try a different stack than I did in my previous roles. I hope this experience will help me broaden my skillset and become a more flexible developer.',
+			],
+			link: 'https://www.spar.nl/',
+		},
+		{
 			name: 'ING',
 			location: 'Amsterdam, Noord-Holland, Nederland',
 			startDate: 'Apr 2022',
-			endDate: 'Oct 2023',
+			endDate: 'Sep 2023',
 			description: [
 				"The role at 'ING', in Amsterdam, North Holland, Netherlands, began in April 2022 and ended in September 2023. It primarily involved serving as a full-stack developer, working on various interfaces that are utilized by ING, employing the Lit element framework. In addition to these duties, for a certain period, the role also encompassed serving as a product owner. This required overseeing project timelines, prioritizing features, collaborating with stakeholders, and making key decisions about product direction. This multi-faceted role demonstrates a blend of technical acumen and leadership ability.",
 			],
