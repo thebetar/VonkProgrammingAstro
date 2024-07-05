@@ -28,28 +28,30 @@ function getReadmoreLink(link: string) {
 							<p class="text-sm dark:text-gray">{blog.date}</p>
 						</div>
 						<div class="flex gap-x-2 mb-2">
-							{blog.tags.map(tag => (
-								<span
-									class:list={[
-										'text-xs',
-										'dark:text-gray',
-										'capitalize',
-										'px-2',
-										'py-1',
-										'rounded-md',
-										'font-semibold',
-										'bg-opacity-70',
-										{
-											'bg-green-700': getTagColor(tag) === 'green',
-											'bg-indigo-700': getTagColor(tag) === 'blue',
-											'bg-purple-700': getTagColor(tag) === 'purple',
-											'bg-red-700': getTagColor(tag) === 'red',
-										},
-									]}
-								>
-									{tag}
-								</span>
-							))}
+							{blog.tags
+								.sort((a, b) => a.localeCompare(b))
+								.map(tag => (
+									<span
+										class:list={[
+											'text-xs',
+											'dark:text-gray',
+											'capitalize',
+											'px-2',
+											'py-1',
+											'rounded-md',
+											'font-semibold',
+											'bg-opacity-70',
+											{
+												'bg-green-700': getTagColor(tag) === 'green',
+												'bg-indigo-700': getTagColor(tag) === 'blue',
+												'bg-purple-700': getTagColor(tag) === 'purple',
+												'bg-red-700': getTagColor(tag) === 'red',
+											},
+										]}
+									>
+										{tag}
+									</span>
+								))}
 						</div>
 						<p class="text-base md:text-sm dark:text-gray mb-1">{blog.description}</p>
 						<a

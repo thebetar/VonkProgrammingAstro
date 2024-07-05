@@ -22,7 +22,7 @@ const blog = info.blogs.find(blog => blog.id === 3);
 
 	<body>
 		<Layout>
-			<BlogPost id={blog.id} title={blog.title} date={blog.date}>
+			<BlogPost {...blog}>
 				<p>
 					Being efficient is very important as a developer. There are many tools we love because they reduce
 					the amount of time that we need to ship some software to production. Think about AI coding

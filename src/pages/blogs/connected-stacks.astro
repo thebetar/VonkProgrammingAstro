@@ -22,7 +22,7 @@ const blog = info.blogs.find(blog => blog.id === 9);
 
 	<body>
 		<Layout>
-			<BlogPost id={blog.id} title={blog.title} date={blog.date}>
+			<BlogPost {...blog}>
 				<p>
 					It often happens that within larger organisations teams work on a product where the team itself is
 					not aware of the placement of this product in the bigger system. They sometimes don&#39;t even know

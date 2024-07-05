@@ -22,7 +22,7 @@ const blog = info.blogs.find(blog => blog.id === 6);
 
 	<body>
 		<Layout>
-			<BlogPost id={blog.id} title={blog.title} date={blog.date}>
+			<BlogPost {...blog}>
 				<p>
 					If you attended school this will sound very familiar to you. You learn about something new that
 					sounds so complex that you cannot even imagine how you will ever wrap your head around it. But once

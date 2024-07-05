@@ -22,7 +22,7 @@ const blog = info.blogs.find(blog => blog.id === 8);
 
 	<body>
 		<Layout>
-			<BlogPost id={blog.id} title={blog.title} date={blog.date}>
+			<BlogPost {...blog}>
 				<p>
 					Do you still remember that first piece of code you wrote? I do it was a simple HTML website but it
 					was so cool to see my work turn into an actual website. From that point on every new thing I learnt

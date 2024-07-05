@@ -1,7 +1,31 @@
 ---
 import { IBlog } from '@types';
+import { getTagColor } from '@data';
 
-const { id: blog_id, title, date } = Astro.props as IBlog;
+const { id: blog_id, title, date, tags } = Astro.props as IBlog;
+
+function parseTitle(title: string) {
+	const chars = title.split('');
+
+	return {
+		title: chars.reduce((acc, char) => {
+			// If char is emoji
+			if (char.charCodeAt(0) > 127) {
+				return acc;
+			}
+
+			return acc + char;
+		}, ''),
+		emoji: chars.reduce((acc, char) => {
+			// If char is emoji
+			if (char.charCodeAt(0) > 127) {
+				return acc + char;
+			}
+
+			return acc;
+		}, ''),
+	};
+}
 ---
 
 <div id="blog_id" class="hidden">{blog_id}</div>
@@ -13,11 +37,47 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 </div>
 
 <div class="blog-header">
-	<h1 class="text-4xl mb-2">{title}</h1>
+	<div>
+		<h1 class="text-4xl my-0 w-fit inline">
+			{parseTitle(title).title}
+		</h1>
+		<div class="text-4xl text-white inline">
+			{parseTitle(title).emoji}
+		</div>
+	</div>
 
-	<p class="text-sm dark:text-gray mb-8">
+	<p class="text-sm dark:text-gray mb-2">
 		{date} | <span id="view-count">1</span> views
 	</p>
+
+	<div class="flex gap-x-2 mb-8">
+		{
+			tags
+				.sort((a, b) => a.localeCompare(b))
+				.map(tag => (
+					<span
+						class:list={[
+							'text-xs',
+							'dark:text-dark',
+							'text-light',
+							'capitalize',
+							'px-2',
+							'py-1',
+							'rounded-md',
+							'font-semibold',
+							{
+								'bg-green-700': getTagColor(tag) === 'green',
+								'bg-indigo-700': getTagColor(tag) === 'blue',
+								'bg-purple-700': getTagColor(tag) === 'purple',
+								'bg-red-700': getTagColor(tag) === 'red',
+							},
+						]}
+					>
+						{tag}
+					</span>
+				))
+		}
+	</div>
 </div>
 
 <div class="blog-post">

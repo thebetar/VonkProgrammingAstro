@@ -22,7 +22,7 @@ const blog = info.blogs.find(blog => blog.id === 5);
 
 	<body>
 		<Layout>
-			<BlogPost id={blog.id} title={blog.title} date={blog.date}>
+			<BlogPost {...blog}>
 				<p>
 					Within the world of development a lot of people have very strong opinions about what is the best
 					tool or programming language. You&#39;ll hear them say things like &quot;the best code editor is
