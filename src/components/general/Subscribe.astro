@@ -43,7 +43,10 @@
 				placeholder="Enter your email"
 				class="max-w-[280px] w-full px-3 py-2 border border-zinc-800 rounded-md focus:outline-none focus:border-zinc-600"
 			/>
-			<div class="text-xs text-red-500 hidden" id="subscribe-error">Please enter a valid email address</div>
+			<div class="text-xs text-red-500 hidden mt-1" id="subscribe-error">Please enter a valid email address</div>
+			<div class="text-xs text-red-500 hidden mt-1" id="subscribe-error-exists">
+				This email is already subscribed
+			</div>
 		</div>
 		<div class="flex gap-x-2 justify-center mt-2">
 			<button
@@ -77,12 +80,19 @@
 		fetch('https://vonkprogramming.nl/subscribe.php', {
 			method: 'POST',
 			body: JSON.stringify({ email: emailInput.value }),
-		});
+		})
+			.then(response => response.text())
+			.then(data => {
+				if (data === 'exists') {
+					document.getElementById('subscribe-error-exists').classList.remove('hidden');
+					return;
+				}
 
-		localStorage.setItem('subscribe-popup', 'shown');
+				document.querySelector('#subscribe-component').classList.add('hidden');
+				document.querySelector('#subscribe-component').classList.remove('flex');
 
-		document.querySelector('#subscribe-component').classList.add('hidden');
-		document.querySelector('#subscribe-component').classList.remove('flex');
+				localStorage.setItem('subscribe-popup', 'shown');
+			});
 	});
 
 	const subscribeDeclineButton = document.getElementById('decline-button');

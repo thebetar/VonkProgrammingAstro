@@ -1,7 +1,7 @@
 ---
 import { IBlog } from '@types';
 
-const { title, date } = Astro.props as IBlog;
+const { id: blog_id, title, date } = Astro.props as IBlog;
 ---
 
 <div class="flex justify-center text-zinc-900 dark:text-white mb-8">
@@ -45,4 +45,23 @@ const { title, date } = Astro.props as IBlog;
 		document.querySelector('#subscribe-component').classList.add('flex');
 		document.querySelector('#subscribe-component').classList.remove('hidden');
 	});
+
+	const viewedBlogs = JSON.parse(localStorage.getItem('viewed-blogs')) || [];
+
+	if (!viewedBlogs.includes(blog_id)) {
+		viewedBlogs.push(blog_id);
+		localStorage.setItem('viewed-blogs', JSON.stringify(viewedBlogs));
+
+		fetch('https://api.ipify.org?format=json')
+			.then(response => response.json())
+			.then(data => {
+				fetch('/view.php', {
+					blog_id,
+					ip_address: data.ip,
+				});
+			})
+			.catch(error => {
+				console.log('Error:', error);
+			});
+	}
 </script>

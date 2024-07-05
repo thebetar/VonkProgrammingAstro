@@ -8,7 +8,7 @@ import BlogPost from '@components/blog/BlogPost.astro';
 const blog = info.blogs.find(blog => blog.id === 3);
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<MetaHead
@@ -22,7 +22,7 @@ const blog = info.blogs.find(blog => blog.id === 3);
 
 	<body>
 		<Layout>
-			<BlogPost title={blog.title} date={blog.date}>
+			<BlogPost id={blog.id} title={blog.title} date={blog.date}>
 				<p>
 					Being efficient is very important as a developer. There are many tools we love because they reduce
 					the amount of time that we need to ship some software to production. Think about AI coding
