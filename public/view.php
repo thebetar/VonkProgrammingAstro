@@ -24,7 +24,7 @@
             $ip_address = $data['ip_address'];
     
             // Check if blog already exists
-            $checkStmt = $conn->prepare("SELECT COUNT(*) FROM Blogs WHERE id = :blog_id");
+            $checkStmt = $conn->prepare("SELECT * FROM Blogs WHERE id = :blog_id");
             $checkStmt->bindParam(':blog_id', $blog_id);
             $checkStmt->execute();
             $blog = $checkStmt->fetch();
