@@ -4,6 +4,8 @@ import { IBlog } from '@types';
 const { id: blog_id, title, date } = Astro.props as IBlog;
 ---
 
+<div id="blog_id" class="hidden">{blog_id}</div>
+
 <div class="flex justify-center text-zinc-900 dark:text-white mb-8">
 	<div>
 		<a href="/" class="underline text-zinc-900 dark:text-white">Go back</a> in time ⏰
@@ -13,7 +15,9 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 <div class="blog-header">
 	<h1 class="text-4xl mb-2">{title}</h1>
 
-	<p class="text-sm dark:text-gray mb-8">{date}</p>
+	<p class="text-sm dark:text-gray mb-8">
+		{date} | <span id="view-count">0</span> views
+	</p>
 </div>
 
 <div class="blog-post">
@@ -39,6 +43,8 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 </div>
 
 <script is:inline>
+	const blog_id = document.getElementById('blog_id').innerText;
+
 	const blogPostSubscribeButton = document.getElementById('subscribe-popup-button');
 
 	blogPostSubscribeButton.addEventListener('click', () => {
@@ -48,6 +54,18 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 
 	const viewedBlogs = JSON.parse(localStorage.getItem('viewed-blogs')) || [];
 
+	fetch(`/view.php?blog_id=${blog_id}`)
+		.then(response => response.text())
+		.then(data => {
+			// Check if result is number
+			if (isNaN(data)) {
+				return;
+			}
+		})
+		.catch(error => {
+			console.log('Error:', error);
+		});
+
 	if (!viewedBlogs.includes(blog_id)) {
 		viewedBlogs.push(blog_id);
 		localStorage.setItem('viewed-blogs', JSON.stringify(viewedBlogs));
@@ -56,8 +74,14 @@ const { id: blog_id, title, date } = Astro.props as IBlog;
 			.then(response => response.json())
 			.then(data => {
 				fetch('/view.php', {
-					blog_id,
-					ip_address: data.ip,
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({
+						blog_id,
+						ip: data.ip,
+					}),
 				});
 			})
 			.catch(error => {
