@@ -1,6 +1,7 @@
 ---
 import { IBlog } from '@types';
 import { getTagColor } from '@data';
+import Share from '@components/general/Share.astro';
 
 const { id: blog_id, title, date, tags } = Astro.props as IBlog;
 
@@ -27,6 +28,8 @@ function parseTitle(title: string) {
 	};
 }
 ---
+
+<Share />
 
 <div id="blog_id" class="hidden">{blog_id}</div>
 
@@ -94,8 +97,15 @@ function parseTitle(title: string) {
 		Subscribe to my blog
 	</button>
 
+	<button
+		id="share-button"
+		class="h-10 w-full px-4 py-2 transition-colors border-2 border-zinc-800 dark:hover:bg-zinc-800 hover:bg-zinc-300 rounded-md block cursor-pointer text-white text-center"
+	>
+		Share this knowledge
+	</button>
+
 	<a
-		class="h-10 w-full px-4 py-2 border-2 border-zinc-800 dark:hover:bg-zinc-800 hover:bg-zinc-300 transition-colors rounded-md block cursor-pointer dark:text-light text-zinc-800 text-center"
+		class="h-10 w-full px-4 py-2 bg-zinc-700 hover:bg-zinc-600 transition-colors rounded-md block cursor-pointer dark:text-light text-zinc-800 text-center"
 		href="mailto:info@vonkprogramming.nl"
 	>
 		Ask me a question</a
@@ -103,17 +113,22 @@ function parseTitle(title: string) {
 </div>
 
 <script is:inline>
+	// Get blog ID
 	const blog_id = document.getElementById('blog_id').innerText;
 
+	// Get subscribe button
 	const blogPostSubscribeButton = document.getElementById('subscribe-popup-button');
 
+	// Add event listener to show popup
 	blogPostSubscribeButton.addEventListener('click', () => {
 		document.querySelector('#subscribe-component').classList.add('flex');
 		document.querySelector('#subscribe-component').classList.remove('hidden');
 	});
 
+	// Get viewed blogs from local storage
 	const viewedBlogs = JSON.parse(localStorage.getItem('viewed-blogs')) || [];
 
+	// Fetch view count to display to user
 	fetch(`/view.php?blog_id=${blog_id}`)
 		.then(response => response.text())
 		.then(data => {
@@ -128,13 +143,17 @@ function parseTitle(title: string) {
 			console.log('Error:', error);
 		});
 
+	// Check if blog has been viewed before
 	if (!viewedBlogs.includes(blog_id)) {
+		// Add blog to viewed blogs
 		viewedBlogs.push(blog_id);
 		localStorage.setItem('viewed-blogs', JSON.stringify(viewedBlogs));
 
+		// Fetch IP address and send to server
 		fetch('https://api.ipify.org?format=json')
 			.then(response => response.json())
 			.then(data =>
+				// Send view to server
 				fetch('/view.php', {
 					method: 'POST',
 					headers: {
@@ -152,10 +171,20 @@ function parseTitle(title: string) {
 					return;
 				}
 
+				// Update view count
 				document.getElementById('view-count').innerText = data;
 			})
 			.catch(error => {
 				console.log('Error:', error);
 			});
 	}
+
+	// Get share button
+	const shareButton = document.getElementById('share-button');
+
+	// Add event listener to share button
+	shareButton.addEventListener('click', () => {
+		document.querySelector('#share-component').classList.add('flex');
+		document.querySelector('#share-component').classList.remove('hidden');
+	});
 </script>

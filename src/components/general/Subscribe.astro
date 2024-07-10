@@ -56,7 +56,7 @@
 				Subscribe
 			</button>
 			<button
-				id="decline-button"
+				id="subscribe-decline-button"
 				class="px-6 py-2 rounded-sm transition border border-zinc-800 text-zinc-800 text-sm md:w-28 w-full text-center hover:bg-zinc-300"
 			>
 				Close
@@ -95,7 +95,7 @@
 			});
 	});
 
-	const subscribeDeclineButton = document.getElementById('decline-button');
+	const subscribeDeclineButton = document.getElementById('subscribe-decline-button');
 
 	subscribeDeclineButton.addEventListener('click', () => {
 		localStorage.setItem('subscribe-popup', 'shown');
