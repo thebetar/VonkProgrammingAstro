@@ -3,7 +3,7 @@ import { IBlog } from '@types';
 import { getTagColor } from '@data';
 import Share from '@components/general/Share.astro';
 
-const { id: blog_id, title, date, tags } = Astro.props as IBlog;
+const { id: blog_id, title, date, tags, description, link } = Astro.props as IBlog;
 
 function parseTitle(title: string) {
 	const chars = title.split('');
@@ -28,6 +28,12 @@ function parseTitle(title: string) {
 	};
 }
 ---
+
+<!-- Linkedin tags -->
+<meta property="og:title" content={`VonkProgramming - ${title}`} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content="//assets/images/logo.webp" />
+<meta property="og:url" content={`//${link}`} />
 
 <Share />
 
