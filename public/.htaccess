@@ -11,7 +11,7 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-      Header add Content-Security-Policy "default-src 'self' 'unsafe-inline' *.klaviyo.com; img-src 'self' data: www.googletagmanager.com *.cloudfront.net/company/WKMTes/images/*; style-src 'self' 'unsafe-inline' *.klaviyo.com; script-src-elem 'self' 'unsafe-inline' www.googletagmanager.com *.klaviyo.com; connect-src 'self' https://api.ipify.org *.klaviyo.com;"
+      Header add Content-Security-Policy "default-src 'self' 'unsafe-inline' *.klaviyo.com; img-src 'self' data: www.googletagmanager.com *.cloudfront.net; style-src 'self' 'unsafe-inline' *.klaviyo.com; script-src-elem 'self' 'unsafe-inline' www.googletagmanager.com *.klaviyo.com; connect-src 'self' https://api.ipify.org *.klaviyo.com;"
 
       # Rewrite www to non-www
       RewriteEngine On
