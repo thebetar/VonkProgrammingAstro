@@ -208,8 +208,10 @@ function parseTitle(title: string) {
 	const shareIcon = document.getElementById('share-icon');
 
 	function shareHandler() {
-		document.querySelector('#share-component').classList.add('flex');
-		document.querySelector('#share-component').classList.remove('hidden');
+		// document.querySelector('#share-component').classList.add('flex');
+		// document.querySelector('#share-component').classList.remove('hidden');
+		window._klOnsite = window._klOnsite || [];
+		window._klOnsite.push(['openForm', 'UejmLA']);
 	}
 
 	// Add event listener to share button
