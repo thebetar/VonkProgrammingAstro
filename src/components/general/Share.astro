@@ -78,14 +78,14 @@
 
 	shareLinkedinButton.addEventListener('click', () => {
 		const url = `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`;
-		window.open(encodeURIComponent(url), '_blank');
+		window.open(url, '_blank');
 	});
 
 	const shareFacebookButton = document.getElementById('share-facebook-button');
 
 	shareFacebookButton.addEventListener('click', () => {
 		const url = `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}&amp;src=sdkpreparse`;
-		window.open(encodeURIComponent(url), '_blank');
+		window.open(url, '_blank');
 	});
 
 	const shareDeclineButton = document.getElementById('share-close-button');
