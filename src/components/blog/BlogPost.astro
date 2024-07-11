@@ -145,8 +145,10 @@ function parseTitle(title: string) {
 
 	// Add event listener to show popup
 	blogPostSubscribeButton.addEventListener('click', () => {
-		document.querySelector('#subscribe-component').classList.add('flex');
-		document.querySelector('#subscribe-component').classList.remove('hidden');
+		// document.querySelector('#subscribe-component').classList.add('flex');
+		// document.querySelector('#subscribe-component').classList.remove('hidden');
+		window._klOnsite = window._klOnsite || [];
+		window._klOnsite.push(['openForm', 'UejmLA']);
 	});
 
 	// Get viewed blogs from local storage
@@ -208,10 +210,8 @@ function parseTitle(title: string) {
 	const shareIcon = document.getElementById('share-icon');
 
 	function shareHandler() {
-		// document.querySelector('#share-component').classList.add('flex');
-		// document.querySelector('#share-component').classList.remove('hidden');
-		window._klOnsite = window._klOnsite || [];
-		window._klOnsite.push(['openForm', 'UejmLA']);
+		document.querySelector('#share-component').classList.add('flex');
+		document.querySelector('#share-component').classList.remove('hidden');
 	}
 
 	// Add event listener to share button
