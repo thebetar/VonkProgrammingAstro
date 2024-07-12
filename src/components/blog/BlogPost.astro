@@ -145,10 +145,7 @@ function parseTitle(title: string) {
 
 	// Add event listener to show popup
 	blogPostSubscribeButton.addEventListener('click', () => {
-		// document.querySelector('#subscribe-component').classList.add('flex');
-		// document.querySelector('#subscribe-component').classList.remove('hidden');
-		window._klOnsite = window._klOnsite || [];
-		window._klOnsite.push(['openForm', 'UejmLA']);
+		klaviyo.push(['openForm', 'UejmLA']);
 	});
 
 	// Get viewed blogs from local storage

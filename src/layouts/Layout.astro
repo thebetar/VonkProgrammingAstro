@@ -2,7 +2,6 @@
 import Footer from '@components/general/Footer.astro';
 import Navbar from '@components/general/Navbar.astro';
 import Cookie from '@components/general/Cookie.astro';
-import Subscribe from '@components/general/Subscribe.astro';
 
 import '../styles/style.css';
 ---
@@ -10,7 +9,6 @@ import '../styles/style.css';
 <Navbar />
 <main class="container">
 	<Cookie />
-	<Subscribe />
 
 	<slot />
 </main>
@@ -24,23 +22,5 @@ import '../styles/style.css';
 	if (cookieToggle) {
 		document.querySelector('#cookie-component').classList.remove('hidden');
 		document.querySelector('#cookie-component').classList.add('flex');
-	}
-
-	// Check if first time visit
-	if (!localStorage.getItem('first-visit')) {
-		localStorage.setItem('first-visit', new Date().getTime());
-	} else {
-		const firstVisit = Number(localStorage.getItem('first-visit'));
-
-		// If visited for more than 10 minutes show subscribe popup
-		if (new Date().getTime() - firstVisit > 600000) {
-			// If user has not already seen the subscribe popup
-			const subscribeToggle = !localStorage.getItem('subscribe-popup');
-
-			if (subscribeToggle) {
-				document.querySelector('#subscribe-component').classList.remove('hidden');
-				document.querySelector('#subscribe-component').classList.add('flex');
-			}
-		}
 	}
 </script>
