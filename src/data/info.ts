@@ -44,6 +44,16 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 10,
+			title: 'The viability of monoliths 🤫',
+			description: `
+				Is kubernetes really the greatest invention of all time? Are AWS and Azure really going to scale infinetely? Maybe there is still a place in this world for monoliths and dedicated servers. In this blog I talk about my views on this topic and how I think that monoliths are still a viable option for a lot of companies.
+			`,
+			tags: [BlogTags.Development],
+			date: '2024-07-13',
+			link: '/blogs/viability-of-monoliths',
+		},
+		{
 			id: 9,
 			title: 'Why is context important? 🤔',
 			description: `
