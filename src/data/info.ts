@@ -5,6 +5,8 @@ enum BlogTags {
 	Development = 'development',
 	Lifestyle = 'lifestyle',
 	Innovation = 'innovation',
+	Business = 'business',
+	Career = 'career',
 }
 
 export const blogTags = [
@@ -23,6 +25,14 @@ export const blogTags = [
 	{
 		name: BlogTags.Innovation,
 		color: 'red',
+	},
+	{
+		name: BlogTags.Business,
+		color: 'orange',
+	},
+	{
+		name: BlogTags.Career,
+		color: 'cyan',
 	},
 ];
 
@@ -44,6 +54,16 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 11,
+			title: 'The abstraction spectrum 🌈',
+			description: `
+				Developers often prefer to solve all their problems using code, sometimes however using a paid service or a no code solution is a better way to solve your problem faster. In this blog post I will talk about the considerations I make when solving a problem and where I think using abstract solutions like no code are justified.
+			`,
+			tags: [BlogTags.Development, BlogTags.Innovation, BlogTags.Business],
+			date: '2024-07-20',
+			link: '/blogs/abstraction-spectrum',
+		},
+		{
 			id: 10,
 			title: 'The viability of monoliths 🤫',
 			description: `
@@ -59,7 +79,7 @@ export const info = {
 			description: `
 				Development teams are often too focussed on the products they work on directly and don't stop to consider who the users are and where the product fits in to the bigger system and what stacks are used that are closely related to the product. In this blog post I will talk about how I deal with understanding this context and how I am often able to communicate with team that work in completely different stacks.
 			`,
-			tags: [BlogTags.Development],
+			tags: [BlogTags.Development, BlogTags.Business, BlogTags.Career],
 			date: '2024-07-05',
 			link: '/blogs/connected-stacks',
 		},
@@ -79,7 +99,7 @@ export const info = {
 			description: `
 				Why are all these motivational guru's so successful in conveying their message. I have also had a period in my life where I was susceptible to these kind of voices and what I have noticed; Is that it works very well in achieving more in life! It might sound weird because a lot of the time they also try to sell you some weird course which does not work. But the effect of believing that you will be able to achieve greatness is a very powerful 
 			`,
-			tags: [BlogTags.Productivity, BlogTags.Lifestyle],
+			tags: [BlogTags.Productivity, BlogTags.Lifestyle, BlogTags.Career],
 			date: '2024-06-15',
 			link: '/blogs/believe-yourself',
 		},
@@ -99,7 +119,7 @@ export const info = {
 			description: `
 				Finding the right tool for the job can be difficult. Finding the optimal tool is even more difficult. In this blog post I go into my views on finding the right tool and what are important things to take into account.
 			`,
-			tags: [BlogTags.Development, BlogTags.Innovation],
+			tags: [BlogTags.Development, BlogTags.Innovation, BlogTags.Productivity],
 			date: '2024-05-24',
 			link: '/blogs/finding-tools',
 		},
@@ -119,7 +139,7 @@ export const info = {
 			description: `
 				Working fast and efficient is important. Doing more in less time while impressing your colleagues is amazing. I will dive into what small and easy improvements every developer can make to work more efficiently and save time in the long run which can be spent on other things (most likely more coding!)
 			`,
-			tags: [BlogTags.Productivity, BlogTags.Development],
+			tags: [BlogTags.Productivity, BlogTags.Development, BlogTags.Career],
 			date: '2024-05-11',
 			link: '/blogs/small-efficiencies',
 		},
@@ -129,7 +149,7 @@ export const info = {
 			description: `
 				Continuous learning is very important in the world of software engineering. But a pitfall a lot of people encounter is that they cannot stick to it. In this blog post I will delve into my personal journey with learning and my findings and tips.
 			`,
-			tags: [BlogTags.Development, BlogTags.Lifestyle],
+			tags: [BlogTags.Development, BlogTags.Lifestyle, BlogTags.Career],
 			date: '2024-05-07',
 			link: '/blogs/learning-sustainably',
 		},
@@ -139,7 +159,7 @@ export const info = {
 			description: `
 				What are the key principles of code excellence? What rules to adhere to and what tools to use? This blog post will delve deep into the world of writing excellent code, click read more to find out.
 			`,
-			tags: [BlogTags.Development],
+			tags: [BlogTags.Development, BlogTags.Productivity, BlogTags.Career],
 			date: '2024-04-24',
 			link: '/blogs/code-excellence',
 		},
