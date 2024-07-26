@@ -54,6 +54,16 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 12,
+			title: 'The degradation of code quality 📉',
+			description: `
+				Have you also noticed that software seems to have more and more bugs and big crashes seem to occur more often? In this blog post I will talk about the challenges that come with guaranteeing high code quality.
+			`,
+			tags: [BlogTags.Development, BlogTags.Innovation],
+			date: '2024-07-27',
+			link: '/blogs/degradation-code-quality',
+		},
+		{
 			id: 11,
 			title: 'The abstraction spectrum 🌈',
 			description: `
