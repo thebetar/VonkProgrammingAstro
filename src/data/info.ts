@@ -344,23 +344,30 @@ export const info = {
 		},
 		{
 			title: 'Stripe',
-			years: 1,
+			years: 2,
 			logo: '/assets/svg/stripe.svg',
 			link: 'https://stripe.com/',
 			featured: false,
 		},
 		{
 			title: 'Payload',
-			years: 1,
+			years: 2,
 			logo: '/assets/svg/payload.svg',
 			link: 'https://payloadcms.com/',
 			featured: false,
 		},
 		{
 			title: 'Astro',
-			years: 1,
+			years: 2,
 			logo: '/assets/svg/astro.svg',
 			link: 'https://astro.build/',
+			featured: false,
+		},
+		{
+			title: 'Pandas',
+			years: 1,
+			logo: '/assets/svg/pandas.svg',
+			link: 'https://pandas.pydata.org/',
 			featured: false,
 		},
 		{
