@@ -132,7 +132,7 @@ function parseTitle(title: string) {
 
 	<a
 		class="h-10 w-full px-4 py-2 bg-zinc-800 hover:bg-zinc-700 transition-colors rounded-md block cursor-pointer text-light text-center"
-		href="mailto:info@vonkprogramming.nl"
+		:href="`mailto:info@vonkprogramming.nl&subject=Question about ${title}&body=Hi VonkProgramming team,%0D%0A%0D%0AI have a question about ${title}.%0D%0A%0D%0AKind regards,%0D%0A%0D%0A[Your name]`"
 	>
 		❓ Ask me a question
 	</a>
