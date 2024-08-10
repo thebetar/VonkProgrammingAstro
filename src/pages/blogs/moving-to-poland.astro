@@ -1,0 +1,163 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 13);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Moving to Poland'}
+			description={info.description}
+			keywords={['poland', 'life', 'work', 'move', 'netherlands', 'life advice'].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost {...blog}>
+				<p>
+					From 2020 to 2023 I worked as a software developer and I enjoyed my work a lot! I got to work on
+					interesting projects for big companies, my income was more than sufficient to cover my living costs
+					and I had great friends that I got to hangout with on an almost daily basis. This might make you
+					wonder, why did I choose to move to a different country, start studying again and give it all up!?
+				</p>
+				<p>
+					I think life is about experiencing and trying new things, and also making mistakes along the way,
+					but I am convinced that people regret the things they did not try more than the mistakes they made
+					and I have always had the dream of trying to live in another country for a while.
+				</p>
+				<p>
+					I think many people are born in a country and accept that country as such an amazing place and I get
+					it, I still agree that the Netherlands, which is my country of origin, is an amazing place to grow
+					up and live. But my scientific brain wants proof of this and I think the best way to test this out
+					is to also have experience living in a country which is different to the one you were born in. In
+					this blog post I will discuss my experiences moving to and living in Poland and the lessons I have
+					learnt during my stay here.
+				</p>
+				<h2 id="moving-to-poland">Moving to Poland</h2>
+				<p>
+					I chose Poland since I wanted to move to a country which would be decently different to the
+					Netherlands but still close to home. I have also always had a fascination with central and eastern
+					Europe and decided that Poland, a country which I already loved going to for holidays, was a good
+					fit. In hindsight I didn&#39;t do a lot of research about my choice but I am happy that I made it
+					since I enjoy life here now. I think moving to any country will feel weird and different at the
+					start, and feeling lonely at times is a guarantee.
+				</p>
+				<p>
+					The reason that I had the courage to move to a different country alone is because I am a big
+					believer in the adaptability of the human mind. I think that, yes we do not like change and it feels
+					very uncomfortable at times, but on the other hand once you throw yourself into the deep and force
+					yourself to have no choice but to accept change that eventually this different way of life will
+					start to feel normal. I even experienced this feeling when I moved from my hometown to Amsterdam
+					after my studies while this experience was less stressful than a whole different country and trust
+					me I have had moments where I was very close to quitting my studies and moving back home again, but
+					that was a while ago now and I think most of these things occur in the first 3 to 6 months of moving
+					somewhere.
+				</p>
+				<h2 id="understanding-different-cultures">Understanding different cultures</h2>
+				<p>
+					After moving to Poland what I have noticed is that the core values in most humans are very similar,
+					but there are also some key differences in how people and societies see the world. This of course is
+					not a very groundbreaking conclusion but when experiencing it, it opens you up to the idea of
+					challenging your own beliefs more and finding out that some of the things you considered as truth
+					were mostly based on where you are from. This gives a new perspective that makes you able to more
+					easily realise when you hold an idea based on what people around you think and not based on your own
+					thoughts about it.
+				</p>
+				<p>
+					Another very enriching experience with moving to a different country where you don&#39;t speak the
+					language is that you get a better understanding of how people feel in your own country that
+					immigrated there. Since you know how it feels to be the outsider and not speak the language. Of
+					course I am trying to learn Polish but as a person who does not speak any Slavic language it will
+					take some time.
+				</p>
+				<p>
+					By feeling like an outsider I don&#39;t mean that you are excluded from society however but more
+					that in some situations it might be difficult while in your own country this would not happen for
+					instance when ordering something, when trying to talk to or asking something from someone or when in
+					a group of people that will start to speak a language that you do not understand. I don&#39;t feel
+					sad about this though I see it more as a big motivation to try and learn the language faster, but I
+					do completely understand how it might make people feel excluded and very lonely, I think everyone
+					feels like this to some degree.
+				</p>
+				<h2 id="trying-new-things">Trying new things</h2>
+				<p>
+					I think life is about trying new things and I think having lived abroad for a while is one of the
+					most enriching experiences. For me personally and most people I&#39;ve spoken to with a similar
+					international adventure. I&#39;ve spoken to many people before I made the decision to move abroad
+					that have lived abroad themselves during an exchange or even for multiple years for other reasons
+					and they all conclusively told me that it broadens the way you view the world and makes you a more
+					globalised person.
+				</p>
+				<p>
+					I know for many people trying new things like this might seem scary and they will not dare to do it
+					but I think the anxiety that is induced by making such decisions is something that you can overcome
+					by exposure. I am not sure however since I most of the time make the decision without giving it too
+					much thought since I believe that with hard work and ambition any situation can be turned into a
+					good situation.
+				</p>
+				<h2 id="how-to-feel-at-home">How to feel at home</h2>
+				<p>
+					In my experience when moving to new cities in the Netherlands but also when moving from Amsterdam to
+					Warsaw the moment where I started to feel at home was triggered by the same things. They are all
+					very logical but still are somtimes overlooked by people trying to move to another country and find
+					their way. These things for me are
+				</p>
+				<ul>
+					<li>
+						<p>
+							Having a comfortable living situation: I think it is important to live somewhere that makes
+							you feel comfortable and where you can retreat to after having a hard day of work or just
+							when you want to relax.
+						</p>
+					</li>
+					<li>
+						<p>
+							Having enough to do: longterm boredom feels horrible, it lowers your energy and it just
+							feels bad. I always try to keep myself busy by at least having three things in my life which
+							are, work or university, sports especially a sport where you can join a sports association
+							and friends to hangout with.
+						</p>
+					</li>
+					<li>
+						<p>
+							Having friends: as mentioned above having friends is not only good to have something to do
+							but are also important for those moments when you are not feeling good and want someone to
+							hangout with. It might sound a bit cliche but I think having good friends is the single most
+							important thing about feeling at home somewhere. A very good tip I have found to find
+							friends is to join a sports association. It has consistently been my best way to meet new
+							people that already have in common that you play the same sport.
+						</p>
+					</li>
+				</ul>
+				<h2 id="differences-in-opportunities">Differences in opportunities</h2>
+				<p>
+					Moving abroad is a great way to increase your opportunities on the global market as well, since you
+					will meet people from different cultures and have a more broad and diverse network of people and
+					businesses that you can get in contact with to try and find work or do business with. I have found
+					that in some ways the world is already very connected, but in others it still is not. One thing that
+					surprised me in Poland was that the job market can be tight at times, while in the Netherlands this
+					is very rare. This in itself is already a business opportunity to connect people in Poland to
+					companies in the Netherlands who are comfortable with their employees speaking English and working
+					remotely from another country.
+				</p>
+				<h2 id="conclusion">Conclusion</h2>
+				<p>
+					I know that moving to another country for multiple years is not for anyone, I still think sometimes
+					I&#39;m crazy for doing it. But I have become convinced that European programs like the Erasmus
+					program is something that is recommended for anyone to try! It is only a one semester program of 4
+					to 6 months where the European Union also grants you a certain amount of money, depending on which
+					country you are from, to live and enjoy your time in the country of your choosing.
+				</p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>

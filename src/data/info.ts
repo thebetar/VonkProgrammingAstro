@@ -54,6 +54,16 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 13,
+			title: 'Moving to Poland 🇳🇱➡️🇵🇱',
+			description: `
+				In this blog post I will describe my experience with moving from the Netherlands to Poland. I will describe the challenges I faced and how I tackled them and how I think someone else could tackle them just the same.
+			`,
+			tags: [BlogTags.Lifestyle, BlogTags.Career],
+			date: '2024-08-10',
+			link: '/blogs/moving-to-poland',
+		},
+		{
 			id: 12,
 			title: 'The degradation of code quality 📉',
 			description: `
@@ -309,7 +319,7 @@ export const info = {
 		},
 		{
 			title: 'Linux',
-			years: 3,
+			years: 4,
 			logo: '/assets/svg/linux.svg',
 			link: 'https://www.linux.org/',
 			featured: false,
