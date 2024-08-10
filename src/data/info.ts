@@ -55,7 +55,7 @@ export const info = {
 	blogs: [
 		{
 			id: 13,
-			title: 'Moving to Poland 🇳🇱➡️🇵🇱',
+			title: 'Moving to Poland 🌍',
 			description: `
 				In this blog post I will describe my experience with moving from the Netherlands to Poland. I will describe the challenges I faced and how I tackled them and how I think someone else could tackle them just the same.
 			`,
