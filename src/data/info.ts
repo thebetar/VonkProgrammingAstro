@@ -54,6 +54,16 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 14,
+			title: 'Connected world 🌐',
+			description: `
+				In today's interconnected world, having a strong network is as crucial as being skilled, as connections can open doors to opportunities that talent alone might not. By leveraging both local and digital networks, you can enhance your professional reach and position yourself for greater success.
+			`,
+			tags: [BlogTags.Lifestyle, BlogTags.Career],
+			date: '2024-08-31',
+			link: '/blogs/connected-world',
+		},
+		{
 			id: 13,
 			title: 'Moving to Poland 🌍',
 			description: `

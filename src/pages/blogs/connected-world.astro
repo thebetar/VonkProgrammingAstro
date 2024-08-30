@@ -1,0 +1,108 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 13);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Connected world'}
+			description={info.description}
+			keywords={['network', 'connections', 'local network', 'connections', 'value of connections'].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost {...blog}>
+				<p>
+					In today&#39;s fast-paced and interconnected world, having a strong network is more crucial than
+					ever. Whether you&#39;re an entrepreneur looking to grow your business, a job seeker trying to land
+					your dream role, or simply someone with a groundbreaking idea, connections can open doors that might
+					otherwise remain closed. Tools like LinkedIn have revolutionized the way we expand our networks,
+					allowing us to reach a global audience with just a few clicks. However, it&#39;s important to
+					remember that even without these digital tools, we&#39;re often more connected than we realize.
+				</p>
+				<h2 id="leveraging-your-local-network">Leveraging your local network</h2>
+				<p>
+					Many people underestimate the reach of their own local network. It&#39;s easy to forget just how
+					many individuals are within arm&#39;s reach. You don&#39;t just have access to the people you know
+					directly; if your message resonates, it could spread through your contacts to their connections, and
+					beyond. This ripple effect can exponentially increase your reach.
+				</p>
+				<p>
+					Think about it: most people have direct access to their family, friends, colleagues, people they
+					meet through hobbies, and even old classmates. If you have something that captures the interest of
+					these individuals, and they, in turn, share it with their own circles, your outreach can quickly
+					grow. Imagine a scenario where each of your contacts shares your message with just a handful of
+					others—suddenly, you’re reaching hundreds, if not thousands, of potential supporters, clients, or
+					partners.
+				</p>
+				<h2 id="being-connected-versus-being-good">Being connected versus being good</h2>
+				<p>
+					In a perfect world, the best person for the job would always have the easiest time finding work. But
+					the reality is often different. There are two primary reasons for this disconnect.
+				</p>
+				<p>
+					<strong>Firstly, human nature plays a role.</strong> Despite our best efforts to be rational and objective,
+					we&#39;re emotional beings. We naturally gravitate towards people we like, trust, and have had positive
+					experiences with. Let&#39;s be honest—wouldn&#39;t you prefer to collaborate with someone you&#39;ve
+					worked with before and enjoyed working with? Most of us would.
+				</p>
+				<p>
+					<strong>Secondly, it&#39;s not just about the quality of work, but also about fit.</strong> A person
+					might be incredibly skilled, but if they don’t fit well within a team, it can create friction. When someone
+					is already known and liked within a team, there&#39;s a level of confidence that they will integrate
+					well, making the decision to hire or collaborate with them much easier.
+				</p>
+				<p>
+					These points highlight that being well-connected can be just as important as being good at what you
+					do. Of course, the ideal scenario is to excel in both areas.
+				</p>
+				<h2 id="the-value-of-connections">The value of connections</h2>
+				<p>
+					Having a broad network of people who hold a favorable opinion of you and your work is a significant
+					asset. But how do you cultivate and expand such a network? The answer might be simpler than you
+					think.
+				</p>
+				<p>
+					One of the most effective ways to meet new people is by attending events. Whether it&#39;s a
+					conference, a workshop, or a social gathering organized by your company, these events are brimming
+					with opportunities to connect. These environments are ideal for both entrepreneurs and professionals
+					in the business world.
+				</p>
+				<p>
+					<strong>For entrepreneurs,</strong> attending business events can be a goldmine for networking. These
+					events are filled with potential clients, collaborators, and even investors. It’s a numbers game—by meeting
+					enough people, you increase your chances of finding those who are a perfect fit for your business.
+				</p>
+				<p>
+					<strong>For professionals working within a company,</strong> participating in social events or cross-departmental
+					meetings can be incredibly beneficial. Not only does it expand your internal network, but it can also
+					enhance your work performance. Knowing people from different sections or levels of the company can facilitate
+					smoother collaboration and improve overall productivity.
+				</p>
+				<h2 id="conclusion">Conclusion</h2>
+				<p>
+					Humans are inherently social creatures, and throughout history, connections have played a vital role
+					in personal and professional success. It might be disheartening to acknowledge, but sometimes being
+					well-liked can be more advantageous than being highly skilled. However, imagine the possibilities if
+					you can achieve both. By building strong relationships and continuously honing your skills, you can
+					position yourself for unparalleled success.
+				</p>
+				<p>
+					So, start nurturing your network today, both online and offline. You never know which connection
+					might be the key to your next big opportunity.
+				</p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>
