@@ -54,6 +54,14 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 15,
+			title: 'The power of boredom 🤯',
+			description: `
+				Have you ever noticed that you come up with the best ideas when you are bored? In this blog post I will talk about the power of boredom and how you can use it to your advantage.
+			`,
+			tags: [BlogTags.Lifestyle, BlogTags.Productivity],
+		},
+		{
 			id: 14,
 			title: 'Connected world 🌐',
 			description: `
