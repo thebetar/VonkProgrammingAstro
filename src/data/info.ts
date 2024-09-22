@@ -60,6 +60,8 @@ export const info = {
 				Have you ever noticed that you come up with the best ideas when you are bored? In this blog post I will talk about the power of boredom and how you can use it to your advantage.
 			`,
 			tags: [BlogTags.Lifestyle, BlogTags.Productivity],
+			date: '2024-09-21',
+			link: '/blogs/being-bored',
 		},
 		{
 			id: 14,
