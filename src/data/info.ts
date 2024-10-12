@@ -54,6 +54,16 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 16,
+			title: 'Unlocking the Full Power of Version Control',
+			description: `
+				Version control is a powerful tool that can help you manage your codebase more effectively. In this blog post, I'll discuss some advanced version control techniques that can help you unlock the full power of version control and take your development workflow to the next level.
+			`,
+			tags: [BlogTags.Development, BlogTags.Productivity],
+			date: '2024-10-12',
+			link: '/blogs/version-control',
+		},
+		{
 			id: 15,
 			title: 'The power of boredom 🤯',
 			description: `

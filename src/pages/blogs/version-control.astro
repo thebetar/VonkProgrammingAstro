@@ -1,0 +1,115 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 16);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Version control'}
+			description={info.description}
+			keywords={['development', 'version control', 'git', 'github', 'bitbucket', 'gitlab'].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost {...blog}>
+                <h2 id="unlocking-the-full-power-of-version-control">Unlocking the Full Power of Version Control</h2>
+                <p>
+                    Version control is a tool that most developers use, but are we really using it to its full potential? It&#39;s not
+                    just about tracking changes. It&#39;s about having the power to turn back time when something breaks, or even
+                    rewriting history when needed.
+                </p>
+                <h2 id="the-basics">The Basics</h2>
+                <p>
+                    At its core, version control is about creating a new version with every change. It’s not like saving your entire
+                    codebase all over again, it’s more efficient. It only saves the differences, making it super easy to roll back when
+                    things go wrong. This works amazing when trying to fix breaking changes or when you deleted an important file on
+                    accident.
+                </p>
+                <p>
+                    Another great strength of version control is the ability to collaborate on projects. Multiple people can work on the
+                    same project simultaneously without interfering with each others work. If you&#39;re working on different files, or
+                    even different parts of the same file, version control can merge the changes without overwriting any of your
+                    colleagues changes.
+                </p>
+                <h2 id="commit-messages-matter-">Commit Messages Matter!</h2>
+                <p>
+                    When it comes to commits, it is important to be descriptive. A good commit message is like a little note to your
+                    future self or your collaborators. Instead of &quot;fixed bug,&quot; try &quot;fix(authentication): off-by-one error
+                    in user authentication.&quot; Trust me, your future self will thank you when you’re digging through a commit history
+                    trying to figure out what happened months ago.
+                </p>
+                <h2 id="naming-branches-like-a-pro">Naming Branches Like a Pro</h2>
+                <p>
+                    Branch names are just as important. A clear branch name tells anyone looking at your project what’s going on. Is it
+                    a new feature? A bug fix? A refactor? Something like <code>feature/add-user-auth</code> or
+                    <code>bugfix/fix-login-error</code> is way more helpful than <code>stuff</code> or <code>wip</code>. It also makes
+                    it easier to organize and review code, especially in larger projects.
+                </p>
+                <h2 id="leveling-up-your-git-skills">Leveling Up Your Git Skills</h2>
+                <p>
+                    After learning the basics of git there is still a lot of advantages to be had. There are more advanced topics that
+                    can still impact your efficiency with version control.
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            Rebasing vs merging, for example. If you&#39;re building a small feature, merging is often fine. It keeps
+                            everything neat, with a clear picture of what happened. But if you want every commit to show up on the main
+                            branch, or need a cleaner history, rebasing might be a better fit.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Amending a commit is the process of adding some changes to the previous commit, this can be very helpful
+                            when you forgot to add something small to the previous commit and you do not want to make a whole new
+                            commit, this can be done by using <code>git commit --amend</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Resetting some of the last commit, most people know how to use <code>git reset --hard</code> to reset to the
+                            last commit that was pushed to the remote repository but <code>git reset HEAD\~1</code> can be used to
+                            travel back one commit. This might be useful when you want to change something small in the last commit.
+                            <!-- {"offset":1} -->
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If you want to clean up your commit history, maybe squash some commits together or even rename them,
+                            <code>git rebase -i</code> can work wonders. It is one of the most powerful tools to rewrite the history of
+                            your project, if you know how to use it.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Stashing changes can be very helpful if you do not want to make a commit yet. It is a tool that is very easy
+                            to use but I see many people not using it, it is quite simple, if you want to move to another branch but not
+                            take your current changes with you just use <code>git stash</code> and all your changes will be stored in
+                            your stash, then after checking out the other branch and returning these changes can be redone by using
+                            <code>git stash --apply</code>
+                        </p>
+                    </li>
+                    <li><p>Many many more</p></li>
+                </ol>
+                <h2 id="conclusion">Conclusion</h2>
+                <p>
+                    By understanding the key concepts, you&#39;ll not only avoid a lot of common issues, but you&#39;ll also be using
+                    version control the way it’s meant to be used efficiently, cleanly, and with a plan. Once you get a good handle on
+                    it, don&#39;t be afraid to continue your learning process and understand the more advanced features, it will save
+                    you a lot of time in the long run.
+                </p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>
