@@ -108,16 +108,6 @@
 	const shareLinkedinButton = document.getElementById('share-linkedin-button');
 
 	shareLinkedinButton.addEventListener('click', () => {
-		// User needs to be identified first
-		// klaviyo.push([
-		// 	'track',
-		// 	'Share blog',
-		// 	{
-		// 		url: window.location.href,
-		// 		socialmedia: 'linkedin',
-		// 	},
-		// ]);
-
 		const url = `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`;
 		window.open(url, '_blank');
 	});
@@ -125,16 +115,6 @@
 	const shareFacebookButton = document.getElementById('share-facebook-button');
 
 	shareFacebookButton.addEventListener('click', () => {
-		// User needs to be identified first
-		// klaviyo.push([
-		// 	'track',
-		// 	'Share blog',
-		// 	{
-		// 		url: window.location.href,
-		// 		socialmedia: 'facebook',
-		// 	},
-		// ]);
-
 		const url = `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}&amp;src=sdkpreparse`;
 		window.open(url, '_blank');
 	});

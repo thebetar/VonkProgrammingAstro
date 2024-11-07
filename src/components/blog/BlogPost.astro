@@ -143,11 +143,11 @@ function parseTitle(title: string) {
 	const blog_id = document.getElementById('blog_id').innerText;
 
 	// Get subscribe button
-	const blogPostSubscribeButton = document.getElementById('subscribe-popup-button');
+	document.getElementById('subscribe-popup-button').addEventListener('click', () => {
+		const subscribePopup = document.querySelector('#subscribe-component');
 
-	// Add event listener to show popup
-	blogPostSubscribeButton.addEventListener('click', () => {
-		klaviyo.push(['openForm', 'UejmLA']);
+		subscribePopup.classList.remove('hidden');
+		subscribePopup.classList.add('flex');
 	});
 
 	// Get viewed blogs from local storage

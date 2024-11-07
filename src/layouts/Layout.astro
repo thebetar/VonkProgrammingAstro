@@ -4,11 +4,13 @@ import Navbar from '@components/general/Navbar.astro';
 import Cookie from '@components/general/Cookie.astro';
 
 import '../styles/style.css';
+import Subscribe from '@components/general/Subscribe.astro';
 ---
 
 <Navbar />
 <main class="container">
 	<Cookie />
+	<Subscribe />
 
 	<slot />
 </main>
@@ -20,7 +22,22 @@ import '../styles/style.css';
 
 	// If popup was not shown, show cookie popup
 	if (cookieToggle) {
-		document.querySelector('#cookie-component').classList.remove('hidden');
-		document.querySelector('#cookie-component').classList.add('flex');
+		const cookieComponent = document.querySelector('#cookie-component');
+		
+		cookieComponent.classList.remove('hidden');
+		cookieComponent.classList.add('flex');
+	}
+
+	// Check if subscribe popup was already shown
+	const subscribeToggle = localStorage.getItem('subscribe-popup');
+
+	// If popup was not shown, show subscribe popup
+	if (!subscribeToggle || new Date().getTime() - parseInt(subscribeToggle) > 1000 * 3600 * 24 * 7) {
+		setTimeout(() => {
+			const subscribeComponent = document.querySelector('#subscribe-component');
+
+			subscribeComponent.classList.remove('hidden');
+			subscribeComponent.classList.add('flex');
+		}, 10000);
 	}
 </script>

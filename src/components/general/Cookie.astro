@@ -1,10 +1,28 @@
 <div
 	id="cookie-component"
-	class="w-screen h-screen px-4 fixed top-0 left-0 bg-zinc-800 bg-opacity-80 justify-center items-center hidden"
+	class="w-screen h-screen px-4 fixed top-0 left-0 bg-zinc-800 bg-opacity-80 justify-center items-center hidden z-50"
 >
 	<div
-		class="bg-white bg-opacity-95 backdrop-blur md:max-w-[460px] w-full md:px-10 px-6 md:pt-6 md:pb-4 py-4 text-center rounded-sm"
+		class="bg-white bg-opacity-95 backdrop-blur md:max-w-[460px] w-full p-4 text-center rounded-sm relative flex flex-col gap-y-2"
 	>
+		<svg 
+			id="cookie-decline"
+			class="absolute top-2 right-2 cursor-pointer hover:opacity-70 transition"
+			xmlns="http://www.w3.org/2000/svg" 
+			xmlns:xlink="http://www.w3.org/1999/xlink" 
+			fill="#000000" 
+			height="16px" 
+			width="16px" 
+			version="1.1" 
+			id="Capa_1" 
+			viewBox="0 0 490 490" 
+			xml:space="preserve"
+		>
+			<polygon 
+				points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490   489.292,457.678 277.331,245.004 489.292,32.337 "
+			/>
+		</svg>
+
 		<svg
 			class="md:h-12 h-10 mx-auto"
 			height="48px"
@@ -21,29 +39,26 @@
 				stroke-linejoin="round"></path>
 		</svg>
 
-		<div class="font-semibold text-xl mt-4">Cookie statement</div>
-		<div class="text-xs mt-2">
+		<div class="font-semibold text-xl">Cookie statement</div>
+
+		<div class="text-sm px-6">
 			Our website sprinkles digital cookies to see what you love. It's like peeking into your preferences, minus
 			the awkward "caught ya" vibe. Don't worry, these cookies play nice – no personal info nabbing. Your privacy
 			is our priority – like a squirrel guarding its acorns. So, when you see the cookie pop-up, know it's an
 			invite to a party of better content. You explore, we optimize – like finding bonus fries in your takeout!
 			Here's to cookies and content! 🍪🎉
 		</div>
-		<div class="text-xs md:mt-2 mt-4">Do you want to accept our cookies?</div>
-		<div class="flex gap-x-2 justify-center mt-2">
-			<button
-				id="cookie-accept"
-				class="px-6 py-2 rounded-sm bg-zinc-800 hover:bg-zinc-600 transition text-white md:w-24 w-full"
-			>
-				Accept
-			</button>
-			<button
-				id="cookie-decline"
-				class="px-6 py-2 rounded-sm transition text-zinc-800 hover:text-zinc-600 underline text-sm md:w-24 w-full"
-			>
-				Decline</button
-			>
+
+		<div class="text-sm font-semibold">
+			Do you want to accept our cookies?
 		</div>
+
+		<button
+			id="cookie-accept"
+			class="px-6 py-2 rounded-sm bg-zinc-800 hover:bg-zinc-600 transition text-white w-full"
+		>
+			Accept
+		</button>
 	</div>
 </div>
 
