@@ -1,0 +1,157 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 17);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Google Chrome tips & tricks'}
+			description={info.description}
+			keywords={['chrome', 'tips', 'tricks', 'browser']}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost {...blog}>
+				<p>
+					Google Chrome is a widely used tool, the most used browser even. So with the power of deduction I
+					can say that you, the reader, probably use it as well. But did you know Google Chrome also provides
+					many easy to use shortcuts that could increase your productivity greatly?
+				</p>
+				<h2 id="vision">Vision</h2>
+				<p>
+					I&#39;ve already written a blog in the past about my view on shortcuts and that I think it&#39;s
+					useful to read into which shortcuts exist for the tools you use on a daily basis, you can read about
+					it <a href="https://vonkprogramming.nl/blogs/small-efficiencies/">here</a>. To summarise my previous
+					blog every shortcut you know that saves you a little bit of time, can add up to a lot of time in the
+					long run. Especially if you know many!
+				</p>
+				<h2 id="shortcuts">Shortcuts</h2>
+				<p>
+					What if you could navigate, manage tabs, and search through pages without even using your mouse?
+					Chrome’s shortcuts enable you to interact with your browser via the keyboard in a much faster way.
+					Mastering these can add up to minutes saved each day, which may seem small but accumulates over the
+					long run.
+				</p>
+				<p>Below, I’ve put together a list of some of the most practical Chrome shortcuts:</p>
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Shortcut</strong></td>
+							<td><strong>Explanation</strong></td>
+						</tr>
+						<tr>
+							<td>Ctrl + T</td>
+							<td>Open new tab</td>
+						</tr>
+						<tr>
+							<td>Ctrl + Shift + T</td>
+							<td>Reopen most recently closed tab</td>
+						</tr>
+						<tr>
+							<td>Ctrl + W</td>
+							<td>Close tab</td>
+						</tr>
+						<tr>
+							<td>Ctrl + Tab</td>
+							<td>Go to next tab</td>
+						</tr>
+						<tr>
+							<td>Ctrl + Shift + Tab</td>
+							<td>Go to previous tab</td>
+						</tr>
+						<tr>
+							<td>Ctrl + L</td>
+							<td>Focus navigation bar</td>
+						</tr>
+						<tr>
+							<td>Ctrl + R</td>
+							<td>Reload page</td>
+						</tr>
+						<tr>
+							<td>Ctrl + P</td>
+							<td>Print</td>
+						</tr>
+						<tr>
+							<td>Ctrl + 1,2,3,...</td>
+							<td>Open specified tab</td>
+						</tr>
+						<tr>
+							<td>Ctrl + N</td>
+							<td>Open new window</td>
+						</tr>
+						<tr>
+							<td>Ctrl + Shift + N</td>
+							<td>Open new incognito window</td>
+						</tr>
+						<tr>
+							<td>Ctrl + Shift + W</td>
+							<td>Close current window</td>
+						</tr>
+						<tr>
+							<td>Ctrl + F</td>
+							<td>Search in current page</td>
+						</tr>
+						<tr>
+							<td>Ctrl + H</td>
+							<td>Open current history</td>
+						</tr>
+						<tr>
+							<td>Home</td>
+							<td>Go to start of page</td>
+						</tr>
+						<tr>
+							<td>End</td>
+							<td>Go to end of page</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="why-learn-these-shortcuts-">Why Learn These Shortcuts?</h2>
+				<p>
+					When you’re familiar with Chrome’s shortcuts, you’ll notice how naturally you can flow through your
+					browser. Switching tabs, reopening accidentally closed ones, or quickly accessing your history
+					becomes second nature, leaving you free to concentrate on your work.
+				</p>
+				<h2 id="one-step-further-advanced-">One step further (advanced)</h2>
+				<p>
+					The shortcuts that are offered by default already give all the tools needed for navigating and
+					manipulating tabs and windows, but if you want to go one step further I recommend downloading the
+					Google Chrome extension <a href="https://vimium.github.io/">Vimium</a> . This tool is not for the light
+					hearted however and I would only recommend using this for people with advanced knowledge of interacting
+					with computer like developers.
+				</p>
+				<p>
+					Vimium offers the user a way to interact with the whole web page using the keyboard, for instance
+					the character <code>f</code> transforms the web page and shows a two character label on each clickable
+					element. These two characters can then be entered on the keyboard to click on this element.
+				</p>
+				<p>
+					Vimium offers this and many more useful features if you want to completely stop using your mouse
+					when interacting with your browser.
+				</p>
+				<h2 id="conclusion">Conclusion</h2>
+				<p>
+					This blog post shows one of the many examples of shortcuts for a tool that you probably use every
+					day, spending some time on getting to know them and practising so they become second nature can
+					increase your efficiency greatly!
+				</p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>

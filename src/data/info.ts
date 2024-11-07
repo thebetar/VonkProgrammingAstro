@@ -54,8 +54,18 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 17,
+			title: 'Google Chrome tips & tricks 🔎',
+			description: `
+				Are you using Google Chrome for browsing the web? In this blog post I will show you some tips and tricks that will help you get the most out of your browsing experience
+			`,
+			tags: [BlogTags.Productivity, BlogTags.Lifestyle],
+			date: '2024-11-08',
+			link: '/blogs/chrome-tips',
+		},
+		{
 			id: 16,
-			title: 'Unlocking the Full Power of Version Control',
+			title: 'Unlocking the Full Power of Version Control 🚀',
 			description: `
 				Version control is a powerful tool that can help you manage your codebase more effectively. In this blog post, I'll discuss some advanced version control techniques that can help you unlock the full power of version control and take your development workflow to the next level.
 			`,
