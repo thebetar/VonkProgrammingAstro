@@ -1,0 +1,101 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import BlogPost from '@components/blog/BlogPost.astro';
+
+const blog = info.blogs.find(blog => blog.id === 18);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MetaHead
+			title={'Large language models'}
+			description={info.description}
+			keywords={['development', 'abstraction', 'efficiency', 'cost', 'flexibility', 'performance'].join(', ')}
+			author={info.name}
+			ogImageUrl={'/assets/images/logo.webp'}
+		/>
+	</head>
+
+	<body>
+		<Layout>
+			<BlogPost {...blog}>
+				<p>
+					Large language models, it is a very hot term right now. Since the release of ChatGPT the whole world
+					has become enchanted by this technology, but how does it actually work? In this blog post I will try
+					to explain how large language models work in a way that’s understandable for both technical and
+					non-technical readers.
+				</p>
+				<h2 id="how-it-works">How It Works</h2>
+				<p>
+					To explain how a large language model works I will first very basically break down which steps are
+					important to discuss and then go into each one in the following paragraphs. The steps that are
+					important for a model are:
+				</p>
+				<ul>
+					<li>
+						<p>
+							Training: The model is fed with a huge amount of text, where it learns patterns in words and
+							relationships between concepts. For example, it learns how an apple seed grows into a tree
+							that eventually produces more apples. By recognizing these patterns, the model can identify
+							useful information later when it encounters similar content.
+						</p>
+					</li>
+					<li>
+						<p>
+							Receiving input: The model takes in text from a user and converts it into a form that it can
+							match with its training data.
+						</p>
+					</li>
+					<li><p>Responding to input: The model generates a response based on the user&#39;s input.</p></li>
+				</ul>
+				<h3 id="training">Training</h3>
+				<p>
+					A large language model needs to be trained on a huge amount of data to be able to answer a wide
+					range of questions. We want it to handle not just questions about cars but also about animals,
+					fruits, cities, and more.
+				</p>
+				<p>
+					This requires a lot of diverse data, gathered from all kinds of sources, which is then split into
+					smaller parts called tokens. A token might be a sentence like &quot;Dogs are mammals,&quot; taken
+					from a larger text about animals. These tokens are then converted into numerical values, because
+					computers process numbers much more efficiently than text. These values are called vectors, which
+					represent points in a multi-dimensional space. This sounds more complicated than it is, you can
+					think about it as a row in an excel sheet where each column is a number in the vector and each row
+					is a separate vector. A vector is just a combination of multiple numbers.
+				</p>
+				<h3 id="encoding">Encoding</h3>
+				<p>
+					When we give input to a language model, like “Explain how an apple grows on a tree,” it’s in human
+					readable text. But computers are better with numbers, so encoding converts this input into numerical
+					data that the model can process efficiently.
+				</p>
+				<h3 id="pattern-matching">Pattern matching</h3>
+				<p>
+					Once the input is converted to vectors (combinations of numbers), the model looks for patterns in
+					these vectors to understand the context of the question. For example, it identifies the relationship
+					between &quot;apple,&quot; &quot;grows,&quot; and &quot;tree.&quot; Then, based on similar patterns
+					it has seen before, the model matches the question with relevant content from its training. If the
+					model was trained on a book about growing fruits, it can pull knowledge from that to respond to the
+					user.
+				</p>
+				<h2 id="decoding-">Decoding:</h2>
+				<p>
+					The model’s response is initially generated as numerical data, which is better for computational
+					purposes. But humans aren&#39;t great at reading long strings of numbers, so decoding converts this
+					output back into readable text.
+				</p>
+				<h2 id="conclusion">Conclusion</h2>
+				<p>
+					This is a simplified look at how a large language model works, but it covers the basics. This
+					incredible technology has transformed our world, giving everyone access to a personal assistant that
+					knows a lot about all kinds of topics! While it’s not perfect, it’s excellent for simple tasks or
+					for sharing information it’s been trained on.
+				</p>
+			</BlogPost>
+		</Layout>
+	</body>
+</html>

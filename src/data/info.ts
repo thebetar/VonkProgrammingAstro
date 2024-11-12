@@ -54,6 +54,16 @@ export const info = {
 	keywords: 'developer, javascript, python, code quality, blogs',
 	blogs: [
 		{
+			id: 18,
+			title: 'The magic of Large Language Models 🪄',
+			description: `
+				Large Language Models have taken the world by storm, but how do they actually work? In this blog post I will talk about the magic behind Large Language Models.
+			`,
+			tags: [BlogTags.Development, BlogTags.Innovation],
+			date: '2024-11-08',
+			link: '/blogs/large-language-models',
+		},
+		{
 			id: 17,
 			title: 'Google Chrome tips & tricks 🔎',
 			description: `
