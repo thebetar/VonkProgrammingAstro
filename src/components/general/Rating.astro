@@ -4,7 +4,7 @@ import type { IRating } from '@types';
 const { rating } = Astro.props as IRating;
 ---
 
-<div class="flex items-center gap-1">
+<div class="flex items-center md:gap-1 gap-[2px]">
     {new Array(rating).fill(0).map(() => (
         <svg xmlns="http://www.w3.org/2000/svg" fill="#ffe234" width="12px" height="12px" viewBox="0 0 16 16">
             <g>
