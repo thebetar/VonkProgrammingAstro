@@ -1,4 +1,5 @@
 ---
+import Rating from '@components/general/Rating.astro';
 import type { ISkills } from '@types';
 
 const { title, skills } = Astro.props as ISkills;
@@ -22,7 +23,7 @@ const { title, skills } = Astro.props as ISkills;
 						</div>
 						<h3 class="md:text-lg text-sm">{item.title}</h3>
 					</div>
-					<p class="md:text-sm text-xs dark:text-gray text-zinc-600">{item.years} years</p>
+					<Rating rating={item.level} />
 				</div>
 			))
 		}

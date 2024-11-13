@@ -27,12 +27,22 @@ export interface IBlogs {
 	blogs: IBlog[];
 }
 
+export enum SkillType {
+	LANGUAGE = 'Programming Language',
+	DATABASE = 'Database',
+	FRAMEWORK = 'Framework',
+	TOOL = 'Tool',
+	OTHER = 'Other',
+}
+
 export interface ISkill {
 	title: string;
 	years: number;
+	level: number;
 	logo: string;
 	link: string;
 	featured: boolean;
+	type: SkillType;
 }
 
 export interface ISkills {
@@ -68,4 +78,8 @@ export interface IProjects {
 
 export interface IProjectDetails {
 	projectDetail: IProject;
+}
+
+export interface IRating {
+	rating: number;
 }
