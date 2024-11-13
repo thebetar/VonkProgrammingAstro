@@ -32,6 +32,7 @@ export enum SkillType {
 	DATABASE = 'Database',
 	FRAMEWORK = 'Framework',
 	TOOL = 'Tool',
+	INFRASTRUCTURE = 'Infrastructure',
 	OTHER = 'Other',
 }
 

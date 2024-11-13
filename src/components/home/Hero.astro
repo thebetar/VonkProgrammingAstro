@@ -5,7 +5,7 @@ const { name, jobDescription1, jobDescription2, about } = Astro.props as IHeroPr
 ---
 
 <section>
-	<p class="dark:text-light mt-[117px]">Hey, I’m</p>
+	<p class="dark:text-light md:mt-[117px] mt-20">Hey, I’m</p>
 	<h1 aria-label={name}>{name}</h1>
 	<div
 		aria-label={jobDescription1 + ' | ' + jobDescription2}
