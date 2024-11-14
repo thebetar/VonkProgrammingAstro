@@ -647,7 +647,7 @@ export const info = {
 			level: 5,
 			logo: '/assets/svg/github.svg',
 			link: 'https://github.com/',
-			featured: true,
+			featured: false,
 			type: SkillType.INFRASTRUCTURE,
 		},
 		{
